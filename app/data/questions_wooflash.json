@@ -1,0 +1,4702 @@
+{
+  "meta": {
+    "title": "Programme SVT — 39 quiz Wooflash",
+    "source": "D:\\IA\\Wooflashquizz\\index.html",
+    "description": "78 prompts oraux issus de deux questions de synthèse par ebook."
+  },
+  "questions": [
+    {
+      "id": "wooflash-eb01-01",
+      "level": "Cycle 4",
+      "school_level": "4e",
+      "theme": "La planète Terre et l'action humaine",
+      "title": "La dynamique terrestre et la tectonique des plaques",
+      "prompt": "En une ou deux phrases, réponds à la question : Quelle est la différence entre la lithosphère et l'asthénosphère ?",
+      "context": "Question tirée du quiz Wooflash eb01 — La dynamique terrestre et la tectonique des plaques.",
+      "expected_answer": "La lithosphère est une enveloppe rigide et cassante, alors que l'asthénosphère est solide mais ductile (déformable) La lithosphère (environ 100 km d'épaisseur) est rigide et découpée en plaques ; l'asthénosphère, située dessous, est plus chaude et ductile, ce qui permet le déplacement des plaques.",
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "La réponse attendue est formulée",
+          "groups": [
+            [
+              "La lithosphère est une enveloppe rigide et cassante, alors que l'asthénosphère est solide mais ductile (déformable)",
+              "La lithosphère est une enveloppe rigide",
+              "déformable",
+              "lithosphere",
+              "enveloppe",
+              "rigide",
+              "cassante",
+              "asthenosphere",
+              "solide",
+              "mais"
+            ]
+          ],
+          "weight": 1.6,
+          "required": true
+        },
+        {
+          "id": "explanation",
+          "label": "Un mot-clé scientifique est ajouté",
+          "groups": [
+            [
+              "lithosphere",
+              "environ",
+              "epaisseur",
+              "rigide",
+              "decoupee",
+              "plaques",
+              "plaque",
+              "asthenosphere"
+            ]
+          ],
+          "weight": 0.6,
+          "required": false,
+          "feedback": "Idéalement, relie le terme à son rôle ou à sa conséquence."
+        }
+      ],
+      "misconceptions": [],
+      "remediation": {
+        "micro_task": "Reformule la réponse en une phrase avec un mot-clé de : La dynamique terrestre et la tectonique des plaques.",
+        "retry_prompt": "En une ou deux phrases, réponds à la question : Quelle est la différence entre la lithosphère et l'asthénosphère ?",
+        "extension": "Donne un exemple ou une conséquence qui précise la réponse."
+      },
+      "source": {
+        "file": "D:\\IA\\Wooflashquizz\\index.html",
+        "locator": "Quiz eb01, question 1",
+        "program": "La planète Terre et l'action humaine"
+      },
+      "origin": "wooflashquizz"
+    },
+    {
+      "id": "wooflash-eb01-06",
+      "level": "Cycle 4",
+      "school_level": "4e",
+      "theme": "La planète Terre et l'action humaine",
+      "title": "La dynamique terrestre et la tectonique des plaques",
+      "prompt": "En une ou deux phrases, réponds à la question : Le point situé à la surface du sol, à la verticale du foyer d'un séisme, s'appelle",
+      "context": "Question tirée du quiz Wooflash eb01 — La dynamique terrestre et la tectonique des plaques.",
+      "expected_answer": "L'épicentre Le foyer (ou hypocentre) est le lieu de la rupture en profondeur ; l'épicentre est le point en surface à sa verticale, où les secousses sont maximales.",
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "La réponse attendue est formulée",
+          "groups": [
+            [
+              "L'épicentre",
+              "epicentre"
+            ]
+          ],
+          "weight": 1.6,
+          "required": true
+        },
+        {
+          "id": "explanation",
+          "label": "Un mot-clé scientifique est ajouté",
+          "groups": [
+            [
+              "foyer",
+              "hypocentre",
+              "lieu",
+              "rupture",
+              "profondeur",
+              "epicentre",
+              "point",
+              "surface"
+            ]
+          ],
+          "weight": 0.6,
+          "required": false,
+          "feedback": "Idéalement, relie le terme à son rôle ou à sa conséquence."
+        }
+      ],
+      "misconceptions": [],
+      "remediation": {
+        "micro_task": "Reformule la réponse en une phrase avec un mot-clé de : La dynamique terrestre et la tectonique des plaques.",
+        "retry_prompt": "En une ou deux phrases, réponds à la question : Le point situé à la surface du sol, à la verticale du foyer d'un séisme, s'appelle",
+        "extension": "Donne un exemple ou une conséquence qui précise la réponse."
+      },
+      "source": {
+        "file": "D:\\IA\\Wooflashquizz\\index.html",
+        "locator": "Quiz eb01, question 6",
+        "program": "La planète Terre et l'action humaine"
+      },
+      "origin": "wooflashquizz"
+    },
+    {
+      "id": "wooflash-eb02-01",
+      "level": "Cycle 4",
+      "school_level": "4e",
+      "theme": "La planète Terre et l'action humaine",
+      "title": "Météo, climat et réchauffement planétaire",
+      "prompt": "En une ou deux phrases, réponds à la question : Selon l'OMM, le climat d'une région se définit par des moyennes calculées sur au moins",
+      "context": "Question tirée du quiz Wooflash eb02 — Météo, climat et réchauffement planétaire.",
+      "expected_answer": "30 ans Le climat correspond aux moyennes des grandeurs atmosphériques sur au moins 30 ans ; en dessous, on parle de météo (temps à court terme).",
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "La réponse attendue est formulée",
+          "groups": [
+            [
+              "30 ans"
+            ]
+          ],
+          "weight": 1.6,
+          "required": true
+        },
+        {
+          "id": "explanation",
+          "label": "Un mot-clé scientifique est ajouté",
+          "groups": [
+            [
+              "climat",
+              "correspond",
+              "moyennes",
+              "moyenne",
+              "grandeurs",
+              "grandeur",
+              "atmospheriques",
+              "atmospherique"
+            ]
+          ],
+          "weight": 0.6,
+          "required": false,
+          "feedback": "Idéalement, relie le terme à son rôle ou à sa conséquence."
+        }
+      ],
+      "misconceptions": [],
+      "remediation": {
+        "micro_task": "Reformule la réponse en une phrase avec un mot-clé de : Météo, climat et réchauffement planétaire.",
+        "retry_prompt": "En une ou deux phrases, réponds à la question : Selon l'OMM, le climat d'une région se définit par des moyennes calculées sur au moins",
+        "extension": "Donne un exemple ou une conséquence qui précise la réponse."
+      },
+      "source": {
+        "file": "D:\\IA\\Wooflashquizz\\index.html",
+        "locator": "Quiz eb02, question 1",
+        "program": "La planète Terre et l'action humaine"
+      },
+      "origin": "wooflashquizz"
+    },
+    {
+      "id": "wooflash-eb02-06",
+      "level": "Cycle 4",
+      "school_level": "4e",
+      "theme": "La planète Terre et l'action humaine",
+      "title": "Météo, climat et réchauffement planétaire",
+      "prompt": "En une ou deux phrases, réponds à la question : Quelle serait la température moyenne de la Terre sans effet de serre naturel ?",
+      "context": "Question tirée du quiz Wooflash eb02 — Météo, climat et réchauffement planétaire.",
+      "expected_answer": "-18 °C : les océans seraient entièrement gelés L'effet de serre naturel maintient la Terre à +15 °C en moyenne ; sans lui, il ferait -18 °C et les océans seraient gelés. Il est donc vital.",
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "La réponse attendue est formulée",
+          "groups": [
+            [
+              "-18 °C : les océans seraient entièrement gelés",
+              "-18 °C",
+              "les océans seraient entièrement gelés",
+              "oceans",
+              "ocean",
+              "seraient",
+              "entierement",
+              "geles",
+              "18 °C"
+            ]
+          ],
+          "weight": 1.6,
+          "required": true
+        },
+        {
+          "id": "explanation",
+          "label": "Un mot-clé scientifique est ajouté",
+          "groups": [
+            [
+              "effet",
+              "serre",
+              "naturel",
+              "maintient",
+              "terre",
+              "moyenne",
+              "ferait",
+              "oceans"
+            ]
+          ],
+          "weight": 0.6,
+          "required": false,
+          "feedback": "Idéalement, relie le terme à son rôle ou à sa conséquence."
+        }
+      ],
+      "misconceptions": [],
+      "remediation": {
+        "micro_task": "Reformule la réponse en une phrase avec un mot-clé de : Météo, climat et réchauffement planétaire.",
+        "retry_prompt": "En une ou deux phrases, réponds à la question : Quelle serait la température moyenne de la Terre sans effet de serre naturel ?",
+        "extension": "Donne un exemple ou une conséquence qui précise la réponse."
+      },
+      "source": {
+        "file": "D:\\IA\\Wooflashquizz\\index.html",
+        "locator": "Quiz eb02, question 6",
+        "program": "La planète Terre et l'action humaine"
+      },
+      "origin": "wooflashquizz"
+    },
+    {
+      "id": "wooflash-eb03-01",
+      "level": "Cycle 4",
+      "school_level": "4e",
+      "theme": "La planète Terre et l'action humaine",
+      "title": "Gestion des risques naturels",
+      "prompt": "En une ou deux phrases, réponds à la question : Le risque naturel résulte du croisement entre",
+      "context": "Question tirée du quiz Wooflash eb03 — Gestion des risques naturels.",
+      "expected_answer": "L'aléa et la vulnérabilité Risque = Aléa (probabilité et intensité de l'événement dangereux) × Vulnérabilité (fragilité des personnes et des biens exposés).",
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "La réponse attendue est formulée",
+          "groups": [
+            [
+              "L'aléa et la vulnérabilité",
+              "L'aléa",
+              "la vulnérabilité",
+              "alea",
+              "vulnerabilite"
+            ]
+          ],
+          "weight": 1.6,
+          "required": true
+        },
+        {
+          "id": "explanation",
+          "label": "Un mot-clé scientifique est ajouté",
+          "groups": [
+            [
+              "risque",
+              "alea",
+              "probabilite",
+              "intensite",
+              "evenement",
+              "dangereux",
+              "vulnerabilite",
+              "fragilite"
+            ]
+          ],
+          "weight": 0.6,
+          "required": false,
+          "feedback": "Idéalement, relie le terme à son rôle ou à sa conséquence."
+        }
+      ],
+      "misconceptions": [],
+      "remediation": {
+        "micro_task": "Reformule la réponse en une phrase avec un mot-clé de : Gestion des risques naturels.",
+        "retry_prompt": "En une ou deux phrases, réponds à la question : Le risque naturel résulte du croisement entre",
+        "extension": "Donne un exemple ou une conséquence qui précise la réponse."
+      },
+      "source": {
+        "file": "D:\\IA\\Wooflashquizz\\index.html",
+        "locator": "Quiz eb03, question 1",
+        "program": "La planète Terre et l'action humaine"
+      },
+      "origin": "wooflashquizz"
+    },
+    {
+      "id": "wooflash-eb03-09",
+      "level": "Cycle 4",
+      "school_level": "4e",
+      "theme": "La planète Terre et l'action humaine",
+      "title": "Gestion des risques naturels",
+      "prompt": "En une ou deux phrases, réponds à la question : Les bâtiments parasismiques sont conçus pour",
+      "context": "Question tirée du quiz Wooflash eb03 — Gestion des risques naturels.",
+      "expected_answer": "Résister aux secousses sismiques Construire des bâtiments parasismiques, capables d'encaisser les secousses, est une mesure de prévention essentielle en zone sismique.",
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "La réponse attendue est formulée",
+          "groups": [
+            [
+              "Résister aux secousses sismiques",
+              "resister",
+              "secousses",
+              "secousse",
+              "sismiques",
+              "sismique"
+            ]
+          ],
+          "weight": 1.6,
+          "required": true
+        },
+        {
+          "id": "explanation",
+          "label": "Un mot-clé scientifique est ajouté",
+          "groups": [
+            [
+              "construire",
+              "batiments",
+              "batiment",
+              "parasismiques",
+              "parasismique",
+              "capables",
+              "capable",
+              "encaisser"
+            ]
+          ],
+          "weight": 0.6,
+          "required": false,
+          "feedback": "Idéalement, relie le terme à son rôle ou à sa conséquence."
+        }
+      ],
+      "misconceptions": [],
+      "remediation": {
+        "micro_task": "Reformule la réponse en une phrase avec un mot-clé de : Gestion des risques naturels.",
+        "retry_prompt": "En une ou deux phrases, réponds à la question : Les bâtiments parasismiques sont conçus pour",
+        "extension": "Donne un exemple ou une conséquence qui précise la réponse."
+      },
+      "source": {
+        "file": "D:\\IA\\Wooflashquizz\\index.html",
+        "locator": "Quiz eb03, question 9",
+        "program": "La planète Terre et l'action humaine"
+      },
+      "origin": "wooflashquizz"
+    },
+    {
+      "id": "wooflash-eb04-01",
+      "level": "Cycle 4",
+      "school_level": "5e",
+      "theme": "La planète Terre et l'action humaine",
+      "title": "Gestion des ressources terrestres",
+      "prompt": "En une ou deux phrases, réponds à la question : Combien de temps faut-il pour former quelques centimètres de sol fertile en climat tempéré ?",
+      "context": "Question tirée du quiz Wooflash eb04 — Gestion des ressources terrestres.",
+      "expected_answer": "De plusieurs siècles à plusieurs milliers d'années Le sol se forme par altération de la roche-mère et fabrication d'humus : 100 à 10 000 ans pour quelques centimètres. C'est une ressource quasi non renouvelable à échelle humaine.",
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "La réponse attendue est formulée",
+          "groups": [
+            [
+              "De plusieurs siècles à plusieurs milliers d'années",
+              "plusieurs",
+              "plusieur",
+              "siecles",
+              "siecle",
+              "milliers",
+              "millier",
+              "annees",
+              "annee"
+            ]
+          ],
+          "weight": 1.6,
+          "required": true
+        },
+        {
+          "id": "explanation",
+          "label": "Un mot-clé scientifique est ajouté",
+          "groups": [
+            [
+              "forme",
+              "alteration",
+              "roche",
+              "mere",
+              "fabrication",
+              "humus",
+              "quelques",
+              "quelque"
+            ]
+          ],
+          "weight": 0.6,
+          "required": false,
+          "feedback": "Idéalement, relie le terme à son rôle ou à sa conséquence."
+        }
+      ],
+      "misconceptions": [],
+      "remediation": {
+        "micro_task": "Reformule la réponse en une phrase avec un mot-clé de : Gestion des ressources terrestres.",
+        "retry_prompt": "En une ou deux phrases, réponds à la question : Combien de temps faut-il pour former quelques centimètres de sol fertile en climat tempéré ?",
+        "extension": "Donne un exemple ou une conséquence qui précise la réponse."
+      },
+      "source": {
+        "file": "D:\\IA\\Wooflashquizz\\index.html",
+        "locator": "Quiz eb04, question 1",
+        "program": "La planète Terre et l'action humaine"
+      },
+      "origin": "wooflashquizz"
+    },
+    {
+      "id": "wooflash-eb04-06",
+      "level": "Cycle 4",
+      "school_level": "5e",
+      "theme": "La planète Terre et l'action humaine",
+      "title": "Gestion des ressources terrestres",
+      "prompt": "En une ou deux phrases, réponds à la question : Le solaire, l'éolien et l'hydraulique sont des énergies",
+      "context": "Question tirée du quiz Wooflash eb04 — Gestion des ressources terrestres.",
+      "expected_answer": "Renouvelables : inépuisables à l'échelle humaine Les énergies renouvelables (soleil, vent, eau, chaleur de la Terre) sont inépuisables et peu polluantes : ce sont les énergies de demain.",
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "La réponse attendue est formulée",
+          "groups": [
+            [
+              "Renouvelables : inépuisables à l'échelle humaine",
+              "Renouvelables",
+              "inépuisables à l'échelle humaine",
+              "renouvelable",
+              "inepuisables",
+              "inepuisable",
+              "echelle",
+              "humaine"
+            ]
+          ],
+          "weight": 1.6,
+          "required": true
+        },
+        {
+          "id": "explanation",
+          "label": "Un mot-clé scientifique est ajouté",
+          "groups": [
+            [
+              "energies",
+              "energie",
+              "renouvelables",
+              "renouvelable",
+              "soleil",
+              "vent",
+              "chaleur",
+              "terre"
+            ]
+          ],
+          "weight": 0.6,
+          "required": false,
+          "feedback": "Idéalement, relie le terme à son rôle ou à sa conséquence."
+        }
+      ],
+      "misconceptions": [],
+      "remediation": {
+        "micro_task": "Reformule la réponse en une phrase avec un mot-clé de : Gestion des ressources terrestres.",
+        "retry_prompt": "En une ou deux phrases, réponds à la question : Le solaire, l'éolien et l'hydraulique sont des énergies",
+        "extension": "Donne un exemple ou une conséquence qui précise la réponse."
+      },
+      "source": {
+        "file": "D:\\IA\\Wooflashquizz\\index.html",
+        "locator": "Quiz eb04, question 6",
+        "program": "La planète Terre et l'action humaine"
+      },
+      "origin": "wooflashquizz"
+    },
+    {
+      "id": "wooflash-eb05-01",
+      "level": "Cycle 4",
+      "school_level": "5e",
+      "theme": "Le vivant et son évolution",
+      "title": "La nutrition des organismes",
+      "prompt": "En une ou deux phrases, réponds à la question : Quelle est l'équation de la respiration cellulaire ?",
+      "context": "Question tirée du quiz Wooflash eb05 — La nutrition des organismes.",
+      "expected_answer": "Glucose + dioxygène (O2) → énergie + CO2 + eau Dans les cellules, le glucose réagit avec le dioxygène pour libérer l'énergie nécessaire à la vie, en produisant du CO2 et de l'eau.",
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "La réponse attendue est formulée",
+          "groups": [
+            [
+              "Glucose + dioxygène (O2) → énergie + CO2 + eau",
+              "Glucose + dioxygène",
+              "→ énergie + CO2 + eau",
+              "glucose",
+              "dioxygene",
+              "energie"
+            ]
+          ],
+          "weight": 1.6,
+          "required": true
+        },
+        {
+          "id": "explanation",
+          "label": "Un mot-clé scientifique est ajouté",
+          "groups": [
+            [
+              "cellules",
+              "cellule",
+              "glucose",
+              "reagit",
+              "dioxygene",
+              "liberer",
+              "energie",
+              "necessaire"
+            ]
+          ],
+          "weight": 0.6,
+          "required": false,
+          "feedback": "Idéalement, relie le terme à son rôle ou à sa conséquence."
+        }
+      ],
+      "misconceptions": [],
+      "remediation": {
+        "micro_task": "Reformule la réponse en une phrase avec un mot-clé de : La nutrition des organismes.",
+        "retry_prompt": "En une ou deux phrases, réponds à la question : Quelle est l'équation de la respiration cellulaire ?",
+        "extension": "Donne un exemple ou une conséquence qui précise la réponse."
+      },
+      "source": {
+        "file": "D:\\IA\\Wooflashquizz\\index.html",
+        "locator": "Quiz eb05, question 1",
+        "program": "Le vivant et son évolution"
+      },
+      "origin": "wooflashquizz"
+    },
+    {
+      "id": "wooflash-eb05-05",
+      "level": "Cycle 4",
+      "school_level": "5e",
+      "theme": "Le vivant et son évolution",
+      "title": "La nutrition des organismes",
+      "prompt": "En une ou deux phrases, réponds à la question : Un organisme autotrophe est capable de",
+      "context": "Question tirée du quiz Wooflash eb05 — La nutrition des organismes.",
+      "expected_answer": "Fabriquer sa propre matière organique à partir de matière minérale et de lumière Les végétaux chlorophylliens sont autotrophes : ils fabriquent leur matière organique à partir d'éléments minéraux et de lumière. Les animaux et les champignons sont hétérotrophes.",
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "La réponse attendue est formulée",
+          "groups": [
+            [
+              "Fabriquer sa propre matière organique à partir de matière minérale et de lumière",
+              "de lumière",
+              "fabriquer",
+              "propre",
+              "matiere",
+              "organique",
+              "partir",
+              "minerale",
+              "lumiere"
+            ]
+          ],
+          "weight": 1.6,
+          "required": true
+        },
+        {
+          "id": "explanation",
+          "label": "Un mot-clé scientifique est ajouté",
+          "groups": [
+            [
+              "vegetaux",
+              "chlorophylliens",
+              "chlorophyllien",
+              "autotrophes",
+              "autotrophe",
+              "fabriquent",
+              "matiere",
+              "organique"
+            ]
+          ],
+          "weight": 0.6,
+          "required": false,
+          "feedback": "Idéalement, relie le terme à son rôle ou à sa conséquence."
+        }
+      ],
+      "misconceptions": [],
+      "remediation": {
+        "micro_task": "Reformule la réponse en une phrase avec un mot-clé de : La nutrition des organismes.",
+        "retry_prompt": "En une ou deux phrases, réponds à la question : Un organisme autotrophe est capable de",
+        "extension": "Donne un exemple ou une conséquence qui précise la réponse."
+      },
+      "source": {
+        "file": "D:\\IA\\Wooflashquizz\\index.html",
+        "locator": "Quiz eb05, question 5",
+        "program": "Le vivant et son évolution"
+      },
+      "origin": "wooflashquizz"
+    },
+    {
+      "id": "wooflash-eb06-01",
+      "level": "Cycle 4",
+      "school_level": "4e",
+      "theme": "Le vivant et son évolution",
+      "title": "La reproduction sexuée des êtres vivants",
+      "prompt": "En une ou deux phrases, réponds à la question : La reproduction sexuée nécessite l'union de deux cellules reproductrices appelées",
+      "context": "Question tirée du quiz Wooflash eb06 — La reproduction sexuée des êtres vivants.",
+      "expected_answer": "Les gamètes : un gamète mâle (spermatozoïde ou grain de pollen) et un gamète femelle (ovule) La reproduction sexuée repose sur la rencontre d'un gamète mâle et d'un gamète femelle : leur union (fécondation) donne naissance à une cellule-œuf.",
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "La réponse attendue est formulée",
+          "groups": [
+            [
+              "Les gamètes : un gamète mâle (spermatozoïde ou grain de pollen) et un gamète femelle (ovule)",
+              "Les gamètes",
+              "un gamète mâle",
+              "spermatozoïde ou grain de pollen",
+              "un gamète femelle",
+              "ovule",
+              "gametes",
+              "gamete",
+              "male",
+              "spermatozoide"
+            ]
+          ],
+          "weight": 1.6,
+          "required": true
+        },
+        {
+          "id": "explanation",
+          "label": "Un mot-clé scientifique est ajouté",
+          "groups": [
+            [
+              "reproduction",
+              "sexuee",
+              "repose",
+              "rencontre",
+              "gamete",
+              "male",
+              "femelle",
+              "union"
+            ]
+          ],
+          "weight": 0.6,
+          "required": false,
+          "feedback": "Idéalement, relie le terme à son rôle ou à sa conséquence."
+        }
+      ],
+      "misconceptions": [],
+      "remediation": {
+        "micro_task": "Reformule la réponse en une phrase avec un mot-clé de : La reproduction sexuée des êtres vivants.",
+        "retry_prompt": "En une ou deux phrases, réponds à la question : La reproduction sexuée nécessite l'union de deux cellules reproductrices appelées",
+        "extension": "Donne un exemple ou une conséquence qui précise la réponse."
+      },
+      "source": {
+        "file": "D:\\IA\\Wooflashquizz\\index.html",
+        "locator": "Quiz eb06, question 1",
+        "program": "Le vivant et son évolution"
+      },
+      "origin": "wooflashquizz"
+    },
+    {
+      "id": "wooflash-eb06-06",
+      "level": "Cycle 4",
+      "school_level": "4e",
+      "theme": "Le vivant et son évolution",
+      "title": "La reproduction sexuée des êtres vivants",
+      "prompt": "En une ou deux phrases, réponds à la question : L'hydre d'eau douce se reproduit de manière asexuée par",
+      "context": "Question tirée du quiz Wooflash eb06 — La reproduction sexuée des êtres vivants.",
+      "expected_answer": "Bourgeonnement : un petit hydre pousse sur le parent avant de s'en détacher Chez l'hydre, un bourgeon se forme sur le corps du parent, grandit puis se détache : c'est une reproduction asexuée animale.",
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "La réponse attendue est formulée",
+          "groups": [
+            [
+              "Bourgeonnement : un petit hydre pousse sur le parent avant de s'en détacher",
+              "Bourgeonnement",
+              "petit",
+              "hydre",
+              "pousse",
+              "parent",
+              "avant",
+              "detacher"
+            ]
+          ],
+          "weight": 1.6,
+          "required": true
+        },
+        {
+          "id": "explanation",
+          "label": "Un mot-clé scientifique est ajouté",
+          "groups": [
+            [
+              "chez",
+              "hydre",
+              "bourgeon",
+              "forme",
+              "corps",
+              "parent",
+              "grandit",
+              "puis"
+            ]
+          ],
+          "weight": 0.6,
+          "required": false,
+          "feedback": "Idéalement, relie le terme à son rôle ou à sa conséquence."
+        }
+      ],
+      "misconceptions": [],
+      "remediation": {
+        "micro_task": "Reformule la réponse en une phrase avec un mot-clé de : La reproduction sexuée des êtres vivants.",
+        "retry_prompt": "En une ou deux phrases, réponds à la question : L'hydre d'eau douce se reproduit de manière asexuée par",
+        "extension": "Donne un exemple ou une conséquence qui précise la réponse."
+      },
+      "source": {
+        "file": "D:\\IA\\Wooflashquizz\\index.html",
+        "locator": "Quiz eb06, question 6",
+        "program": "Le vivant et son évolution"
+      },
+      "origin": "wooflashquizz"
+    },
+    {
+      "id": "wooflash-eb07-01",
+      "level": "Cycle 4",
+      "school_level": "3e",
+      "theme": "Le vivant et son évolution",
+      "title": "Génétique humaine et hérédité",
+      "prompt": "En une ou deux phrases, réponds à la question : Combien de chromosomes contient chacune de nos cellules ?",
+      "context": "Question tirée du quiz Wooflash eb07 — Génétique humaine et hérédité.",
+      "expected_answer": "46 chromosomes, soit 23 paires Dans le noyau de chaque cellule humaine se trouvent 46 chromosomes (23 paires), dont une paire détermine le sexe : XX chez la femme, XY chez l'homme.",
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "La réponse attendue est formulée",
+          "groups": [
+            [
+              "46 chromosomes, soit 23 paires",
+              "chromosomes",
+              "chromosome",
+              "soit",
+              "paires",
+              "paire",
+              "46",
+              "23"
+            ]
+          ],
+          "weight": 1.6,
+          "required": true
+        },
+        {
+          "id": "explanation",
+          "label": "Un mot-clé scientifique est ajouté",
+          "groups": [
+            [
+              "noyau",
+              "chaque",
+              "cellule",
+              "humaine",
+              "trouvent",
+              "chromosomes",
+              "chromosome",
+              "paires"
+            ]
+          ],
+          "weight": 0.6,
+          "required": false,
+          "feedback": "Idéalement, relie le terme à son rôle ou à sa conséquence."
+        }
+      ],
+      "misconceptions": [],
+      "remediation": {
+        "micro_task": "Reformule la réponse en une phrase avec un mot-clé de : Génétique humaine et hérédité.",
+        "retry_prompt": "En une ou deux phrases, réponds à la question : Combien de chromosomes contient chacune de nos cellules ?",
+        "extension": "Donne un exemple ou une conséquence qui précise la réponse."
+      },
+      "source": {
+        "file": "D:\\IA\\Wooflashquizz\\index.html",
+        "locator": "Quiz eb07, question 1",
+        "program": "Le vivant et son évolution"
+      },
+      "origin": "wooflashquizz"
+    },
+    {
+      "id": "wooflash-eb07-08",
+      "level": "Cycle 4",
+      "school_level": "3e",
+      "theme": "Le vivant et son évolution",
+      "title": "Génétique humaine et hérédité",
+      "prompt": "En une ou deux phrases, réponds à la question : Lors de la fabrication des gamètes (méiose), les paires de chromosomes",
+      "context": "Question tirée du quiz Wooflash eb07 — Génétique humaine et hérédité.",
+      "expected_answer": "Se séparent : chaque gamète ne reçoit que 23 chromosomes La méiose (deux divisions successives) réduit le nombre de chromosomes de moitié : chaque gamète reçoit 23 chromosomes, un seul de chaque paire.",
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "La réponse attendue est formulée",
+          "groups": [
+            [
+              "Se séparent : chaque gamète ne reçoit que 23 chromosomes",
+              "Se séparent",
+              "separent",
+              "chaque",
+              "gamete",
+              "recoit",
+              "chromosomes",
+              "chromosome",
+              "23"
+            ]
+          ],
+          "weight": 1.6,
+          "required": true
+        },
+        {
+          "id": "explanation",
+          "label": "Un mot-clé scientifique est ajouté",
+          "groups": [
+            [
+              "meiose",
+              "deux",
+              "divisions",
+              "division",
+              "successives",
+              "successive",
+              "reduit",
+              "nombre"
+            ]
+          ],
+          "weight": 0.6,
+          "required": false,
+          "feedback": "Idéalement, relie le terme à son rôle ou à sa conséquence."
+        }
+      ],
+      "misconceptions": [],
+      "remediation": {
+        "micro_task": "Reformule la réponse en une phrase avec un mot-clé de : Génétique humaine et hérédité.",
+        "retry_prompt": "En une ou deux phrases, réponds à la question : Lors de la fabrication des gamètes (méiose), les paires de chromosomes",
+        "extension": "Donne un exemple ou une conséquence qui précise la réponse."
+      },
+      "source": {
+        "file": "D:\\IA\\Wooflashquizz\\index.html",
+        "locator": "Quiz eb07, question 8",
+        "program": "Le vivant et son évolution"
+      },
+      "origin": "wooflashquizz"
+    },
+    {
+      "id": "wooflash-eb08-01",
+      "level": "Cycle 4",
+      "school_level": "3e",
+      "theme": "Le vivant et son évolution",
+      "title": "L'évolution : preuves et mécanismes",
+      "prompt": "En une ou deux phrases, réponds à la question : La vie sur Terre est apparue il y a environ",
+      "context": "Question tirée du quiz Wooflash eb08 — L'évolution : preuves et mécanismes.",
+      "expected_answer": "3,8 milliards d'années Les plus anciennes traces de vie (bactéries fossiles) datent d'environ 3,8 milliards d'années : tous les êtres vivants actuels descendent de ces premières formes.",
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "La réponse attendue est formulée",
+          "groups": [
+            [
+              "3,8 milliards d'années",
+              "milliards",
+              "milliard",
+              "annees",
+              "annee",
+              "3,8"
+            ]
+          ],
+          "weight": 1.6,
+          "required": true
+        },
+        {
+          "id": "explanation",
+          "label": "Un mot-clé scientifique est ajouté",
+          "groups": [
+            [
+              "anciennes",
+              "ancienne",
+              "traces",
+              "trace",
+              "bacteries",
+              "bacterie",
+              "fossiles",
+              "fossile"
+            ]
+          ],
+          "weight": 0.6,
+          "required": false,
+          "feedback": "Idéalement, relie le terme à son rôle ou à sa conséquence."
+        }
+      ],
+      "misconceptions": [],
+      "remediation": {
+        "micro_task": "Reformule la réponse en une phrase avec un mot-clé de : L'évolution : preuves et mécanismes.",
+        "retry_prompt": "En une ou deux phrases, réponds à la question : La vie sur Terre est apparue il y a environ",
+        "extension": "Donne un exemple ou une conséquence qui précise la réponse."
+      },
+      "source": {
+        "file": "D:\\IA\\Wooflashquizz\\index.html",
+        "locator": "Quiz eb08, question 1",
+        "program": "Le vivant et son évolution"
+      },
+      "origin": "wooflashquizz"
+    },
+    {
+      "id": "wooflash-eb08-04",
+      "level": "Cycle 4",
+      "school_level": "3e",
+      "theme": "Le vivant et son évolution",
+      "title": "L'évolution : preuves et mécanismes",
+      "prompt": "En une ou deux phrases, réponds à la question : Archaeopteryx est un fossile précieux car il présente",
+      "context": "Question tirée du quiz Wooflash eb08 — L'évolution : preuves et mécanismes.",
+      "expected_answer": "Des caractères intermédiaires : plumes d'oiseau et dents de reptile Ce fossile à caractères intermédiaires montre la transition entre reptiles et oiseaux : il illustre l'évolution graduelle des espèces.",
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "La réponse attendue est formulée",
+          "groups": [
+            [
+              "Des caractères intermédiaires : plumes d'oiseau et dents de reptile",
+              "Des caractères intermédiaires",
+              "plumes d'oiseau",
+              "dents de reptile",
+              "caracteres",
+              "caractere",
+              "intermediaires",
+              "intermediaire",
+              "plumes",
+              "plume"
+            ]
+          ],
+          "weight": 1.6,
+          "required": true
+        },
+        {
+          "id": "explanation",
+          "label": "Un mot-clé scientifique est ajouté",
+          "groups": [
+            [
+              "fossile",
+              "caracteres",
+              "caractere",
+              "intermediaires",
+              "intermediaire",
+              "montre",
+              "transition",
+              "entre"
+            ]
+          ],
+          "weight": 0.6,
+          "required": false,
+          "feedback": "Idéalement, relie le terme à son rôle ou à sa conséquence."
+        }
+      ],
+      "misconceptions": [],
+      "remediation": {
+        "micro_task": "Reformule la réponse en une phrase avec un mot-clé de : L'évolution : preuves et mécanismes.",
+        "retry_prompt": "En une ou deux phrases, réponds à la question : Archaeopteryx est un fossile précieux car il présente",
+        "extension": "Donne un exemple ou une conséquence qui précise la réponse."
+      },
+      "source": {
+        "file": "D:\\IA\\Wooflashquizz\\index.html",
+        "locator": "Quiz eb08, question 4",
+        "program": "Le vivant et son évolution"
+      },
+      "origin": "wooflashquizz"
+    },
+    {
+      "id": "wooflash-eb09-01",
+      "level": "Cycle 4",
+      "school_level": "4e",
+      "theme": "Le corps humain et la santé",
+      "title": "Effort musculaire et système nerveux",
+      "prompt": "En une ou deux phrases, réponds à la question : Pendant un effort physique, les muscles consomment davantage",
+      "context": "Question tirée du quiz Wooflash eb09 — Effort musculaire et système nerveux.",
+      "expected_answer": "De dioxygène et de glucose, et rejettent plus de CO2 et de chaleur Les muscles en activité brûlent glucose + O2 (respiration cellulaire) : il faut donc leur apporter davantage de nutriments et de dioxygène par le sang.",
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "La réponse attendue est formulée",
+          "groups": [
+            [
+              "De dioxygène et de glucose, et rejettent plus de CO2 et de chaleur",
+              "De dioxygène",
+              "de glucose",
+              "rejettent plus de CO2",
+              "de chaleur",
+              "dioxygene",
+              "glucose",
+              "rejettent",
+              "chaleur"
+            ]
+          ],
+          "weight": 1.6,
+          "required": true
+        },
+        {
+          "id": "explanation",
+          "label": "Un mot-clé scientifique est ajouté",
+          "groups": [
+            [
+              "muscles",
+              "muscle",
+              "activite",
+              "brulent",
+              "glucose",
+              "respiration",
+              "cellulaire",
+              "faut"
+            ]
+          ],
+          "weight": 0.6,
+          "required": false,
+          "feedback": "Idéalement, relie le terme à son rôle ou à sa conséquence."
+        }
+      ],
+      "misconceptions": [],
+      "remediation": {
+        "micro_task": "Reformule la réponse en une phrase avec un mot-clé de : Effort musculaire et système nerveux.",
+        "retry_prompt": "En une ou deux phrases, réponds à la question : Pendant un effort physique, les muscles consomment davantage",
+        "extension": "Donne un exemple ou une conséquence qui précise la réponse."
+      },
+      "source": {
+        "file": "D:\\IA\\Wooflashquizz\\index.html",
+        "locator": "Quiz eb09, question 1",
+        "program": "Le corps humain et la santé"
+      },
+      "origin": "wooflashquizz"
+    },
+    {
+      "id": "wooflash-eb09-06",
+      "level": "Cycle 4",
+      "school_level": "4e",
+      "theme": "Le corps humain et la santé",
+      "title": "Effort musculaire et système nerveux",
+      "prompt": "En une ou deux phrases, réponds à la question : Le message nerveux passe d'un neurone au suivant au niveau de",
+      "context": "Question tirée du quiz Wooflash eb09 — Effort musculaire et système nerveux.",
+      "expected_answer": "La synapse, grâce à des neurotransmetteurs (molécules chimiques) La synapse est la zone de jonction entre deux neurones : la transmission y est chimique, par des neurotransmetteurs qui stimulent ou inhibent le neurone suivant.",
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "La réponse attendue est formulée",
+          "groups": [
+            [
+              "La synapse, grâce à des neurotransmetteurs (molécules chimiques)",
+              "La synapse, grâce à des neurotransmetteurs",
+              "molécules chimiques",
+              "synapse",
+              "grace",
+              "neurotransmetteurs",
+              "neurotransmetteur",
+              "molecules",
+              "molecule",
+              "chimiques"
+            ]
+          ],
+          "weight": 1.6,
+          "required": true
+        },
+        {
+          "id": "explanation",
+          "label": "Un mot-clé scientifique est ajouté",
+          "groups": [
+            [
+              "synapse",
+              "zone",
+              "jonction",
+              "entre",
+              "deux",
+              "neurones",
+              "neurone",
+              "transmission"
+            ]
+          ],
+          "weight": 0.6,
+          "required": false,
+          "feedback": "Idéalement, relie le terme à son rôle ou à sa conséquence."
+        }
+      ],
+      "misconceptions": [],
+      "remediation": {
+        "micro_task": "Reformule la réponse en une phrase avec un mot-clé de : Effort musculaire et système nerveux.",
+        "retry_prompt": "En une ou deux phrases, réponds à la question : Le message nerveux passe d'un neurone au suivant au niveau de",
+        "extension": "Donne un exemple ou une conséquence qui précise la réponse."
+      },
+      "source": {
+        "file": "D:\\IA\\Wooflashquizz\\index.html",
+        "locator": "Quiz eb09, question 6",
+        "program": "Le corps humain et la santé"
+      },
+      "origin": "wooflashquizz"
+    },
+    {
+      "id": "wooflash-eb10-01",
+      "level": "Cycle 4",
+      "school_level": "5e",
+      "theme": "Le corps humain et la santé",
+      "title": "Digestion et voyage des nutriments",
+      "prompt": "En une ou deux phrases, réponds à la question : La digestion commence dans la bouche où les dents",
+      "context": "Question tirée du quiz Wooflash eb10 — Digestion et voyage des nutriments.",
+      "expected_answer": "Coupent et broient les aliments : c'est la digestion mécanique La digestion est double : mécanique (dents, brassage de l'estomac) et chimique (enzymes). La bouche assure le broyage mécanique, tandis que la salive amorce la digestion chimique de l'amidon.",
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "La réponse attendue est formulée",
+          "groups": [
+            [
+              "Coupent et broient les aliments : c'est la digestion mécanique",
+              "Coupent",
+              "broient les aliments",
+              "c'est la digestion mécanique",
+              "broient",
+              "aliments",
+              "aliment",
+              "digestion",
+              "mecanique"
+            ]
+          ],
+          "weight": 1.6,
+          "required": true
+        },
+        {
+          "id": "explanation",
+          "label": "Un mot-clé scientifique est ajouté",
+          "groups": [
+            [
+              "digestion",
+              "double",
+              "mecanique",
+              "dents",
+              "brassage",
+              "estomac",
+              "chimique",
+              "enzymes"
+            ]
+          ],
+          "weight": 0.6,
+          "required": false,
+          "feedback": "Idéalement, relie le terme à son rôle ou à sa conséquence."
+        }
+      ],
+      "misconceptions": [],
+      "remediation": {
+        "micro_task": "Reformule la réponse en une phrase avec un mot-clé de : Digestion et voyage des nutriments.",
+        "retry_prompt": "En une ou deux phrases, réponds à la question : La digestion commence dans la bouche où les dents",
+        "extension": "Donne un exemple ou une conséquence qui précise la réponse."
+      },
+      "source": {
+        "file": "D:\\IA\\Wooflashquizz\\index.html",
+        "locator": "Quiz eb10, question 1",
+        "program": "Le corps humain et la santé"
+      },
+      "origin": "wooflashquizz"
+    },
+    {
+      "id": "wooflash-eb10-05",
+      "level": "Cycle 4",
+      "school_level": "5e",
+      "theme": "Le corps humain et la santé",
+      "title": "Digestion et voyage des nutriments",
+      "prompt": "En une ou deux phrases, réponds à la question : Où la quasi-totalité des nutriments passe-t-elle dans le sang ?",
+      "context": "Question tirée du quiz Wooflash eb10 — Digestion et voyage des nutriments.",
+      "expected_answer": "Dans l'intestin grêle, au niveau des villosités L'absorption intestinale a lieu dans l'intestin grêle : ses millions de replis (villosités) forment une immense surface d'échange où les nutriments passent dans le sang.",
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "La réponse attendue est formulée",
+          "groups": [
+            [
+              "Dans l'intestin grêle, au niveau des villosités",
+              "l'intestin grêle, au niveau des villosités",
+              "intestin",
+              "grele",
+              "niveau",
+              "villosites",
+              "villosite"
+            ]
+          ],
+          "weight": 1.6,
+          "required": true
+        },
+        {
+          "id": "explanation",
+          "label": "Un mot-clé scientifique est ajouté",
+          "groups": [
+            [
+              "absorption",
+              "intestinale",
+              "lieu",
+              "intestin",
+              "grele",
+              "millions",
+              "million",
+              "replis"
+            ]
+          ],
+          "weight": 0.6,
+          "required": false,
+          "feedback": "Idéalement, relie le terme à son rôle ou à sa conséquence."
+        }
+      ],
+      "misconceptions": [],
+      "remediation": {
+        "micro_task": "Reformule la réponse en une phrase avec un mot-clé de : Digestion et voyage des nutriments.",
+        "retry_prompt": "En une ou deux phrases, réponds à la question : Où la quasi-totalité des nutriments passe-t-elle dans le sang ?",
+        "extension": "Donne un exemple ou une conséquence qui précise la réponse."
+      },
+      "source": {
+        "file": "D:\\IA\\Wooflashquizz\\index.html",
+        "locator": "Quiz eb10, question 5",
+        "program": "Le corps humain et la santé"
+      },
+      "origin": "wooflashquizz"
+    },
+    {
+      "id": "wooflash-eb11-01",
+      "level": "Cycle 4",
+      "school_level": "3e",
+      "theme": "Le corps humain et la santé",
+      "title": "Le système immunitaire humain",
+      "prompt": "En une ou deux phrases, réponds à la question : L'entrée de micro-organismes dans le corps (par une coupure ou la respiration) s'appelle",
+      "context": "Question tirée du quiz Wooflash eb11 — Le système immunitaire humain.",
+      "expected_answer": "La contamination La contamination est l'entrée des microbes dans le corps ; l'infection est leur multiplication à l'intérieur. Se laver les mains et désinfecter une plaie évite la contamination.",
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "La réponse attendue est formulée",
+          "groups": [
+            [
+              "La contamination",
+              "contamination"
+            ]
+          ],
+          "weight": 1.6,
+          "required": true
+        },
+        {
+          "id": "explanation",
+          "label": "Un mot-clé scientifique est ajouté",
+          "groups": [
+            [
+              "contamination",
+              "entree",
+              "microbes",
+              "microbe",
+              "corps",
+              "infection",
+              "multiplication",
+              "interieur"
+            ]
+          ],
+          "weight": 0.6,
+          "required": false,
+          "feedback": "Idéalement, relie le terme à son rôle ou à sa conséquence."
+        }
+      ],
+      "misconceptions": [],
+      "remediation": {
+        "micro_task": "Reformule la réponse en une phrase avec un mot-clé de : Le système immunitaire humain.",
+        "retry_prompt": "En une ou deux phrases, réponds à la question : L'entrée de micro-organismes dans le corps (par une coupure ou la respiration) s'appelle",
+        "extension": "Donne un exemple ou une conséquence qui précise la réponse."
+      },
+      "source": {
+        "file": "D:\\IA\\Wooflashquizz\\index.html",
+        "locator": "Quiz eb11, question 1",
+        "program": "Le corps humain et la santé"
+      },
+      "origin": "wooflashquizz"
+    },
+    {
+      "id": "wooflash-eb11-06",
+      "level": "Cycle 4",
+      "school_level": "3e",
+      "theme": "Le corps humain et la santé",
+      "title": "Le système immunitaire humain",
+      "prompt": "En une ou deux phrases, réponds à la question : La vaccination consiste à",
+      "context": "Question tirée du quiz Wooflash eb11 — Le système immunitaire humain.",
+      "expected_answer": "Présenter au corps un microbe rendu inoffensif pour qu'il fabrique des anticorps et des lymphocytes mémoires Le vaccin entraîne le système immunitaire sans déclencher la maladie : à la vraie rencontre, les lymphocytes mémoires réagissent immédiatement.",
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "La réponse attendue est formulée",
+          "groups": [
+            [
+              "Présenter au corps un microbe rendu inoffensif pour qu'il fabrique des anticorps et des lymphocytes mémoires",
+              "des lymphocytes mémoires",
+              "presenter",
+              "corps",
+              "microbe",
+              "rendu",
+              "inoffensif",
+              "fabrique",
+              "anticorps",
+              "anticorp"
+            ]
+          ],
+          "weight": 1.6,
+          "required": true
+        },
+        {
+          "id": "explanation",
+          "label": "Un mot-clé scientifique est ajouté",
+          "groups": [
+            [
+              "vaccin",
+              "entraine",
+              "systeme",
+              "immunitaire",
+              "declencher",
+              "maladie",
+              "vraie",
+              "rencontre"
+            ]
+          ],
+          "weight": 0.6,
+          "required": false,
+          "feedback": "Idéalement, relie le terme à son rôle ou à sa conséquence."
+        }
+      ],
+      "misconceptions": [],
+      "remediation": {
+        "micro_task": "Reformule la réponse en une phrase avec un mot-clé de : Le système immunitaire humain.",
+        "retry_prompt": "En une ou deux phrases, réponds à la question : La vaccination consiste à",
+        "extension": "Donne un exemple ou une conséquence qui précise la réponse."
+      },
+      "source": {
+        "file": "D:\\IA\\Wooflashquizz\\index.html",
+        "locator": "Quiz eb11, question 6",
+        "program": "Le corps humain et la santé"
+      },
+      "origin": "wooflashquizz"
+    },
+    {
+      "id": "wooflash-eb12-01",
+      "level": "Cycle 4",
+      "school_level": "4e",
+      "theme": "Le corps humain et la santé",
+      "title": "La reproduction humaine",
+      "prompt": "En une ou deux phrases, réponds à la question : Chez la femme, l'ovulation a lieu en général",
+      "context": "Question tirée du quiz Wooflash eb12 — La reproduction humaine.",
+      "expected_answer": "Vers le 14e jour d'un cycle de 28 jours Les ovaires libèrent un ovule environ tous les 28 jours, vers le 14e jour du cycle. Sans fécondation, la muqueuse utérine est évacuée : ce sont les règles.",
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "La réponse attendue est formulée",
+          "groups": [
+            [
+              "Vers le 14e jour d'un cycle de 28 jours",
+              "vers",
+              "jour",
+              "cycle",
+              "jours",
+              "28"
+            ]
+          ],
+          "weight": 1.6,
+          "required": true
+        },
+        {
+          "id": "explanation",
+          "label": "Un mot-clé scientifique est ajouté",
+          "groups": [
+            [
+              "ovaires",
+              "ovaire",
+              "liberent",
+              "ovule",
+              "environ",
+              "jours",
+              "vers",
+              "jour"
+            ]
+          ],
+          "weight": 0.6,
+          "required": false,
+          "feedback": "Idéalement, relie le terme à son rôle ou à sa conséquence."
+        }
+      ],
+      "misconceptions": [],
+      "remediation": {
+        "micro_task": "Reformule la réponse en une phrase avec un mot-clé de : La reproduction humaine.",
+        "retry_prompt": "En une ou deux phrases, réponds à la question : Chez la femme, l'ovulation a lieu en général",
+        "extension": "Donne un exemple ou une conséquence qui précise la réponse."
+      },
+      "source": {
+        "file": "D:\\IA\\Wooflashquizz\\index.html",
+        "locator": "Quiz eb12, question 1",
+        "program": "Le corps humain et la santé"
+      },
+      "origin": "wooflashquizz"
+    },
+    {
+      "id": "wooflash-eb12-06",
+      "level": "Cycle 4",
+      "school_level": "4e",
+      "theme": "Le corps humain et la santé",
+      "title": "La reproduction humaine",
+      "prompt": "En une ou deux phrases, réponds à la question : Quelle glande, située dans le cerveau, commande le fonctionnement des organes reproducteurs ?",
+      "context": "Question tirée du quiz Wooflash eb12 — La reproduction humaine.",
+      "expected_answer": "L'hypophyse L'hypophyse, dans le cerveau, envoie des messagers chimiques aux testicules et aux ovaires, qui fabriquent alors les hormones sexuelles.",
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "La réponse attendue est formulée",
+          "groups": [
+            [
+              "L'hypophyse",
+              "hypophyse"
+            ]
+          ],
+          "weight": 1.6,
+          "required": true
+        },
+        {
+          "id": "explanation",
+          "label": "Un mot-clé scientifique est ajouté",
+          "groups": [
+            [
+              "hypophyse",
+              "cerveau",
+              "envoie",
+              "messagers",
+              "messager",
+              "chimiques",
+              "chimique",
+              "testicules"
+            ]
+          ],
+          "weight": 0.6,
+          "required": false,
+          "feedback": "Idéalement, relie le terme à son rôle ou à sa conséquence."
+        }
+      ],
+      "misconceptions": [],
+      "remediation": {
+        "micro_task": "Reformule la réponse en une phrase avec un mot-clé de : La reproduction humaine.",
+        "retry_prompt": "En une ou deux phrases, réponds à la question : Quelle glande, située dans le cerveau, commande le fonctionnement des organes reproducteurs ?",
+        "extension": "Donne un exemple ou une conséquence qui précise la réponse."
+      },
+      "source": {
+        "file": "D:\\IA\\Wooflashquizz\\index.html",
+        "locator": "Quiz eb12, question 6",
+        "program": "Le corps humain et la santé"
+      },
+      "origin": "wooflashquizz"
+    },
+    {
+      "id": "wooflash-eb13-01",
+      "level": "Cycle 3",
+      "school_level": "6e",
+      "theme": "Le vivant et son environnement",
+      "title": "Cellule, pollinisation et recyclage du sol",
+      "prompt": "En une ou deux phrases, réponds à la question : Quels sont les 3 constituants communs à toutes les cellules animales et végétales ?",
+      "context": "Question tirée du quiz Wooflash eb13 — Cellule, pollinisation et recyclage du sol.",
+      "expected_answer": "Membrane plasmique, cytoplasme et noyau Toute cellule possède : la membrane plasmique (enveloppe protectrice), le cytoplasme (siège des réactions vitales) et le noyau (centre de commande contenant l'information).",
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "La réponse attendue est formulée",
+          "groups": [
+            [
+              "Membrane plasmique, cytoplasme et noyau",
+              "Membrane plasmique, cytoplasme",
+              "noyau",
+              "membrane",
+              "plasmique",
+              "cytoplasme"
+            ]
+          ],
+          "weight": 1.6,
+          "required": true
+        },
+        {
+          "id": "explanation",
+          "label": "Un mot-clé scientifique est ajouté",
+          "groups": [
+            [
+              "cellule",
+              "possede",
+              "membrane",
+              "plasmique",
+              "enveloppe",
+              "protectrice",
+              "cytoplasme",
+              "siege"
+            ]
+          ],
+          "weight": 0.6,
+          "required": false,
+          "feedback": "Idéalement, relie le terme à son rôle ou à sa conséquence."
+        }
+      ],
+      "misconceptions": [],
+      "remediation": {
+        "micro_task": "Reformule la réponse en une phrase avec un mot-clé de : Cellule, pollinisation et recyclage du sol.",
+        "retry_prompt": "En une ou deux phrases, réponds à la question : Quels sont les 3 constituants communs à toutes les cellules animales et végétales ?",
+        "extension": "Donne un exemple ou une conséquence qui précise la réponse."
+      },
+      "source": {
+        "file": "D:\\IA\\Wooflashquizz\\index.html",
+        "locator": "Quiz eb13, question 1",
+        "program": "Le vivant et son environnement"
+      },
+      "origin": "wooflashquizz"
+    },
+    {
+      "id": "wooflash-eb13-06",
+      "level": "Cycle 3",
+      "school_level": "6e",
+      "theme": "Le vivant et son environnement",
+      "title": "Cellule, pollinisation et recyclage du sol",
+      "prompt": "En une ou deux phrases, réponds à la question : La coopération entre l'abeille et la fleur est bénéfique",
+      "context": "Question tirée du quiz Wooflash eb13 — Cellule, pollinisation et recyclage du sol.",
+      "expected_answer": "Aux deux : l'abeille se nourrit de nectar, la plante est fécondée C'est une coopération mutuelle : l'insecte butine le nectar (sa récompense) et transporte le pollen, assurant la fécondation de la plante.",
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "La réponse attendue est formulée",
+          "groups": [
+            [
+              "Aux deux : l'abeille se nourrit de nectar, la plante est fécondée",
+              "Aux deux",
+              "deux",
+              "abeille",
+              "nourrit",
+              "nectar",
+              "plante",
+              "fecondee"
+            ]
+          ],
+          "weight": 1.6,
+          "required": true
+        },
+        {
+          "id": "explanation",
+          "label": "Un mot-clé scientifique est ajouté",
+          "groups": [
+            [
+              "cooperation",
+              "mutuelle",
+              "insecte",
+              "butine",
+              "nectar",
+              "recompense",
+              "transporte",
+              "pollen"
+            ]
+          ],
+          "weight": 0.6,
+          "required": false,
+          "feedback": "Idéalement, relie le terme à son rôle ou à sa conséquence."
+        }
+      ],
+      "misconceptions": [],
+      "remediation": {
+        "micro_task": "Reformule la réponse en une phrase avec un mot-clé de : Cellule, pollinisation et recyclage du sol.",
+        "retry_prompt": "En une ou deux phrases, réponds à la question : La coopération entre l'abeille et la fleur est bénéfique",
+        "extension": "Donne un exemple ou une conséquence qui précise la réponse."
+      },
+      "source": {
+        "file": "D:\\IA\\Wooflashquizz\\index.html",
+        "locator": "Quiz eb13, question 6",
+        "program": "Le vivant et son environnement"
+      },
+      "origin": "wooflashquizz"
+    },
+    {
+      "id": "wooflash-eb14-01",
+      "level": "Cycle 3",
+      "school_level": "6e",
+      "theme": "Le vivant et son environnement",
+      "title": "Classification du vivant et parentés",
+      "prompt": "En une ou deux phrases, réponds à la question : Sur quoi repose la classification des êtres vivants en groupes emboîtés ?",
+      "context": "Question tirée du quiz Wooflash eb14 — Classification du vivant et parentés.",
+      "expected_answer": "Le partage d'attributs anatomiques observables On classe les êtres vivants sur ce qu'ils POSSÈDENT (squelette osseux, poils, plumes, 4 membres...), jamais sur le milieu de vie, la locomotion ou le régime alimentaire.",
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "La réponse attendue est formulée",
+          "groups": [
+            [
+              "Le partage d'attributs anatomiques observables",
+              "partage",
+              "attributs",
+              "attribut",
+              "anatomiques",
+              "anatomique",
+              "observables",
+              "observable"
+            ]
+          ],
+          "weight": 1.6,
+          "required": true
+        },
+        {
+          "id": "explanation",
+          "label": "Un mot-clé scientifique est ajouté",
+          "groups": [
+            [
+              "classe",
+              "etres",
+              "vivants",
+              "vivant",
+              "possedent",
+              "squelette",
+              "osseux",
+              "poils"
+            ]
+          ],
+          "weight": 0.6,
+          "required": false,
+          "feedback": "Idéalement, relie le terme à son rôle ou à sa conséquence."
+        }
+      ],
+      "misconceptions": [],
+      "remediation": {
+        "micro_task": "Reformule la réponse en une phrase avec un mot-clé de : Classification du vivant et parentés.",
+        "retry_prompt": "En une ou deux phrases, réponds à la question : Sur quoi repose la classification des êtres vivants en groupes emboîtés ?",
+        "extension": "Donne un exemple ou une conséquence qui précise la réponse."
+      },
+      "source": {
+        "file": "D:\\IA\\Wooflashquizz\\index.html",
+        "locator": "Quiz eb14, question 1",
+        "program": "Le vivant et son environnement"
+      },
+      "origin": "wooflashquizz"
+    },
+    {
+      "id": "wooflash-eb14-06",
+      "level": "Cycle 3",
+      "school_level": "6e",
+      "theme": "Le vivant et son environnement",
+      "title": "Classification du vivant et parentés",
+      "prompt": "En une ou deux phrases, réponds à la question : Pourquoi l'âne et le cheval sont-ils deux espèces distinctes, alors qu'ils peuvent se croiser ?",
+      "context": "Question tirée du quiz Wooflash eb14 — Classification du vivant et parentés.",
+      "expected_answer": "Parce que leur descendant, le mulet, est stérile La définition biologique de l'espèce exige une descendance fertile : la jument et l'âne donnent un mulet, mais hybride stérile. Ce sont donc deux espèces séparées.",
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "La réponse attendue est formulée",
+          "groups": [
+            [
+              "Parce que leur descendant, le mulet, est stérile",
+              "parce",
+              "descendant",
+              "mulet",
+              "sterile"
+            ]
+          ],
+          "weight": 1.6,
+          "required": true
+        },
+        {
+          "id": "explanation",
+          "label": "Un mot-clé scientifique est ajouté",
+          "groups": [
+            [
+              "definition",
+              "biologique",
+              "espece",
+              "exige",
+              "descendance",
+              "fertile",
+              "jument",
+              "donnent"
+            ]
+          ],
+          "weight": 0.6,
+          "required": false,
+          "feedback": "Idéalement, relie le terme à son rôle ou à sa conséquence."
+        }
+      ],
+      "misconceptions": [],
+      "remediation": {
+        "micro_task": "Reformule la réponse en une phrase avec un mot-clé de : Classification du vivant et parentés.",
+        "retry_prompt": "En une ou deux phrases, réponds à la question : Pourquoi l'âne et le cheval sont-ils deux espèces distinctes, alors qu'ils peuvent se croiser ?",
+        "extension": "Donne un exemple ou une conséquence qui précise la réponse."
+      },
+      "source": {
+        "file": "D:\\IA\\Wooflashquizz\\index.html",
+        "locator": "Quiz eb14, question 6",
+        "program": "Le vivant et son environnement"
+      },
+      "origin": "wooflashquizz"
+    },
+    {
+      "id": "wooflash-eb15-01",
+      "level": "Cycle 3",
+      "school_level": "6e",
+      "theme": "Le vivant et son environnement",
+      "title": "Micro-organismes et fermentations",
+      "prompt": "En une ou deux phrases, réponds à la question : Pourquoi la pâte à pain gonfle-t-elle pendant la levée ?",
+      "context": "Question tirée du quiz Wooflash eb15 — Micro-organismes et fermentations.",
+      "expected_answer": "Parce que les levures respirent et fermentent en rejetant du dioxyde de carbone (CO2) qui forme des bulles Les levures consomment le sucre de la farine et rejettent du CO2 (fermentation alcoolique) : le gaz est piégé dans le réseau de gluten et fait gonfler la pâte.",
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "La réponse attendue est formulée",
+          "groups": [
+            [
+              "Parce que les levures respirent et fermentent en rejetant du dioxyde de carbone (CO2) qui forme des bulles",
+              "Parce que les levures respirent",
+              "qui forme des bulles",
+              "parce",
+              "levures",
+              "levure",
+              "respirent",
+              "fermentent",
+              "rejetant",
+              "dioxyde"
+            ]
+          ],
+          "weight": 1.6,
+          "required": true
+        },
+        {
+          "id": "explanation",
+          "label": "Un mot-clé scientifique est ajouté",
+          "groups": [
+            [
+              "levures",
+              "levure",
+              "consomment",
+              "sucre",
+              "farine",
+              "rejettent",
+              "fermentation",
+              "alcoolique"
+            ]
+          ],
+          "weight": 0.6,
+          "required": false,
+          "feedback": "Idéalement, relie le terme à son rôle ou à sa conséquence."
+        }
+      ],
+      "misconceptions": [],
+      "remediation": {
+        "micro_task": "Reformule la réponse en une phrase avec un mot-clé de : Micro-organismes et fermentations.",
+        "retry_prompt": "En une ou deux phrases, réponds à la question : Pourquoi la pâte à pain gonfle-t-elle pendant la levée ?",
+        "extension": "Donne un exemple ou une conséquence qui précise la réponse."
+      },
+      "source": {
+        "file": "D:\\IA\\Wooflashquizz\\index.html",
+        "locator": "Quiz eb15, question 1",
+        "program": "Le vivant et son environnement"
+      },
+      "origin": "wooflashquizz"
+    },
+    {
+      "id": "wooflash-eb15-06",
+      "level": "Cycle 3",
+      "school_level": "6e",
+      "theme": "Le vivant et son environnement",
+      "title": "Micro-organismes et fermentations",
+      "prompt": "En une ou deux phrases, réponds à la question : Une fermentation est",
+      "context": "Question tirée du quiz Wooflash eb15 — Micro-organismes et fermentations.",
+      "expected_answer": "Une transformation biologique d'une matière organique par des micro-organismes vivants La fermentation (pain, yaourt, fromage, choucroute) est réalisée par des êtres vivants microscopiques : levures ou bactéries, qui transforment la matière organique.",
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "La réponse attendue est formulée",
+          "groups": [
+            [
+              "Une transformation biologique d'une matière organique par des micro-organismes vivants",
+              "transformation",
+              "biologique",
+              "matiere",
+              "organique",
+              "micro",
+              "organismes",
+              "organisme",
+              "vivants",
+              "vivant"
+            ]
+          ],
+          "weight": 1.6,
+          "required": true
+        },
+        {
+          "id": "explanation",
+          "label": "Un mot-clé scientifique est ajouté",
+          "groups": [
+            [
+              "fermentation",
+              "pain",
+              "yaourt",
+              "fromage",
+              "choucroute",
+              "realisee",
+              "etres",
+              "vivants"
+            ]
+          ],
+          "weight": 0.6,
+          "required": false,
+          "feedback": "Idéalement, relie le terme à son rôle ou à sa conséquence."
+        }
+      ],
+      "misconceptions": [],
+      "remediation": {
+        "micro_task": "Reformule la réponse en une phrase avec un mot-clé de : Micro-organismes et fermentations.",
+        "retry_prompt": "En une ou deux phrases, réponds à la question : Une fermentation est",
+        "extension": "Donne un exemple ou une conséquence qui précise la réponse."
+      },
+      "source": {
+        "file": "D:\\IA\\Wooflashquizz\\index.html",
+        "locator": "Quiz eb15, question 6",
+        "program": "Le vivant et son environnement"
+      },
+      "origin": "wooflashquizz"
+    },
+    {
+      "id": "wooflash-eb16-01",
+      "level": "Cycle 4",
+      "school_level": "3e",
+      "theme": "Le corps humain et la santé",
+      "title": "Le monde microbien et notre organisme",
+      "prompt": "En une ou deux phrases, réponds à la question : Notre intestin héberge un grand nombre de micro-organismes qui",
+      "context": "Question tirée du quiz Wooflash eb16 — Le monde microbien et notre organisme.",
+      "expected_answer": "Contribuent à son bon fonctionnement Notre organisme héberge de nombreux micro-organismes, particulièrement dans l'intestin, qui contribuent à son bon fonctionnement.",
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "La réponse attendue est formulée",
+          "groups": [
+            [
+              "Contribuent à son bon fonctionnement",
+              "contribuent",
+              "fonctionnement"
+            ]
+          ],
+          "weight": 1.6,
+          "required": true
+        },
+        {
+          "id": "explanation",
+          "label": "Un mot-clé scientifique est ajouté",
+          "groups": [
+            [
+              "notre",
+              "organisme",
+              "heberge",
+              "nombreux",
+              "micro",
+              "organismes",
+              "particulierement",
+              "intestin"
+            ]
+          ],
+          "weight": 0.6,
+          "required": false,
+          "feedback": "Idéalement, relie le terme à son rôle ou à sa conséquence."
+        }
+      ],
+      "misconceptions": [],
+      "remediation": {
+        "micro_task": "Reformule la réponse en une phrase avec un mot-clé de : Le monde microbien et notre organisme.",
+        "retry_prompt": "En une ou deux phrases, réponds à la question : Notre intestin héberge un grand nombre de micro-organismes qui",
+        "extension": "Donne un exemple ou une conséquence qui précise la réponse."
+      },
+      "source": {
+        "file": "D:\\IA\\Wooflashquizz\\index.html",
+        "locator": "Quiz eb16, question 1",
+        "program": "Le corps humain et la santé"
+      },
+      "origin": "wooflashquizz"
+    },
+    {
+      "id": "wooflash-eb16-06",
+      "level": "Cycle 4",
+      "school_level": "3e",
+      "theme": "Le corps humain et la santé",
+      "title": "Le monde microbien et notre organisme",
+      "prompt": "En une ou deux phrases, réponds à la question : Quel est le rôle des lymphocytes T tueurs ?",
+      "context": "Question tirée du quiz Wooflash eb16 — Le monde microbien et notre organisme.",
+      "expected_answer": "Détruire les cellules infectées de l'organisme Les lymphocytes T tueurs détruisent les cellules infectées : c'est l'autre réaction spécifique, avec les anticorps des lymphocytes B.",
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "La réponse attendue est formulée",
+          "groups": [
+            [
+              "Détruire les cellules infectées de l'organisme",
+              "detruire",
+              "cellules",
+              "cellule",
+              "infectees",
+              "infectee",
+              "organisme"
+            ]
+          ],
+          "weight": 1.6,
+          "required": true
+        },
+        {
+          "id": "explanation",
+          "label": "Un mot-clé scientifique est ajouté",
+          "groups": [
+            [
+              "lymphocytes",
+              "lymphocyte",
+              "tueurs",
+              "tueur",
+              "detruisent",
+              "cellules",
+              "cellule",
+              "infectees"
+            ]
+          ],
+          "weight": 0.6,
+          "required": false,
+          "feedback": "Idéalement, relie le terme à son rôle ou à sa conséquence."
+        }
+      ],
+      "misconceptions": [],
+      "remediation": {
+        "micro_task": "Reformule la réponse en une phrase avec un mot-clé de : Le monde microbien et notre organisme.",
+        "retry_prompt": "En une ou deux phrases, réponds à la question : Quel est le rôle des lymphocytes T tueurs ?",
+        "extension": "Donne un exemple ou une conséquence qui précise la réponse."
+      },
+      "source": {
+        "file": "D:\\IA\\Wooflashquizz\\index.html",
+        "locator": "Quiz eb16, question 6",
+        "program": "Le corps humain et la santé"
+      },
+      "origin": "wooflashquizz"
+    },
+    {
+      "id": "wooflash-eb17-01",
+      "level": "Cycle 4",
+      "school_level": "3e",
+      "theme": "Le vivant et son évolution",
+      "title": "Stabilité et diversité génétique",
+      "prompt": "En une ou deux phrases, réponds à la question : Le phénotype d'un individu est le résultat de",
+      "context": "Question tirée du quiz Wooflash eb17 — Stabilité et diversité génétique.",
+      "expected_answer": "L'expression de ses gènes et de l'influence de l'environnement Le phénotype est le résultat de l'expression des gènes et de l'influence de l'environnement.",
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "La réponse attendue est formulée",
+          "groups": [
+            [
+              "L'expression de ses gènes et de l'influence de l'environnement",
+              "L'expression de ses gènes",
+              "de l'influence de l'environnement",
+              "expression",
+              "genes",
+              "influence",
+              "environnement"
+            ]
+          ],
+          "weight": 1.6,
+          "required": true
+        },
+        {
+          "id": "explanation",
+          "label": "Un mot-clé scientifique est ajouté",
+          "groups": [
+            [
+              "phenotype",
+              "resultat",
+              "expression",
+              "genes",
+              "influence",
+              "environnement"
+            ]
+          ],
+          "weight": 0.6,
+          "required": false,
+          "feedback": "Idéalement, relie le terme à son rôle ou à sa conséquence."
+        }
+      ],
+      "misconceptions": [],
+      "remediation": {
+        "micro_task": "Reformule la réponse en une phrase avec un mot-clé de : Stabilité et diversité génétique.",
+        "retry_prompt": "En une ou deux phrases, réponds à la question : Le phénotype d'un individu est le résultat de",
+        "extension": "Donne un exemple ou une conséquence qui précise la réponse."
+      },
+      "source": {
+        "file": "D:\\IA\\Wooflashquizz\\index.html",
+        "locator": "Quiz eb17, question 1",
+        "program": "Le vivant et son évolution"
+      },
+      "origin": "wooflashquizz"
+    },
+    {
+      "id": "wooflash-eb17-06",
+      "level": "Cycle 4",
+      "school_level": "3e",
+      "theme": "Le vivant et son évolution",
+      "title": "Stabilité et diversité génétique",
+      "prompt": "En une ou deux phrases, réponds à la question : L'apparition de nouveaux caractères est liée à",
+      "context": "Question tirée du quiz Wooflash eb17 — Stabilité et diversité génétique.",
+      "expected_answer": "Des modifications de l'ADN : les mutations L'apparition de nouveaux caractères est liée à des modifications de l'ADN, les mutations.",
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "La réponse attendue est formulée",
+          "groups": [
+            [
+              "Des modifications de l'ADN : les mutations",
+              "Des modifications de l'ADN",
+              "les mutations",
+              "modifications",
+              "modification",
+              "mutations",
+              "mutation"
+            ]
+          ],
+          "weight": 1.6,
+          "required": true
+        },
+        {
+          "id": "explanation",
+          "label": "Un mot-clé scientifique est ajouté",
+          "groups": [
+            [
+              "apparition",
+              "nouveaux",
+              "caracteres",
+              "caractere",
+              "liee",
+              "modifications",
+              "modification",
+              "mutations"
+            ]
+          ],
+          "weight": 0.6,
+          "required": false,
+          "feedback": "Idéalement, relie le terme à son rôle ou à sa conséquence."
+        }
+      ],
+      "misconceptions": [],
+      "remediation": {
+        "micro_task": "Reformule la réponse en une phrase avec un mot-clé de : Stabilité et diversité génétique.",
+        "retry_prompt": "En une ou deux phrases, réponds à la question : L'apparition de nouveaux caractères est liée à",
+        "extension": "Donne un exemple ou une conséquence qui précise la réponse."
+      },
+      "source": {
+        "file": "D:\\IA\\Wooflashquizz\\index.html",
+        "locator": "Quiz eb17, question 6",
+        "program": "Le vivant et son évolution"
+      },
+      "origin": "wooflashquizz"
+    },
+    {
+      "id": "wooflash-eb18-01",
+      "level": "Cycle 4",
+      "school_level": "3e",
+      "theme": "Le vivant et son évolution",
+      "title": "Parenté et évolution",
+      "prompt": "En une ou deux phrases, réponds à la question : La biodiversité représente",
+      "context": "Question tirée du quiz Wooflash eb18 — Parenté et évolution.",
+      "expected_answer": "La diversité des êtres vivants d'un milieu et leurs relations entre eux et avec le milieu La biodiversité représente la diversité des êtres vivants qui occupent un milieu et leurs relations entre eux et avec le milieu.",
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "La réponse attendue est formulée",
+          "groups": [
+            [
+              "La diversité des êtres vivants d'un milieu et leurs relations entre eux et avec le milieu",
+              "leurs relations entre eux",
+              "le milieu",
+              "diversite",
+              "etres",
+              "vivants",
+              "vivant",
+              "milieu",
+              "relations",
+              "relation"
+            ]
+          ],
+          "weight": 1.6,
+          "required": true
+        },
+        {
+          "id": "explanation",
+          "label": "Un mot-clé scientifique est ajouté",
+          "groups": [
+            [
+              "biodiversite",
+              "represente",
+              "diversite",
+              "etres",
+              "vivants",
+              "vivant",
+              "occupent",
+              "milieu"
+            ]
+          ],
+          "weight": 0.6,
+          "required": false,
+          "feedback": "Idéalement, relie le terme à son rôle ou à sa conséquence."
+        }
+      ],
+      "misconceptions": [],
+      "remediation": {
+        "micro_task": "Reformule la réponse en une phrase avec un mot-clé de : Parenté et évolution.",
+        "retry_prompt": "En une ou deux phrases, réponds à la question : La biodiversité représente",
+        "extension": "Donne un exemple ou une conséquence qui précise la réponse."
+      },
+      "source": {
+        "file": "D:\\IA\\Wooflashquizz\\index.html",
+        "locator": "Quiz eb18, question 1",
+        "program": "Le vivant et son évolution"
+      },
+      "origin": "wooflashquizz"
+    },
+    {
+      "id": "wooflash-eb18-09",
+      "level": "Cycle 4",
+      "school_level": "3e",
+      "theme": "Le vivant et son évolution",
+      "title": "Parenté et évolution",
+      "prompt": "En une ou deux phrases, réponds à la question : L'évolution des espèces s'explique notamment par",
+      "context": "Question tirée du quiz Wooflash eb18 — Parenté et évolution.",
+      "expected_answer": "L'apparition de nouveaux caractères au hasard suite à des mutations, puis la sélection naturelle L'évolution s'explique par l'apparition de nouveaux caractères au hasard (mutations) et la sélection naturelle.",
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "La réponse attendue est formulée",
+          "groups": [
+            [
+              "L'apparition de nouveaux caractères au hasard suite à des mutations, puis la sélection naturelle",
+              "la sélection naturelle",
+              "apparition",
+              "nouveaux",
+              "caracteres",
+              "caractere",
+              "hasard",
+              "suite",
+              "mutations",
+              "mutation"
+            ]
+          ],
+          "weight": 1.6,
+          "required": true
+        },
+        {
+          "id": "explanation",
+          "label": "Un mot-clé scientifique est ajouté",
+          "groups": [
+            [
+              "evolution",
+              "explique",
+              "apparition",
+              "nouveaux",
+              "caracteres",
+              "caractere",
+              "hasard",
+              "mutations"
+            ]
+          ],
+          "weight": 0.6,
+          "required": false,
+          "feedback": "Idéalement, relie le terme à son rôle ou à sa conséquence."
+        }
+      ],
+      "misconceptions": [],
+      "remediation": {
+        "micro_task": "Reformule la réponse en une phrase avec un mot-clé de : Parenté et évolution.",
+        "retry_prompt": "En une ou deux phrases, réponds à la question : L'évolution des espèces s'explique notamment par",
+        "extension": "Donne un exemple ou une conséquence qui précise la réponse."
+      },
+      "source": {
+        "file": "D:\\IA\\Wooflashquizz\\index.html",
+        "locator": "Quiz eb18, question 9",
+        "program": "Le vivant et son évolution"
+      },
+      "origin": "wooflashquizz"
+    },
+    {
+      "id": "wooflash-eb19-01",
+      "level": "Cycle 4",
+      "school_level": "4e",
+      "theme": "La planète Terre et l'action humaine",
+      "title": "Phénomènes géologiques et risques naturels",
+      "prompt": "En une ou deux phrases, réponds à la question : Les séismes et les éruptions volcaniques se produisent",
+      "context": "Question tirée du quiz Wooflash eb19 — Phénomènes géologiques et risques naturels.",
+      "expected_answer": "Dans des zones précises du globe : les zones actives On observe séismes et éruptions dans des zones précises du globe : les zones actives.",
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "La réponse attendue est formulée",
+          "groups": [
+            [
+              "Dans des zones précises du globe : les zones actives",
+              "des zones précises du globe",
+              "les zones actives",
+              "zones",
+              "precises",
+              "precise",
+              "globe",
+              "actives",
+              "active"
+            ]
+          ],
+          "weight": 1.6,
+          "required": true
+        },
+        {
+          "id": "explanation",
+          "label": "Un mot-clé scientifique est ajouté",
+          "groups": [
+            [
+              "observe",
+              "seismes",
+              "seisme",
+              "eruptions",
+              "eruption",
+              "zones",
+              "precises",
+              "precise"
+            ]
+          ],
+          "weight": 0.6,
+          "required": false,
+          "feedback": "Idéalement, relie le terme à son rôle ou à sa conséquence."
+        }
+      ],
+      "misconceptions": [],
+      "remediation": {
+        "micro_task": "Reformule la réponse en une phrase avec un mot-clé de : Phénomènes géologiques et risques naturels.",
+        "retry_prompt": "En une ou deux phrases, réponds à la question : Les séismes et les éruptions volcaniques se produisent",
+        "extension": "Donne un exemple ou une conséquence qui précise la réponse."
+      },
+      "source": {
+        "file": "D:\\IA\\Wooflashquizz\\index.html",
+        "locator": "Quiz eb19, question 1",
+        "program": "La planète Terre et l'action humaine"
+      },
+      "origin": "wooflashquizz"
+    },
+    {
+      "id": "wooflash-eb19-09",
+      "level": "Cycle 4",
+      "school_level": "4e",
+      "theme": "La planète Terre et l'action humaine",
+      "title": "Phénomènes géologiques et risques naturels",
+      "prompt": "En une ou deux phrases, réponds à la question : Un volcanisme et des séismes fréquents à la frontière de deux plaques s'expliquent par",
+      "context": "Question tirée du quiz Wooflash eb19 — Phénomènes géologiques et risques naturels.",
+      "expected_answer": "Le mouvement relatif des plaques lithosphériques à leur frontière C'est le mouvement des plaques à leur frontière qui explique l'activité des zones actives.",
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "La réponse attendue est formulée",
+          "groups": [
+            [
+              "Le mouvement relatif des plaques lithosphériques à leur frontière",
+              "mouvement",
+              "relatif",
+              "plaques",
+              "plaque",
+              "lithospheriques",
+              "lithospherique",
+              "frontiere"
+            ]
+          ],
+          "weight": 1.6,
+          "required": true
+        },
+        {
+          "id": "explanation",
+          "label": "Un mot-clé scientifique est ajouté",
+          "groups": [
+            [
+              "mouvement",
+              "plaques",
+              "plaque",
+              "frontiere",
+              "explique",
+              "activite",
+              "zones",
+              "actives"
+            ]
+          ],
+          "weight": 0.6,
+          "required": false,
+          "feedback": "Idéalement, relie le terme à son rôle ou à sa conséquence."
+        }
+      ],
+      "misconceptions": [],
+      "remediation": {
+        "micro_task": "Reformule la réponse en une phrase avec un mot-clé de : Phénomènes géologiques et risques naturels.",
+        "retry_prompt": "En une ou deux phrases, réponds à la question : Un volcanisme et des séismes fréquents à la frontière de deux plaques s'expliquent par",
+        "extension": "Donne un exemple ou une conséquence qui précise la réponse."
+      },
+      "source": {
+        "file": "D:\\IA\\Wooflashquizz\\index.html",
+        "locator": "Quiz eb19, question 9",
+        "program": "La planète Terre et l'action humaine"
+      },
+      "origin": "wooflashquizz"
+    },
+    {
+      "id": "wooflash-eb20-01",
+      "level": "Cycle 4",
+      "school_level": "4e",
+      "theme": "La planète Terre et l'action humaine",
+      "title": "Météorologie et climats",
+      "prompt": "En une ou deux phrases, réponds à la question : La climatologie étudie les phénomènes météorologiques",
+      "context": "Question tirée du quiz Wooflash eb20 — Météorologie et climats.",
+      "expected_answer": "Sur des zones étendues et une longue échelle de temps La climatologie étudie les phénomènes météorologiques sur des zones et une échelle de temps étendues.",
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "La réponse attendue est formulée",
+          "groups": [
+            [
+              "Sur des zones étendues et une longue échelle de temps",
+              "Sur des zones étendues",
+              "une longue échelle de temps",
+              "zones",
+              "etendues",
+              "etendue",
+              "longue",
+              "echelle",
+              "temps"
+            ]
+          ],
+          "weight": 1.6,
+          "required": true
+        },
+        {
+          "id": "explanation",
+          "label": "Un mot-clé scientifique est ajouté",
+          "groups": [
+            [
+              "climatologie",
+              "etudie",
+              "phenomenes",
+              "phenomene",
+              "meteorologiques",
+              "meteorologique",
+              "zones",
+              "echelle"
+            ]
+          ],
+          "weight": 0.6,
+          "required": false,
+          "feedback": "Idéalement, relie le terme à son rôle ou à sa conséquence."
+        }
+      ],
+      "misconceptions": [],
+      "remediation": {
+        "micro_task": "Reformule la réponse en une phrase avec un mot-clé de : Météorologie et climats.",
+        "retry_prompt": "En une ou deux phrases, réponds à la question : La climatologie étudie les phénomènes météorologiques",
+        "extension": "Donne un exemple ou une conséquence qui précise la réponse."
+      },
+      "source": {
+        "file": "D:\\IA\\Wooflashquizz\\index.html",
+        "locator": "Quiz eb20, question 1",
+        "program": "La planète Terre et l'action humaine"
+      },
+      "origin": "wooflashquizz"
+    },
+    {
+      "id": "wooflash-eb20-09",
+      "level": "Cycle 4",
+      "school_level": "4e",
+      "theme": "La planète Terre et l'action humaine",
+      "title": "Météorologie et climats",
+      "prompt": "En une ou deux phrases, réponds à la question : Les masses d'eau et les masses d'air sont",
+      "context": "Question tirée du quiz Wooflash eb20 — Météorologie et climats.",
+      "expected_answer": "Les enveloppes fluides de la Terre, dont la connaissance explique météo et climats La connaissance des enveloppes fluides (masses d'eau et d'air) permet de comprendre météo et climats.",
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "La réponse attendue est formulée",
+          "groups": [
+            [
+              "Les enveloppes fluides de la Terre, dont la connaissance explique météo et climats",
+              "climats",
+              "enveloppes",
+              "enveloppe",
+              "fluides",
+              "fluide",
+              "terre",
+              "dont",
+              "connaissance",
+              "explique"
+            ]
+          ],
+          "weight": 1.6,
+          "required": true
+        },
+        {
+          "id": "explanation",
+          "label": "Un mot-clé scientifique est ajouté",
+          "groups": [
+            [
+              "connaissance",
+              "enveloppes",
+              "enveloppe",
+              "fluides",
+              "fluide",
+              "masses",
+              "masse",
+              "permet"
+            ]
+          ],
+          "weight": 0.6,
+          "required": false,
+          "feedback": "Idéalement, relie le terme à son rôle ou à sa conséquence."
+        }
+      ],
+      "misconceptions": [],
+      "remediation": {
+        "micro_task": "Reformule la réponse en une phrase avec un mot-clé de : Météorologie et climats.",
+        "retry_prompt": "En une ou deux phrases, réponds à la question : Les masses d'eau et les masses d'air sont",
+        "extension": "Donne un exemple ou une conséquence qui précise la réponse."
+      },
+      "source": {
+        "file": "D:\\IA\\Wooflashquizz\\index.html",
+        "locator": "Quiz eb20, question 9",
+        "program": "La planète Terre et l'action humaine"
+      },
+      "origin": "wooflashquizz"
+    },
+    {
+      "id": "wooflash-eb21-01",
+      "level": "Cycle 4",
+      "school_level": "4e",
+      "theme": "Le vivant et son évolution",
+      "title": "Reproduction et dynamique des populations",
+      "prompt": "En une ou deux phrases, réponds à la question : La reproduction asexuée permet de produire des descendants",
+      "context": "Question tirée du quiz Wooflash eb21 — Reproduction et dynamique des populations.",
+      "expected_answer": "À partir d'un seul individu La reproduction asexuée permet de produire des descendants à partir d'un seul individu.",
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "La réponse attendue est formulée",
+          "groups": [
+            [
+              "À partir d'un seul individu",
+              "partir",
+              "seul",
+              "individu"
+            ]
+          ],
+          "weight": 1.6,
+          "required": true
+        },
+        {
+          "id": "explanation",
+          "label": "Un mot-clé scientifique est ajouté",
+          "groups": [
+            [
+              "reproduction",
+              "asexuee",
+              "permet",
+              "produire",
+              "descendants",
+              "descendant",
+              "partir",
+              "seul"
+            ]
+          ],
+          "weight": 0.6,
+          "required": false,
+          "feedback": "Idéalement, relie le terme à son rôle ou à sa conséquence."
+        }
+      ],
+      "misconceptions": [],
+      "remediation": {
+        "micro_task": "Reformule la réponse en une phrase avec un mot-clé de : Reproduction et dynamique des populations.",
+        "retry_prompt": "En une ou deux phrases, réponds à la question : La reproduction asexuée permet de produire des descendants",
+        "extension": "Donne un exemple ou une conséquence qui précise la réponse."
+      },
+      "source": {
+        "file": "D:\\IA\\Wooflashquizz\\index.html",
+        "locator": "Quiz eb21, question 1",
+        "program": "Le vivant et son évolution"
+      },
+      "origin": "wooflashquizz"
+    },
+    {
+      "id": "wooflash-eb21-06",
+      "level": "Cycle 4",
+      "school_level": "4e",
+      "theme": "Le vivant et son évolution",
+      "title": "Reproduction et dynamique des populations",
+      "prompt": "En une ou deux phrases, réponds à la question : Il existe donc une dynamique des populations",
+      "context": "Question tirée du quiz Wooflash eb21 — Reproduction et dynamique des populations.",
+      "expected_answer": "Liée à l'efficacité de la reproduction Il existe une dynamique des populations liée à l'efficacité de la reproduction.",
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "La réponse attendue est formulée",
+          "groups": [
+            [
+              "Liée à l'efficacité de la reproduction",
+              "liee",
+              "efficacite",
+              "reproduction"
+            ]
+          ],
+          "weight": 1.6,
+          "required": true
+        },
+        {
+          "id": "explanation",
+          "label": "Un mot-clé scientifique est ajouté",
+          "groups": [
+            [
+              "existe",
+              "dynamique",
+              "populations",
+              "population",
+              "liee",
+              "efficacite",
+              "reproduction"
+            ]
+          ],
+          "weight": 0.6,
+          "required": false,
+          "feedback": "Idéalement, relie le terme à son rôle ou à sa conséquence."
+        }
+      ],
+      "misconceptions": [],
+      "remediation": {
+        "micro_task": "Reformule la réponse en une phrase avec un mot-clé de : Reproduction et dynamique des populations.",
+        "retry_prompt": "En une ou deux phrases, réponds à la question : Il existe donc une dynamique des populations",
+        "extension": "Donne un exemple ou une conséquence qui précise la réponse."
+      },
+      "source": {
+        "file": "D:\\IA\\Wooflashquizz\\index.html",
+        "locator": "Quiz eb21, question 6",
+        "program": "Le vivant et son évolution"
+      },
+      "origin": "wooflashquizz"
+    },
+    {
+      "id": "wooflash-eb22-01",
+      "level": "Cycle 4",
+      "school_level": "4e",
+      "theme": "Le corps humain et la santé",
+      "title": "Reproduction et sexualité",
+      "prompt": "En une ou deux phrases, réponds à la question : À la puberté, les changements du corps sont déclenchés par",
+      "context": "Question tirée du quiz Wooflash eb22 — Reproduction et sexualité.",
+      "expected_answer": "La mise en fonctionnement des organes reproducteurs À la puberté, les changements sont déclenchés par la mise en fonctionnement des organes reproducteurs.",
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "La réponse attendue est formulée",
+          "groups": [
+            [
+              "La mise en fonctionnement des organes reproducteurs",
+              "mise",
+              "fonctionnement",
+              "organes",
+              "organe",
+              "reproducteurs",
+              "reproducteur"
+            ]
+          ],
+          "weight": 1.6,
+          "required": true
+        },
+        {
+          "id": "explanation",
+          "label": "Un mot-clé scientifique est ajouté",
+          "groups": [
+            [
+              "puberte",
+              "changements",
+              "changement",
+              "declenches",
+              "declenche",
+              "mise",
+              "fonctionnement",
+              "organes"
+            ]
+          ],
+          "weight": 0.6,
+          "required": false,
+          "feedback": "Idéalement, relie le terme à son rôle ou à sa conséquence."
+        }
+      ],
+      "misconceptions": [],
+      "remediation": {
+        "micro_task": "Reformule la réponse en une phrase avec un mot-clé de : Reproduction et sexualité.",
+        "retry_prompt": "En une ou deux phrases, réponds à la question : À la puberté, les changements du corps sont déclenchés par",
+        "extension": "Donne un exemple ou une conséquence qui précise la réponse."
+      },
+      "source": {
+        "file": "D:\\IA\\Wooflashquizz\\index.html",
+        "locator": "Quiz eb22, question 1",
+        "program": "Le corps humain et la santé"
+      },
+      "origin": "wooflashquizz"
+    },
+    {
+      "id": "wooflash-eb22-06",
+      "level": "Cycle 4",
+      "school_level": "4e",
+      "theme": "Le corps humain et la santé",
+      "title": "Reproduction et sexualité",
+      "prompt": "En une ou deux phrases, réponds à la question : Les règles sont dues à",
+      "context": "Question tirée du quiz Wooflash eb22 — Reproduction et sexualité.",
+      "expected_answer": "La chute du taux d'hormones ovariennes La chute du taux d'hormones ovariennes est responsable des règles.",
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "La réponse attendue est formulée",
+          "groups": [
+            [
+              "La chute du taux d'hormones ovariennes",
+              "chute",
+              "taux",
+              "hormones",
+              "hormone",
+              "ovariennes",
+              "ovarienne"
+            ]
+          ],
+          "weight": 1.6,
+          "required": true
+        },
+        {
+          "id": "explanation",
+          "label": "Un mot-clé scientifique est ajouté",
+          "groups": [
+            [
+              "chute",
+              "taux",
+              "hormones",
+              "hormone",
+              "ovariennes",
+              "ovarienne",
+              "responsable",
+              "regles"
+            ]
+          ],
+          "weight": 0.6,
+          "required": false,
+          "feedback": "Idéalement, relie le terme à son rôle ou à sa conséquence."
+        }
+      ],
+      "misconceptions": [],
+      "remediation": {
+        "micro_task": "Reformule la réponse en une phrase avec un mot-clé de : Reproduction et sexualité.",
+        "retry_prompt": "En une ou deux phrases, réponds à la question : Les règles sont dues à",
+        "extension": "Donne un exemple ou une conséquence qui précise la réponse."
+      },
+      "source": {
+        "file": "D:\\IA\\Wooflashquizz\\index.html",
+        "locator": "Quiz eb22, question 6",
+        "program": "Le corps humain et la santé"
+      },
+      "origin": "wooflashquizz"
+    },
+    {
+      "id": "wooflash-eb23-01",
+      "level": "Cycle 4",
+      "school_level": "4e",
+      "theme": "Le corps humain et la santé",
+      "title": "Le fonctionnement du système nerveux",
+      "prompt": "En une ou deux phrases, réponds à la question : Notre corps capte les variations de l'environnement grâce",
+      "context": "Question tirée du quiz Wooflash eb23 — Le fonctionnement du système nerveux.",
+      "expected_answer": "Aux organes sensoriels pourvus de récepteurs sensoriels spécifiques Notre corps capte les variations de l'environnement grâce aux organes sensoriels pourvus de récepteurs spécifiques.",
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "La réponse attendue est formulée",
+          "groups": [
+            [
+              "Aux organes sensoriels pourvus de récepteurs sensoriels spécifiques",
+              "organes",
+              "organe",
+              "sensoriels",
+              "sensoriel",
+              "pourvus",
+              "pourvu",
+              "recepteurs",
+              "recepteur",
+              "specifiques"
+            ]
+          ],
+          "weight": 1.6,
+          "required": true
+        },
+        {
+          "id": "explanation",
+          "label": "Un mot-clé scientifique est ajouté",
+          "groups": [
+            [
+              "notre",
+              "corps",
+              "capte",
+              "variations",
+              "variation",
+              "environnement",
+              "grace",
+              "organes"
+            ]
+          ],
+          "weight": 0.6,
+          "required": false,
+          "feedback": "Idéalement, relie le terme à son rôle ou à sa conséquence."
+        }
+      ],
+      "misconceptions": [],
+      "remediation": {
+        "micro_task": "Reformule la réponse en une phrase avec un mot-clé de : Le fonctionnement du système nerveux.",
+        "retry_prompt": "En une ou deux phrases, réponds à la question : Notre corps capte les variations de l'environnement grâce",
+        "extension": "Donne un exemple ou une conséquence qui précise la réponse."
+      },
+      "source": {
+        "file": "D:\\IA\\Wooflashquizz\\index.html",
+        "locator": "Quiz eb23, question 1",
+        "program": "Le corps humain et la santé"
+      },
+      "origin": "wooflashquizz"
+    },
+    {
+      "id": "wooflash-eb23-06",
+      "level": "Cycle 4",
+      "school_level": "4e",
+      "theme": "Le corps humain et la santé",
+      "title": "Le fonctionnement du système nerveux",
+      "prompt": "En une ou deux phrases, réponds à la question : Les neurones constituent",
+      "context": "Question tirée du quiz Wooflash eb23 — Le fonctionnement du système nerveux.",
+      "expected_answer": "Un réseau complexe de communication Les neurones constituent un réseau complexe de communication.",
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "La réponse attendue est formulée",
+          "groups": [
+            [
+              "Un réseau complexe de communication",
+              "reseau",
+              "complexe",
+              "communication"
+            ]
+          ],
+          "weight": 1.6,
+          "required": true
+        },
+        {
+          "id": "explanation",
+          "label": "Un mot-clé scientifique est ajouté",
+          "groups": [
+            [
+              "neurones",
+              "neurone",
+              "constituent",
+              "reseau",
+              "complexe",
+              "communication"
+            ]
+          ],
+          "weight": 0.6,
+          "required": false,
+          "feedback": "Idéalement, relie le terme à son rôle ou à sa conséquence."
+        }
+      ],
+      "misconceptions": [],
+      "remediation": {
+        "micro_task": "Reformule la réponse en une phrase avec un mot-clé de : Le fonctionnement du système nerveux.",
+        "retry_prompt": "En une ou deux phrases, réponds à la question : Les neurones constituent",
+        "extension": "Donne un exemple ou une conséquence qui précise la réponse."
+      },
+      "source": {
+        "file": "D:\\IA\\Wooflashquizz\\index.html",
+        "locator": "Quiz eb23, question 6",
+        "program": "Le corps humain et la santé"
+      },
+      "origin": "wooflashquizz"
+    },
+    {
+      "id": "wooflash-eb24-01",
+      "level": "Cycle 4",
+      "school_level": "5e",
+      "theme": "Le vivant et son évolution",
+      "title": "Nutrition chez les végétaux",
+      "prompt": "En une ou deux phrases, réponds à la question : Les végétaux chlorophylliens prélèvent leurs éléments nutritifs",
+      "context": "Question tirée du quiz Wooflash eb24 — Nutrition chez les végétaux.",
+      "expected_answer": "À la frontière de deux milieux : le sol et l'atmosphère Les végétaux chlorophylliens vivent à la frontière du sol et de l'atmosphère, où ils prélèvent leurs éléments nutritifs.",
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "La réponse attendue est formulée",
+          "groups": [
+            [
+              "À la frontière de deux milieux : le sol et l'atmosphère",
+              "À la frontière de deux milieux",
+              "le sol",
+              "l'atmosphère",
+              "frontiere",
+              "deux",
+              "milieux",
+              "atmosphere"
+            ]
+          ],
+          "weight": 1.6,
+          "required": true
+        },
+        {
+          "id": "explanation",
+          "label": "Un mot-clé scientifique est ajouté",
+          "groups": [
+            [
+              "vegetaux",
+              "chlorophylliens",
+              "chlorophyllien",
+              "vivent",
+              "frontiere",
+              "atmosphere",
+              "prelevent",
+              "elements"
+            ]
+          ],
+          "weight": 0.6,
+          "required": false,
+          "feedback": "Idéalement, relie le terme à son rôle ou à sa conséquence."
+        }
+      ],
+      "misconceptions": [],
+      "remediation": {
+        "micro_task": "Reformule la réponse en une phrase avec un mot-clé de : Nutrition chez les végétaux.",
+        "retry_prompt": "En une ou deux phrases, réponds à la question : Les végétaux chlorophylliens prélèvent leurs éléments nutritifs",
+        "extension": "Donne un exemple ou une conséquence qui précise la réponse."
+      },
+      "source": {
+        "file": "D:\\IA\\Wooflashquizz\\index.html",
+        "locator": "Quiz eb24, question 1",
+        "program": "Le vivant et son évolution"
+      },
+      "origin": "wooflashquizz"
+    },
+    {
+      "id": "wooflash-eb24-06",
+      "level": "Cycle 4",
+      "school_level": "5e",
+      "theme": "Le vivant et son évolution",
+      "title": "Nutrition chez les végétaux",
+      "prompt": "En une ou deux phrases, réponds à la question : Lors de la photosynthèse, en présence de lumière et d'eau, le CO2 est converti en",
+      "context": "Question tirée du quiz Wooflash eb24 — Nutrition chez les végétaux.",
+      "expected_answer": "Matière organique En présence de lumière et d'eau, le CO2 est converti en matière organique : c'est la photosynthèse.",
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "La réponse attendue est formulée",
+          "groups": [
+            [
+              "Matière organique",
+              "matiere",
+              "organique"
+            ]
+          ],
+          "weight": 1.6,
+          "required": true
+        },
+        {
+          "id": "explanation",
+          "label": "Un mot-clé scientifique est ajouté",
+          "groups": [
+            [
+              "presence",
+              "lumiere",
+              "converti",
+              "matiere",
+              "organique",
+              "photosynthese"
+            ]
+          ],
+          "weight": 0.6,
+          "required": false,
+          "feedback": "Idéalement, relie le terme à son rôle ou à sa conséquence."
+        }
+      ],
+      "misconceptions": [],
+      "remediation": {
+        "micro_task": "Reformule la réponse en une phrase avec un mot-clé de : Nutrition chez les végétaux.",
+        "retry_prompt": "En une ou deux phrases, réponds à la question : Lors de la photosynthèse, en présence de lumière et d'eau, le CO2 est converti en",
+        "extension": "Donne un exemple ou une conséquence qui précise la réponse."
+      },
+      "source": {
+        "file": "D:\\IA\\Wooflashquizz\\index.html",
+        "locator": "Quiz eb24, question 6",
+        "program": "Le vivant et son évolution"
+      },
+      "origin": "wooflashquizz"
+    },
+    {
+      "id": "wooflash-eb25-01",
+      "level": "Cycle 4",
+      "school_level": "5e",
+      "theme": "Le vivant et son évolution",
+      "title": "Nutrition chez les animaux",
+      "prompt": "En une ou deux phrases, réponds à la question : La nutrition des animaux consiste à prélever dans le milieu extérieur",
+      "context": "Question tirée du quiz Wooflash eb25 — Nutrition chez les animaux.",
+      "expected_answer": "De la matière organique et minérale La nutrition des animaux consiste à prélever de la matière organique et minérale dans le milieu extérieur.",
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "La réponse attendue est formulée",
+          "groups": [
+            [
+              "De la matière organique et minérale",
+              "De la matière organique",
+              "minérale",
+              "matiere",
+              "organique",
+              "minerale"
+            ]
+          ],
+          "weight": 1.6,
+          "required": true
+        },
+        {
+          "id": "explanation",
+          "label": "Un mot-clé scientifique est ajouté",
+          "groups": [
+            [
+              "nutrition",
+              "animaux",
+              "consiste",
+              "prelever",
+              "matiere",
+              "organique",
+              "minerale",
+              "milieu"
+            ]
+          ],
+          "weight": 0.6,
+          "required": false,
+          "feedback": "Idéalement, relie le terme à son rôle ou à sa conséquence."
+        }
+      ],
+      "misconceptions": [],
+      "remediation": {
+        "micro_task": "Reformule la réponse en une phrase avec un mot-clé de : Nutrition chez les animaux.",
+        "retry_prompt": "En une ou deux phrases, réponds à la question : La nutrition des animaux consiste à prélever dans le milieu extérieur",
+        "extension": "Donne un exemple ou une conséquence qui précise la réponse."
+      },
+      "source": {
+        "file": "D:\\IA\\Wooflashquizz\\index.html",
+        "locator": "Quiz eb25, question 1",
+        "program": "Le vivant et son évolution"
+      },
+      "origin": "wooflashquizz"
+    },
+    {
+      "id": "wooflash-eb25-06",
+      "level": "Cycle 4",
+      "school_level": "5e",
+      "theme": "Le vivant et son évolution",
+      "title": "Nutrition chez les animaux",
+      "prompt": "En une ou deux phrases, réponds à la question : La structure du tube digestif",
+      "context": "Question tirée du quiz Wooflash eb25 — Nutrition chez les animaux.",
+      "expected_answer": "Dépend du régime alimentaire de l'animal La structure du tube digestif dépend du régime alimentaire de l'animal.",
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "La réponse attendue est formulée",
+          "groups": [
+            [
+              "Dépend du régime alimentaire de l'animal",
+              "depend",
+              "regime",
+              "alimentaire",
+              "animal"
+            ]
+          ],
+          "weight": 1.6,
+          "required": true
+        },
+        {
+          "id": "explanation",
+          "label": "Un mot-clé scientifique est ajouté",
+          "groups": [
+            [
+              "structure",
+              "tube",
+              "digestif",
+              "depend",
+              "regime",
+              "alimentaire",
+              "animal"
+            ]
+          ],
+          "weight": 0.6,
+          "required": false,
+          "feedback": "Idéalement, relie le terme à son rôle ou à sa conséquence."
+        }
+      ],
+      "misconceptions": [],
+      "remediation": {
+        "micro_task": "Reformule la réponse en une phrase avec un mot-clé de : Nutrition chez les animaux.",
+        "retry_prompt": "En une ou deux phrases, réponds à la question : La structure du tube digestif",
+        "extension": "Donne un exemple ou une conséquence qui précise la réponse."
+      },
+      "source": {
+        "file": "D:\\IA\\Wooflashquizz\\index.html",
+        "locator": "Quiz eb25, question 6",
+        "program": "Le vivant et son évolution"
+      },
+      "origin": "wooflashquizz"
+    },
+    {
+      "id": "wooflash-eb26-01",
+      "level": "Cycle 4",
+      "school_level": "5e",
+      "theme": "La planète Terre et l'action humaine",
+      "title": "Impacts des activités humaines sur les écosystèmes",
+      "prompt": "En une ou deux phrases, réponds à la question : Un écosystème est",
+      "context": "Question tirée du quiz Wooflash eb26 — Impacts des activités humaines sur les écosystèmes.",
+      "expected_answer": "Une association d'êtres vivants entretenant des relations complexes au sein d'un territoire donné Les écosystèmes sont des associations d'êtres vivants entretenant des relations complexes au sein d'un territoire donné.",
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "La réponse attendue est formulée",
+          "groups": [
+            [
+              "Une association d'êtres vivants entretenant des relations complexes au sein d'un territoire donné",
+              "association",
+              "etres",
+              "vivants",
+              "vivant",
+              "entretenant",
+              "relations",
+              "relation",
+              "complexes",
+              "complexe"
+            ]
+          ],
+          "weight": 1.6,
+          "required": true
+        },
+        {
+          "id": "explanation",
+          "label": "Un mot-clé scientifique est ajouté",
+          "groups": [
+            [
+              "ecosystemes",
+              "ecosysteme",
+              "associations",
+              "association",
+              "etres",
+              "vivants",
+              "vivant",
+              "entretenant"
+            ]
+          ],
+          "weight": 0.6,
+          "required": false,
+          "feedback": "Idéalement, relie le terme à son rôle ou à sa conséquence."
+        }
+      ],
+      "misconceptions": [],
+      "remediation": {
+        "micro_task": "Reformule la réponse en une phrase avec un mot-clé de : Impacts des activités humaines sur les écosystèmes.",
+        "retry_prompt": "En une ou deux phrases, réponds à la question : Un écosystème est",
+        "extension": "Donne un exemple ou une conséquence qui précise la réponse."
+      },
+      "source": {
+        "file": "D:\\IA\\Wooflashquizz\\index.html",
+        "locator": "Quiz eb26, question 1",
+        "program": "La planète Terre et l'action humaine"
+      },
+      "origin": "wooflashquizz"
+    },
+    {
+      "id": "wooflash-eb26-06",
+      "level": "Cycle 4",
+      "school_level": "5e",
+      "theme": "La planète Terre et l'action humaine",
+      "title": "Impacts des activités humaines sur les écosystèmes",
+      "prompt": "En une ou deux phrases, réponds à la question : Face à ces menaces, de plus en plus de personnes",
+      "context": "Question tirée du quiz Wooflash eb26 — Impacts des activités humaines sur les écosystèmes.",
+      "expected_answer": "Prennent conscience de leur importance et mettent en place des actions de préservation De plus en plus de personnes prennent conscience de leur importance et mettent en place des actions de préservation.",
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "La réponse attendue est formulée",
+          "groups": [
+            [
+              "Prennent conscience de leur importance et mettent en place des actions de préservation",
+              "Prennent conscience de leur importance",
+              "prennent",
+              "conscience",
+              "importance",
+              "mettent",
+              "place",
+              "actions",
+              "action",
+              "preservation"
+            ]
+          ],
+          "weight": 1.6,
+          "required": true
+        },
+        {
+          "id": "explanation",
+          "label": "Un mot-clé scientifique est ajouté",
+          "groups": [
+            [
+              "personnes",
+              "personne",
+              "prennent",
+              "conscience",
+              "importance",
+              "mettent",
+              "place",
+              "actions"
+            ]
+          ],
+          "weight": 0.6,
+          "required": false,
+          "feedback": "Idéalement, relie le terme à son rôle ou à sa conséquence."
+        }
+      ],
+      "misconceptions": [],
+      "remediation": {
+        "micro_task": "Reformule la réponse en une phrase avec un mot-clé de : Impacts des activités humaines sur les écosystèmes.",
+        "retry_prompt": "En une ou deux phrases, réponds à la question : Face à ces menaces, de plus en plus de personnes",
+        "extension": "Donne un exemple ou une conséquence qui précise la réponse."
+      },
+      "source": {
+        "file": "D:\\IA\\Wooflashquizz\\index.html",
+        "locator": "Quiz eb26, question 6",
+        "program": "La planète Terre et l'action humaine"
+      },
+      "origin": "wooflashquizz"
+    },
+    {
+      "id": "wooflash-eb27-01",
+      "level": "Cycle 4",
+      "school_level": "5e",
+      "theme": "La planète Terre et l'action humaine",
+      "title": "Enjeux de l'exploitation des ressources naturelles",
+      "prompt": "En une ou deux phrases, réponds à la question : Une ressource naturelle est prélevée par l'homme dans l'environnement pour",
+      "context": "Question tirée du quiz Wooflash eb27 — Enjeux de l'exploitation des ressources naturelles.",
+      "expected_answer": "Subvenir à ses besoins et réaliser ses activités Une ressource naturelle est prélevée pour subvenir aux besoins de l'homme et à ses activités.",
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "La réponse attendue est formulée",
+          "groups": [
+            [
+              "Subvenir à ses besoins et réaliser ses activités",
+              "Subvenir à ses besoins",
+              "réaliser ses activités",
+              "subvenir",
+              "besoins",
+              "besoin",
+              "realiser",
+              "activites",
+              "activite"
+            ]
+          ],
+          "weight": 1.6,
+          "required": true
+        },
+        {
+          "id": "explanation",
+          "label": "Un mot-clé scientifique est ajouté",
+          "groups": [
+            [
+              "ressource",
+              "naturelle",
+              "prelevee",
+              "subvenir",
+              "besoins",
+              "besoin",
+              "homme",
+              "activites"
+            ]
+          ],
+          "weight": 0.6,
+          "required": false,
+          "feedback": "Idéalement, relie le terme à son rôle ou à sa conséquence."
+        }
+      ],
+      "misconceptions": [],
+      "remediation": {
+        "micro_task": "Reformule la réponse en une phrase avec un mot-clé de : Enjeux de l'exploitation des ressources naturelles.",
+        "retry_prompt": "En une ou deux phrases, réponds à la question : Une ressource naturelle est prélevée par l'homme dans l'environnement pour",
+        "extension": "Donne un exemple ou une conséquence qui précise la réponse."
+      },
+      "source": {
+        "file": "D:\\IA\\Wooflashquizz\\index.html",
+        "locator": "Quiz eb27, question 1",
+        "program": "La planète Terre et l'action humaine"
+      },
+      "origin": "wooflashquizz"
+    },
+    {
+      "id": "wooflash-eb27-06",
+      "level": "Cycle 4",
+      "school_level": "5e",
+      "theme": "La planète Terre et l'action humaine",
+      "title": "Enjeux de l'exploitation des ressources naturelles",
+      "prompt": "En une ou deux phrases, réponds à la question : Exploiter les ressources dans le cadre du développement durable, c'est par exemple",
+      "context": "Question tirée du quiz Wooflash eb27 — Enjeux de l'exploitation des ressources naturelles.",
+      "expected_answer": "Mettre en place des quotas de pêche et des techniques d'irrigation économes en eau Quotas de pêche et techniques d'irrigation économes : une exploitation raisonnée dans le cadre du développement durable.",
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "La réponse attendue est formulée",
+          "groups": [
+            [
+              "Mettre en place des quotas de pêche et des techniques d'irrigation économes en eau",
+              "des techniques d'irrigation économes en eau",
+              "mettre",
+              "place",
+              "quotas",
+              "quota",
+              "peche",
+              "techniques",
+              "technique",
+              "irrigation"
+            ]
+          ],
+          "weight": 1.6,
+          "required": true
+        },
+        {
+          "id": "explanation",
+          "label": "Un mot-clé scientifique est ajouté",
+          "groups": [
+            [
+              "quotas",
+              "quota",
+              "peche",
+              "techniques",
+              "technique",
+              "irrigation",
+              "economes",
+              "econome"
+            ]
+          ],
+          "weight": 0.6,
+          "required": false,
+          "feedback": "Idéalement, relie le terme à son rôle ou à sa conséquence."
+        }
+      ],
+      "misconceptions": [],
+      "remediation": {
+        "micro_task": "Reformule la réponse en une phrase avec un mot-clé de : Enjeux de l'exploitation des ressources naturelles.",
+        "retry_prompt": "En une ou deux phrases, réponds à la question : Exploiter les ressources dans le cadre du développement durable, c'est par exemple",
+        "extension": "Donne un exemple ou une conséquence qui précise la réponse."
+      },
+      "source": {
+        "file": "D:\\IA\\Wooflashquizz\\index.html",
+        "locator": "Quiz eb27, question 6",
+        "program": "La planète Terre et l'action humaine"
+      },
+      "origin": "wooflashquizz"
+    },
+    {
+      "id": "wooflash-eb28-01",
+      "level": "Cycle 4",
+      "school_level": "5e",
+      "theme": "Le corps humain et la santé",
+      "title": "Activité physique : efforts et santé",
+      "prompt": "En une ou deux phrases, réponds à la question : Pendant un effort physique, le système cardio-vasculaire est sollicité pour",
+      "context": "Question tirée du quiz Wooflash eb28 — Activité physique : efforts et santé.",
+      "expected_answer": "Envoyer davantage de sang aux muscles actifs Le système cardio-vasculaire envoie davantage de sang aux muscles actifs pendant l'effort.",
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "La réponse attendue est formulée",
+          "groups": [
+            [
+              "Envoyer davantage de sang aux muscles actifs",
+              "envoyer",
+              "davantage",
+              "sang",
+              "muscles",
+              "muscle",
+              "actifs",
+              "actif"
+            ]
+          ],
+          "weight": 1.6,
+          "required": true
+        },
+        {
+          "id": "explanation",
+          "label": "Un mot-clé scientifique est ajouté",
+          "groups": [
+            [
+              "systeme",
+              "cardio",
+              "vasculaire",
+              "envoie",
+              "davantage",
+              "sang",
+              "muscles",
+              "muscle"
+            ]
+          ],
+          "weight": 0.6,
+          "required": false,
+          "feedback": "Idéalement, relie le terme à son rôle ou à sa conséquence."
+        }
+      ],
+      "misconceptions": [],
+      "remediation": {
+        "micro_task": "Reformule la réponse en une phrase avec un mot-clé de : Activité physique : efforts et santé.",
+        "retry_prompt": "En une ou deux phrases, réponds à la question : Pendant un effort physique, le système cardio-vasculaire est sollicité pour",
+        "extension": "Donne un exemple ou une conséquence qui précise la réponse."
+      },
+      "source": {
+        "file": "D:\\IA\\Wooflashquizz\\index.html",
+        "locator": "Quiz eb28, question 1",
+        "program": "Le corps humain et la santé"
+      },
+      "origin": "wooflashquizz"
+    },
+    {
+      "id": "wooflash-eb28-06",
+      "level": "Cycle 4",
+      "school_level": "5e",
+      "theme": "Le corps humain et la santé",
+      "title": "Activité physique : efforts et santé",
+      "prompt": "En une ou deux phrases, réponds à la question : Pendant l'effort, une partie de l'énergie musculaire est transformée en chaleur, ce qui explique",
+      "context": "Question tirée du quiz Wooflash eb28 — Activité physique : efforts et santé.",
+      "expected_answer": "L'augmentation de la température du corps Une partie de l'énergie est transformée en chaleur : la température du corps augmente.",
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "La réponse attendue est formulée",
+          "groups": [
+            [
+              "L'augmentation de la température du corps",
+              "augmentation",
+              "temperature",
+              "corps"
+            ]
+          ],
+          "weight": 1.6,
+          "required": true
+        },
+        {
+          "id": "explanation",
+          "label": "Un mot-clé scientifique est ajouté",
+          "groups": [
+            [
+              "partie",
+              "energie",
+              "transformee",
+              "chaleur",
+              "temperature",
+              "corps",
+              "augmente"
+            ]
+          ],
+          "weight": 0.6,
+          "required": false,
+          "feedback": "Idéalement, relie le terme à son rôle ou à sa conséquence."
+        }
+      ],
+      "misconceptions": [],
+      "remediation": {
+        "micro_task": "Reformule la réponse en une phrase avec un mot-clé de : Activité physique : efforts et santé.",
+        "retry_prompt": "En une ou deux phrases, réponds à la question : Pendant l'effort, une partie de l'énergie musculaire est transformée en chaleur, ce qui explique",
+        "extension": "Donne un exemple ou une conséquence qui précise la réponse."
+      },
+      "source": {
+        "file": "D:\\IA\\Wooflashquizz\\index.html",
+        "locator": "Quiz eb28, question 6",
+        "program": "Le corps humain et la santé"
+      },
+      "origin": "wooflashquizz"
+    },
+    {
+      "id": "wooflash-eb29-01",
+      "level": "Cycle 4",
+      "school_level": "5e",
+      "theme": "Le corps humain et la santé",
+      "title": "Alimentation et digestion",
+      "prompt": "En une ou deux phrases, réponds à la question : L'alimentation doit être suffisamment variée et équilibrée pour apporter",
+      "context": "Question tirée du quiz Wooflash eb29 — Alimentation et digestion.",
+      "expected_answer": "Tous les éléments énergétiques, de l'eau et des vitamines L'alimentation apporte tous les éléments énergétiques, de l'eau et des vitamines.",
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "La réponse attendue est formulée",
+          "groups": [
+            [
+              "Tous les éléments énergétiques, de l'eau et des vitamines",
+              "Tous les éléments énergétiques, de l'eau",
+              "des vitamines",
+              "elements",
+              "element",
+              "energetiques",
+              "energetique",
+              "vitamines",
+              "vitamine"
+            ]
+          ],
+          "weight": 1.6,
+          "required": true
+        },
+        {
+          "id": "explanation",
+          "label": "Un mot-clé scientifique est ajouté",
+          "groups": [
+            [
+              "alimentation",
+              "apporte",
+              "elements",
+              "element",
+              "energetiques",
+              "energetique",
+              "vitamines",
+              "vitamine"
+            ]
+          ],
+          "weight": 0.6,
+          "required": false,
+          "feedback": "Idéalement, relie le terme à son rôle ou à sa conséquence."
+        }
+      ],
+      "misconceptions": [],
+      "remediation": {
+        "micro_task": "Reformule la réponse en une phrase avec un mot-clé de : Alimentation et digestion.",
+        "retry_prompt": "En une ou deux phrases, réponds à la question : L'alimentation doit être suffisamment variée et équilibrée pour apporter",
+        "extension": "Donne un exemple ou une conséquence qui précise la réponse."
+      },
+      "source": {
+        "file": "D:\\IA\\Wooflashquizz\\index.html",
+        "locator": "Quiz eb29, question 1",
+        "program": "Le corps humain et la santé"
+      },
+      "origin": "wooflashquizz"
+    },
+    {
+      "id": "wooflash-eb29-06",
+      "level": "Cycle 4",
+      "school_level": "5e",
+      "theme": "Le corps humain et la santé",
+      "title": "Alimentation et digestion",
+      "prompt": "En une ou deux phrases, réponds à la question : Les nutriments sont indispensables",
+      "context": "Question tirée du quiz Wooflash eb29 — Alimentation et digestion.",
+      "expected_answer": "Au bon fonctionnement de l'organisme Les nutriments sont indispensables au bon fonctionnement de l'organisme.",
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "La réponse attendue est formulée",
+          "groups": [
+            [
+              "Au bon fonctionnement de l'organisme",
+              "fonctionnement",
+              "organisme"
+            ]
+          ],
+          "weight": 1.6,
+          "required": true
+        },
+        {
+          "id": "explanation",
+          "label": "Un mot-clé scientifique est ajouté",
+          "groups": [
+            [
+              "nutriments",
+              "nutriment",
+              "indispensables",
+              "indispensable",
+              "fonctionnement",
+              "organisme"
+            ]
+          ],
+          "weight": 0.6,
+          "required": false,
+          "feedback": "Idéalement, relie le terme à son rôle ou à sa conséquence."
+        }
+      ],
+      "misconceptions": [],
+      "remediation": {
+        "micro_task": "Reformule la réponse en une phrase avec un mot-clé de : Alimentation et digestion.",
+        "retry_prompt": "En une ou deux phrases, réponds à la question : Les nutriments sont indispensables",
+        "extension": "Donne un exemple ou une conséquence qui précise la réponse."
+      },
+      "source": {
+        "file": "D:\\IA\\Wooflashquizz\\index.html",
+        "locator": "Quiz eb29, question 6",
+        "program": "Le corps humain et la santé"
+      },
+      "origin": "wooflashquizz"
+    },
+    {
+      "id": "wooflash-eb30-01",
+      "level": "Cycle 3",
+      "school_level": "6e",
+      "theme": "Le vivant et son environnement",
+      "title": "Conditions de vie sur Terre et réchauffement climatique",
+      "prompt": "En une ou deux phrases, réponds à la question : Sans atmosphère, la température moyenne théorique de la Terre serait de",
+      "context": "Question tirée du quiz Wooflash eb30 — Conditions de vie sur Terre et réchauffement climatique.",
+      "expected_answer": "Moins 18 degrés La position de la Terre lui confère une température moyenne théorique de moins 18 degrés.",
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "La réponse attendue est formulée",
+          "groups": [
+            [
+              "Moins 18 degrés",
+              "moins",
+              "degres",
+              "degre",
+              "18"
+            ]
+          ],
+          "weight": 1.6,
+          "required": true
+        },
+        {
+          "id": "explanation",
+          "label": "Un mot-clé scientifique est ajouté",
+          "groups": [
+            [
+              "position",
+              "terre",
+              "confere",
+              "temperature",
+              "moyenne",
+              "theorique",
+              "moins",
+              "degres"
+            ]
+          ],
+          "weight": 0.6,
+          "required": false,
+          "feedback": "Idéalement, relie le terme à son rôle ou à sa conséquence."
+        }
+      ],
+      "misconceptions": [],
+      "remediation": {
+        "micro_task": "Reformule la réponse en une phrase avec un mot-clé de : Conditions de vie sur Terre et réchauffement climatique.",
+        "retry_prompt": "En une ou deux phrases, réponds à la question : Sans atmosphère, la température moyenne théorique de la Terre serait de",
+        "extension": "Donne un exemple ou une conséquence qui précise la réponse."
+      },
+      "source": {
+        "file": "D:\\IA\\Wooflashquizz\\index.html",
+        "locator": "Quiz eb30, question 1",
+        "program": "Le vivant et son environnement"
+      },
+      "origin": "wooflashquizz"
+    },
+    {
+      "id": "wooflash-eb30-06",
+      "level": "Cycle 3",
+      "school_level": "6e",
+      "theme": "Le vivant et son environnement",
+      "title": "Conditions de vie sur Terre et réchauffement climatique",
+      "prompt": "En une ou deux phrases, réponds à la question : Ces émissions augmentent l'effet de serre naturel, ce qui entraîne",
+      "context": "Question tirée du quiz Wooflash eb30 — Conditions de vie sur Terre et réchauffement climatique.",
+      "expected_answer": "Un réchauffement climatique Ces émissions augmentent l'effet de serre naturel, d'où un réchauffement climatique.",
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "La réponse attendue est formulée",
+          "groups": [
+            [
+              "Un réchauffement climatique",
+              "rechauffement",
+              "climatique"
+            ]
+          ],
+          "weight": 1.6,
+          "required": true
+        },
+        {
+          "id": "explanation",
+          "label": "Un mot-clé scientifique est ajouté",
+          "groups": [
+            [
+              "emissions",
+              "emission",
+              "augmentent",
+              "effet",
+              "serre",
+              "naturel",
+              "rechauffement",
+              "climatique"
+            ]
+          ],
+          "weight": 0.6,
+          "required": false,
+          "feedback": "Idéalement, relie le terme à son rôle ou à sa conséquence."
+        }
+      ],
+      "misconceptions": [],
+      "remediation": {
+        "micro_task": "Reformule la réponse en une phrase avec un mot-clé de : Conditions de vie sur Terre et réchauffement climatique.",
+        "retry_prompt": "En une ou deux phrases, réponds à la question : Ces émissions augmentent l'effet de serre naturel, ce qui entraîne",
+        "extension": "Donne un exemple ou une conséquence qui précise la réponse."
+      },
+      "source": {
+        "file": "D:\\IA\\Wooflashquizz\\index.html",
+        "locator": "Quiz eb30, question 6",
+        "program": "Le vivant et son environnement"
+      },
+      "origin": "wooflashquizz"
+    },
+    {
+      "id": "wooflash-eb31-01",
+      "level": "Cycle 3",
+      "school_level": "6e",
+      "theme": "Le vivant et son environnement",
+      "title": "Alimentation et santé",
+      "prompt": "En une ou deux phrases, réponds à la question : Les aliments sont composés de",
+      "context": "Question tirée du quiz Wooflash eb31 — Alimentation et santé.",
+      "expected_answer": "Glucides, lipides, protéines, eau et sels minéraux Les aliments sont composés de glucides, de lipides, de protéines, ainsi que d'eau et de sels minéraux.",
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "La réponse attendue est formulée",
+          "groups": [
+            [
+              "Glucides, lipides, protéines, eau et sels minéraux",
+              "Glucides, lipides, protéines, eau",
+              "sels minéraux",
+              "glucides",
+              "glucide",
+              "lipides",
+              "lipide",
+              "proteines",
+              "proteine",
+              "sels"
+            ]
+          ],
+          "weight": 1.6,
+          "required": true
+        },
+        {
+          "id": "explanation",
+          "label": "Un mot-clé scientifique est ajouté",
+          "groups": [
+            [
+              "aliments",
+              "aliment",
+              "composes",
+              "compose",
+              "glucides",
+              "glucide",
+              "lipides",
+              "lipide"
+            ]
+          ],
+          "weight": 0.6,
+          "required": false,
+          "feedback": "Idéalement, relie le terme à son rôle ou à sa conséquence."
+        }
+      ],
+      "misconceptions": [],
+      "remediation": {
+        "micro_task": "Reformule la réponse en une phrase avec un mot-clé de : Alimentation et santé.",
+        "retry_prompt": "En une ou deux phrases, réponds à la question : Les aliments sont composés de",
+        "extension": "Donne un exemple ou une conséquence qui précise la réponse."
+      },
+      "source": {
+        "file": "D:\\IA\\Wooflashquizz\\index.html",
+        "locator": "Quiz eb31, question 1",
+        "program": "Le vivant et son environnement"
+      },
+      "origin": "wooflashquizz"
+    },
+    {
+      "id": "wooflash-eb31-06",
+      "level": "Cycle 3",
+      "school_level": "6e",
+      "theme": "Le vivant et son environnement",
+      "title": "Alimentation et santé",
+      "prompt": "En une ou deux phrases, réponds à la question : L'énergie apportée par les aliments se mesure en",
+      "context": "Question tirée du quiz Wooflash eb31 — Alimentation et santé.",
+      "expected_answer": "Kilocalories (Kcal) ou KiloJoules (KJ) L'énergie des aliments se mesure en Kilocalories (Kcal) ou KiloJoules (KJ).",
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "La réponse attendue est formulée",
+          "groups": [
+            [
+              "Kilocalories (Kcal) ou KiloJoules (KJ)",
+              "Kilocalories",
+              "Kcal",
+              "ou KiloJoules",
+              "kilocalorie",
+              "kilojoules",
+              "kilojoule"
+            ]
+          ],
+          "weight": 1.6,
+          "required": true
+        },
+        {
+          "id": "explanation",
+          "label": "Un mot-clé scientifique est ajouté",
+          "groups": [
+            [
+              "energie",
+              "aliments",
+              "aliment",
+              "mesure",
+              "kilocalories",
+              "kilocalorie",
+              "kcal",
+              "kilojoules"
+            ]
+          ],
+          "weight": 0.6,
+          "required": false,
+          "feedback": "Idéalement, relie le terme à son rôle ou à sa conséquence."
+        }
+      ],
+      "misconceptions": [],
+      "remediation": {
+        "micro_task": "Reformule la réponse en une phrase avec un mot-clé de : Alimentation et santé.",
+        "retry_prompt": "En une ou deux phrases, réponds à la question : L'énergie apportée par les aliments se mesure en",
+        "extension": "Donne un exemple ou une conséquence qui précise la réponse."
+      },
+      "source": {
+        "file": "D:\\IA\\Wooflashquizz\\index.html",
+        "locator": "Quiz eb31, question 6",
+        "program": "Le vivant et son environnement"
+      },
+      "origin": "wooflashquizz"
+    },
+    {
+      "id": "wooflash-eb32-01",
+      "level": "Cycle 3",
+      "school_level": "6e",
+      "theme": "Le vivant et son environnement",
+      "title": "Unité du vivant et classification",
+      "prompt": "En une ou deux phrases, réponds à la question : La classification utilitaire classe les êtres vivants selon",
+      "context": "Question tirée du quiz Wooflash eb32 — Unité du vivant et classification.",
+      "expected_answer": "Des critères déterminés par les besoins de l'être humain (comestible, nuisible...) En classification utilitaire, les critères sont déterminés par les besoins de l'être humain.",
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "La réponse attendue est formulée",
+          "groups": [
+            [
+              "Des critères déterminés par les besoins de l'être humain (comestible, nuisible...)",
+              "comestible, nuisible",
+              "criteres",
+              "critere",
+              "determines",
+              "determine",
+              "besoins",
+              "besoin",
+              "etre",
+              "humain"
+            ]
+          ],
+          "weight": 1.6,
+          "required": true
+        },
+        {
+          "id": "explanation",
+          "label": "Un mot-clé scientifique est ajouté",
+          "groups": [
+            [
+              "classification",
+              "utilitaire",
+              "criteres",
+              "critere",
+              "determines",
+              "determine",
+              "besoins",
+              "besoin"
+            ]
+          ],
+          "weight": 0.6,
+          "required": false,
+          "feedback": "Idéalement, relie le terme à son rôle ou à sa conséquence."
+        }
+      ],
+      "misconceptions": [],
+      "remediation": {
+        "micro_task": "Reformule la réponse en une phrase avec un mot-clé de : Unité du vivant et classification.",
+        "retry_prompt": "En une ou deux phrases, réponds à la question : La classification utilitaire classe les êtres vivants selon",
+        "extension": "Donne un exemple ou une conséquence qui précise la réponse."
+      },
+      "source": {
+        "file": "D:\\IA\\Wooflashquizz\\index.html",
+        "locator": "Quiz eb32, question 1",
+        "program": "Le vivant et son environnement"
+      },
+      "origin": "wooflashquizz"
+    },
+    {
+      "id": "wooflash-eb32-06",
+      "level": "Cycle 3",
+      "school_level": "6e",
+      "theme": "Le vivant et son environnement",
+      "title": "Unité du vivant et classification",
+      "prompt": "En une ou deux phrases, réponds à la question : Tous les êtres vivants, unicellulaires ou pluricellulaires, partagent le même caractère :",
+      "context": "Question tirée du quiz Wooflash eb32 — Unité du vivant et classification.",
+      "expected_answer": "Ils sont tous composés d'au moins une cellule Tous les êtres vivants sont composés d'au moins une cellule.",
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "La réponse attendue est formulée",
+          "groups": [
+            [
+              "Ils sont tous composés d'au moins une cellule",
+              "composes",
+              "compose",
+              "moins",
+              "cellule"
+            ]
+          ],
+          "weight": 1.6,
+          "required": true
+        },
+        {
+          "id": "explanation",
+          "label": "Un mot-clé scientifique est ajouté",
+          "groups": [
+            [
+              "etres",
+              "vivants",
+              "vivant",
+              "composes",
+              "compose",
+              "moins",
+              "cellule"
+            ]
+          ],
+          "weight": 0.6,
+          "required": false,
+          "feedback": "Idéalement, relie le terme à son rôle ou à sa conséquence."
+        }
+      ],
+      "misconceptions": [],
+      "remediation": {
+        "micro_task": "Reformule la réponse en une phrase avec un mot-clé de : Unité du vivant et classification.",
+        "retry_prompt": "En une ou deux phrases, réponds à la question : Tous les êtres vivants, unicellulaires ou pluricellulaires, partagent le même caractère :",
+        "extension": "Donne un exemple ou une conséquence qui précise la réponse."
+      },
+      "source": {
+        "file": "D:\\IA\\Wooflashquizz\\index.html",
+        "locator": "Quiz eb32, question 6",
+        "program": "Le vivant et son environnement"
+      },
+      "origin": "wooflashquizz"
+    },
+    {
+      "id": "wooflash-eb33-01",
+      "level": "Cycle 3",
+      "school_level": "6e",
+      "theme": "Le vivant et son environnement",
+      "title": "Biodiversité actuelle et passée",
+      "prompt": "En une ou deux phrases, réponds à la question : Pour décrire la biodiversité à l'échelle des espèces, les scientifiques",
+      "context": "Question tirée du quiz Wooflash eb33 — Biodiversité actuelle et passée.",
+      "expected_answer": "Observent les caractères des individus et construisent des clés de détermination Ils observent les caractères et construisent des clés de détermination pour identifier espèces et groupes.",
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "La réponse attendue est formulée",
+          "groups": [
+            [
+              "Observent les caractères des individus et construisent des clés de détermination",
+              "Observent les caractères des individus",
+              "construisent des clés de détermination",
+              "observent",
+              "caracteres",
+              "caractere",
+              "individus",
+              "individu",
+              "construisent",
+              "cles"
+            ]
+          ],
+          "weight": 1.6,
+          "required": true
+        },
+        {
+          "id": "explanation",
+          "label": "Un mot-clé scientifique est ajouté",
+          "groups": [
+            [
+              "observent",
+              "caracteres",
+              "caractere",
+              "construisent",
+              "cles",
+              "determination",
+              "identifier",
+              "especes"
+            ]
+          ],
+          "weight": 0.6,
+          "required": false,
+          "feedback": "Idéalement, relie le terme à son rôle ou à sa conséquence."
+        }
+      ],
+      "misconceptions": [],
+      "remediation": {
+        "micro_task": "Reformule la réponse en une phrase avec un mot-clé de : Biodiversité actuelle et passée.",
+        "retry_prompt": "En une ou deux phrases, réponds à la question : Pour décrire la biodiversité à l'échelle des espèces, les scientifiques",
+        "extension": "Donne un exemple ou une conséquence qui précise la réponse."
+      },
+      "source": {
+        "file": "D:\\IA\\Wooflashquizz\\index.html",
+        "locator": "Quiz eb33, question 1",
+        "program": "Le vivant et son environnement"
+      },
+      "origin": "wooflashquizz"
+    },
+    {
+      "id": "wooflash-eb33-06",
+      "level": "Cycle 3",
+      "school_level": "6e",
+      "theme": "Le vivant et son environnement",
+      "title": "Biodiversité actuelle et passée",
+      "prompt": "En une ou deux phrases, réponds à la question : Grâce au principe d'actualisme, les scientifiques peuvent",
+      "context": "Question tirée du quiz Wooflash eb33 — Biodiversité actuelle et passée.",
+      "expected_answer": "Reconstituer le paléo-environnement où vivaient ces espèces ainsi que leurs interactions Ils peuvent reconstituer le paléo-environnement et les interactions des espèces disparues.",
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "La réponse attendue est formulée",
+          "groups": [
+            [
+              "Reconstituer le paléo-environnement où vivaient ces espèces ainsi que leurs interactions",
+              "reconstituer",
+              "paleo",
+              "environnement",
+              "vivaient",
+              "especes",
+              "espece",
+              "ainsi",
+              "interactions",
+              "interaction"
+            ]
+          ],
+          "weight": 1.6,
+          "required": true
+        },
+        {
+          "id": "explanation",
+          "label": "Un mot-clé scientifique est ajouté",
+          "groups": [
+            [
+              "peuvent",
+              "reconstituer",
+              "paleo",
+              "environnement",
+              "interactions",
+              "interaction",
+              "especes",
+              "espece"
+            ]
+          ],
+          "weight": 0.6,
+          "required": false,
+          "feedback": "Idéalement, relie le terme à son rôle ou à sa conséquence."
+        }
+      ],
+      "misconceptions": [],
+      "remediation": {
+        "micro_task": "Reformule la réponse en une phrase avec un mot-clé de : Biodiversité actuelle et passée.",
+        "retry_prompt": "En une ou deux phrases, réponds à la question : Grâce au principe d'actualisme, les scientifiques peuvent",
+        "extension": "Donne un exemple ou une conséquence qui précise la réponse."
+      },
+      "source": {
+        "file": "D:\\IA\\Wooflashquizz\\index.html",
+        "locator": "Quiz eb33, question 6",
+        "program": "Le vivant et son environnement"
+      },
+      "origin": "wooflashquizz"
+    },
+    {
+      "id": "wooflash-eb34-01",
+      "level": "Cycle 3",
+      "school_level": "6e",
+      "theme": "Le vivant et son environnement",
+      "title": "Reproduction des plantes à fleurs",
+      "prompt": "En une ou deux phrases, réponds à la question : Dans une fleur, le pistil est",
+      "context": "Question tirée du quiz Wooflash eb34 — Reproduction des plantes à fleurs.",
+      "expected_answer": "La partie femelle : il contient des cellules reproductrices dans les ovules Le pistil est la partie femelle : il contient des cellules reproductrices dans les ovules.",
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "La réponse attendue est formulée",
+          "groups": [
+            [
+              "La partie femelle : il contient des cellules reproductrices dans les ovules",
+              "La partie femelle",
+              "il contient des cellules reproductrices",
+              "les ovules",
+              "partie",
+              "femelle",
+              "contient",
+              "cellules",
+              "cellule",
+              "reproductrices"
+            ]
+          ],
+          "weight": 1.6,
+          "required": true
+        },
+        {
+          "id": "explanation",
+          "label": "Un mot-clé scientifique est ajouté",
+          "groups": [
+            [
+              "pistil",
+              "partie",
+              "femelle",
+              "contient",
+              "cellules",
+              "cellule",
+              "reproductrices",
+              "reproductrice"
+            ]
+          ],
+          "weight": 0.6,
+          "required": false,
+          "feedback": "Idéalement, relie le terme à son rôle ou à sa conséquence."
+        }
+      ],
+      "misconceptions": [],
+      "remediation": {
+        "micro_task": "Reformule la réponse en une phrase avec un mot-clé de : Reproduction des plantes à fleurs.",
+        "retry_prompt": "En une ou deux phrases, réponds à la question : Dans une fleur, le pistil est",
+        "extension": "Donne un exemple ou une conséquence qui précise la réponse."
+      },
+      "source": {
+        "file": "D:\\IA\\Wooflashquizz\\index.html",
+        "locator": "Quiz eb34, question 1",
+        "program": "Le vivant et son environnement"
+      },
+      "origin": "wooflashquizz"
+    },
+    {
+      "id": "wooflash-eb34-06",
+      "level": "Cycle 3",
+      "school_level": "6e",
+      "theme": "Le vivant et son environnement",
+      "title": "Reproduction des plantes à fleurs",
+      "prompt": "En une ou deux phrases, réponds à la question : Beaucoup de fleurs attirent les insectes pollinisateurs par",
+      "context": "Question tirée du quiz Wooflash eb34 — Reproduction des plantes à fleurs.",
+      "expected_answer": "Différents signaux : grands pétales colorés, molécules odorantes Les fleurs attirent les insectes par différents signaux : pétales colorés, molécules odorantes.",
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "La réponse attendue est formulée",
+          "groups": [
+            [
+              "Différents signaux : grands pétales colorés, molécules odorantes",
+              "Différents signaux",
+              "grands pétales colorés, molécules odorantes",
+              "differents",
+              "different",
+              "signaux",
+              "grands",
+              "grand",
+              "petales",
+              "petale"
+            ]
+          ],
+          "weight": 1.6,
+          "required": true
+        },
+        {
+          "id": "explanation",
+          "label": "Un mot-clé scientifique est ajouté",
+          "groups": [
+            [
+              "fleurs",
+              "fleur",
+              "attirent",
+              "insectes",
+              "insecte",
+              "differents",
+              "different",
+              "signaux"
+            ]
+          ],
+          "weight": 0.6,
+          "required": false,
+          "feedback": "Idéalement, relie le terme à son rôle ou à sa conséquence."
+        }
+      ],
+      "misconceptions": [],
+      "remediation": {
+        "micro_task": "Reformule la réponse en une phrase avec un mot-clé de : Reproduction des plantes à fleurs.",
+        "retry_prompt": "En une ou deux phrases, réponds à la question : Beaucoup de fleurs attirent les insectes pollinisateurs par",
+        "extension": "Donne un exemple ou une conséquence qui précise la réponse."
+      },
+      "source": {
+        "file": "D:\\IA\\Wooflashquizz\\index.html",
+        "locator": "Quiz eb34, question 6",
+        "program": "Le vivant et son environnement"
+      },
+      "origin": "wooflashquizz"
+    },
+    {
+      "id": "wooflash-eb35-01",
+      "level": "Cycle 3",
+      "school_level": "6e",
+      "theme": "Le vivant et son environnement",
+      "title": "Reproduction et sexualité humaine",
+      "prompt": "En une ou deux phrases, réponds à la question : La puberté marque",
+      "context": "Question tirée du quiz Wooflash eb35 — Reproduction et sexualité humaine.",
+      "expected_answer": "Le passage de l'enfance à l'âge adulte La puberté marque le passage de l'enfance à l'âge adulte.",
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "La réponse attendue est formulée",
+          "groups": [
+            [
+              "Le passage de l'enfance à l'âge adulte",
+              "passage",
+              "enfance",
+              "adulte"
+            ]
+          ],
+          "weight": 1.6,
+          "required": true
+        },
+        {
+          "id": "explanation",
+          "label": "Un mot-clé scientifique est ajouté",
+          "groups": [
+            [
+              "puberte",
+              "marque",
+              "passage",
+              "enfance",
+              "adulte"
+            ]
+          ],
+          "weight": 0.6,
+          "required": false,
+          "feedback": "Idéalement, relie le terme à son rôle ou à sa conséquence."
+        }
+      ],
+      "misconceptions": [],
+      "remediation": {
+        "micro_task": "Reformule la réponse en une phrase avec un mot-clé de : Reproduction et sexualité humaine.",
+        "retry_prompt": "En une ou deux phrases, réponds à la question : La puberté marque",
+        "extension": "Donne un exemple ou une conséquence qui précise la réponse."
+      },
+      "source": {
+        "file": "D:\\IA\\Wooflashquizz\\index.html",
+        "locator": "Quiz eb35, question 1",
+        "program": "Le vivant et son environnement"
+      },
+      "origin": "wooflashquizz"
+    },
+    {
+      "id": "wooflash-eb35-06",
+      "level": "Cycle 3",
+      "school_level": "6e",
+      "theme": "Le vivant et son environnement",
+      "title": "Reproduction et sexualité humaine",
+      "prompt": "En une ou deux phrases, réponds à la question : Chez l'être humain, la sexualité",
+      "context": "Question tirée du quiz Wooflash eb35 — Reproduction et sexualité humaine.",
+      "expected_answer": "Prend en compte des aspects biologiques, mais aussi émotionnels, juridiques et sociaux La sexualité humaine prend en compte des aspects biologiques, émotionnels, juridiques et sociaux.",
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "La réponse attendue est formulée",
+          "groups": [
+            [
+              "Prend en compte des aspects biologiques, mais aussi émotionnels, juridiques et sociaux",
+              "sociaux",
+              "prend",
+              "compte",
+              "aspects",
+              "aspect",
+              "biologiques",
+              "biologique",
+              "mais",
+              "aussi"
+            ]
+          ],
+          "weight": 1.6,
+          "required": true
+        },
+        {
+          "id": "explanation",
+          "label": "Un mot-clé scientifique est ajouté",
+          "groups": [
+            [
+              "sexualite",
+              "humaine",
+              "prend",
+              "compte",
+              "aspects",
+              "aspect",
+              "biologiques",
+              "biologique"
+            ]
+          ],
+          "weight": 0.6,
+          "required": false,
+          "feedback": "Idéalement, relie le terme à son rôle ou à sa conséquence."
+        }
+      ],
+      "misconceptions": [],
+      "remediation": {
+        "micro_task": "Reformule la réponse en une phrase avec un mot-clé de : Reproduction et sexualité humaine.",
+        "retry_prompt": "En une ou deux phrases, réponds à la question : Chez l'être humain, la sexualité",
+        "extension": "Donne un exemple ou une conséquence qui précise la réponse."
+      },
+      "source": {
+        "file": "D:\\IA\\Wooflashquizz\\index.html",
+        "locator": "Quiz eb35, question 6",
+        "program": "Le vivant et son environnement"
+      },
+      "origin": "wooflashquizz"
+    },
+    {
+      "id": "wooflash-eb36-01",
+      "level": "Cycle 3",
+      "school_level": "6e",
+      "theme": "Le vivant et son environnement",
+      "title": "Fonctionnement et dynamique des écosystèmes",
+      "prompt": "En une ou deux phrases, réponds à la question : Un écosystème est constitué de",
+      "context": "Question tirée du quiz Wooflash eb36 — Fonctionnement et dynamique des écosystèmes.",
+      "expected_answer": "L'ensemble des êtres vivants, de leur milieu de vie et de leurs interactions Un écosystème réunit les êtres vivants, leur milieu de vie et toutes leurs interactions.",
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "La réponse attendue est formulée",
+          "groups": [
+            [
+              "L'ensemble des êtres vivants, de leur milieu de vie et de leurs interactions",
+              "de leurs interactions",
+              "ensemble",
+              "etres",
+              "vivants",
+              "vivant",
+              "milieu",
+              "interactions",
+              "interaction"
+            ]
+          ],
+          "weight": 1.6,
+          "required": true
+        },
+        {
+          "id": "explanation",
+          "label": "Un mot-clé scientifique est ajouté",
+          "groups": [
+            [
+              "ecosysteme",
+              "reunit",
+              "etres",
+              "vivants",
+              "vivant",
+              "milieu",
+              "interactions",
+              "interaction"
+            ]
+          ],
+          "weight": 0.6,
+          "required": false,
+          "feedback": "Idéalement, relie le terme à son rôle ou à sa conséquence."
+        }
+      ],
+      "misconceptions": [],
+      "remediation": {
+        "micro_task": "Reformule la réponse en une phrase avec un mot-clé de : Fonctionnement et dynamique des écosystèmes.",
+        "retry_prompt": "En une ou deux phrases, réponds à la question : Un écosystème est constitué de",
+        "extension": "Donne un exemple ou une conséquence qui précise la réponse."
+      },
+      "source": {
+        "file": "D:\\IA\\Wooflashquizz\\index.html",
+        "locator": "Quiz eb36, question 1",
+        "program": "Le vivant et son environnement"
+      },
+      "origin": "wooflashquizz"
+    },
+    {
+      "id": "wooflash-eb36-06",
+      "level": "Cycle 3",
+      "school_level": "6e",
+      "theme": "Le vivant et son environnement",
+      "title": "Fonctionnement et dynamique des écosystèmes",
+      "prompt": "En une ou deux phrases, réponds à la question : Les feux ou les chablis (chutes d'arbres) sont",
+      "context": "Question tirée du quiz Wooflash eb36 — Fonctionnement et dynamique des écosystèmes.",
+      "expected_answer": "Des perturbations de l'écosystème qui modifient fortement les conditions du milieu Feux et chablis sont des perturbations qui modifient fortement les conditions du milieu.",
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "La réponse attendue est formulée",
+          "groups": [
+            [
+              "Des perturbations de l'écosystème qui modifient fortement les conditions du milieu",
+              "perturbations",
+              "perturbation",
+              "ecosysteme",
+              "modifient",
+              "fortement",
+              "conditions",
+              "condition",
+              "milieu"
+            ]
+          ],
+          "weight": 1.6,
+          "required": true
+        },
+        {
+          "id": "explanation",
+          "label": "Un mot-clé scientifique est ajouté",
+          "groups": [
+            [
+              "feux",
+              "chablis",
+              "chabli",
+              "perturbations",
+              "perturbation",
+              "modifient",
+              "fortement",
+              "conditions"
+            ]
+          ],
+          "weight": 0.6,
+          "required": false,
+          "feedback": "Idéalement, relie le terme à son rôle ou à sa conséquence."
+        }
+      ],
+      "misconceptions": [],
+      "remediation": {
+        "micro_task": "Reformule la réponse en une phrase avec un mot-clé de : Fonctionnement et dynamique des écosystèmes.",
+        "retry_prompt": "En une ou deux phrases, réponds à la question : Les feux ou les chablis (chutes d'arbres) sont",
+        "extension": "Donne un exemple ou une conséquence qui précise la réponse."
+      },
+      "source": {
+        "file": "D:\\IA\\Wooflashquizz\\index.html",
+        "locator": "Quiz eb36, question 6",
+        "program": "Le vivant et son environnement"
+      },
+      "origin": "wooflashquizz"
+    },
+    {
+      "id": "wooflash-eb37-01",
+      "level": "Cycle 3",
+      "school_level": "6e",
+      "theme": "Le vivant et son environnement",
+      "title": "Place des êtres vivants dans le cycle de la matière",
+      "prompt": "En une ou deux phrases, réponds à la question : Les végétaux produisent de la matière organique à partir de",
+      "context": "Question tirée du quiz Wooflash eb37 — Place des êtres vivants dans le cycle de la matière.",
+      "expected_answer": "De sels minéraux, de dioxyde de carbone, d'eau et d'énergie sous forme de lumière Les végétaux produisent de la matière organique à partir de sels minéraux, CO2, eau et lumière.",
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "La réponse attendue est formulée",
+          "groups": [
+            [
+              "De sels minéraux, de dioxyde de carbone, d'eau et d'énergie sous forme de lumière",
+              "d'énergie sous forme de lumière",
+              "sels",
+              "mineraux",
+              "dioxyde",
+              "carbone",
+              "energie",
+              "sous",
+              "forme",
+              "lumiere"
+            ]
+          ],
+          "weight": 1.6,
+          "required": true
+        },
+        {
+          "id": "explanation",
+          "label": "Un mot-clé scientifique est ajouté",
+          "groups": [
+            [
+              "vegetaux",
+              "produisent",
+              "matiere",
+              "organique",
+              "partir",
+              "sels",
+              "mineraux",
+              "lumiere"
+            ]
+          ],
+          "weight": 0.6,
+          "required": false,
+          "feedback": "Idéalement, relie le terme à son rôle ou à sa conséquence."
+        }
+      ],
+      "misconceptions": [],
+      "remediation": {
+        "micro_task": "Reformule la réponse en une phrase avec un mot-clé de : Place des êtres vivants dans le cycle de la matière.",
+        "retry_prompt": "En une ou deux phrases, réponds à la question : Les végétaux produisent de la matière organique à partir de",
+        "extension": "Donne un exemple ou une conséquence qui précise la réponse."
+      },
+      "source": {
+        "file": "D:\\IA\\Wooflashquizz\\index.html",
+        "locator": "Quiz eb37, question 1",
+        "program": "Le vivant et son environnement"
+      },
+      "origin": "wooflashquizz"
+    },
+    {
+      "id": "wooflash-eb37-06",
+      "level": "Cycle 3",
+      "school_level": "6e",
+      "theme": "Le vivant et son environnement",
+      "title": "Place des êtres vivants dans le cycle de la matière",
+      "prompt": "En une ou deux phrases, réponds à la question : Les décomposeurs permettent",
+      "context": "Question tirée du quiz Wooflash eb37 — Place des êtres vivants dans le cycle de la matière.",
+      "expected_answer": "D'enrichir le sol en matière minérale, indispensable aux végétaux Les décomposeurs enrichissent le sol en matière minérale, indispensable aux végétaux.",
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "La réponse attendue est formulée",
+          "groups": [
+            [
+              "D'enrichir le sol en matière minérale, indispensable aux végétaux",
+              "enrichir",
+              "matiere",
+              "minerale",
+              "indispensable",
+              "vegetaux"
+            ]
+          ],
+          "weight": 1.6,
+          "required": true
+        },
+        {
+          "id": "explanation",
+          "label": "Un mot-clé scientifique est ajouté",
+          "groups": [
+            [
+              "decomposeurs",
+              "decomposeur",
+              "enrichissent",
+              "matiere",
+              "minerale",
+              "indispensable",
+              "vegetaux"
+            ]
+          ],
+          "weight": 0.6,
+          "required": false,
+          "feedback": "Idéalement, relie le terme à son rôle ou à sa conséquence."
+        }
+      ],
+      "misconceptions": [],
+      "remediation": {
+        "micro_task": "Reformule la réponse en une phrase avec un mot-clé de : Place des êtres vivants dans le cycle de la matière.",
+        "retry_prompt": "En une ou deux phrases, réponds à la question : Les décomposeurs permettent",
+        "extension": "Donne un exemple ou une conséquence qui précise la réponse."
+      },
+      "source": {
+        "file": "D:\\IA\\Wooflashquizz\\index.html",
+        "locator": "Quiz eb37, question 6",
+        "program": "Le vivant et son environnement"
+      },
+      "origin": "wooflashquizz"
+    },
+    {
+      "id": "wooflash-eb38-01",
+      "level": "Cycle 3",
+      "school_level": "6e",
+      "theme": "Le vivant et son environnement",
+      "title": "Conséquences des actions humaines sur l'environnement",
+      "prompt": "En une ou deux phrases, réponds à la question : Pour satisfaire ses besoins, l'être humain exploite les ressources naturelles, ce qui peut entraîner",
+      "context": "Question tirée du quiz Wooflash eb38 — Conséquences des actions humaines sur l'environnement.",
+      "expected_answer": "L'épuisement des ressources, la destruction des écosystèmes et la pollution Cette exploitation peut causer épuisement des ressources, destruction des écosystèmes et pollution.",
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "La réponse attendue est formulée",
+          "groups": [
+            [
+              "L'épuisement des ressources, la destruction des écosystèmes et la pollution",
+              "la pollution",
+              "epuisement",
+              "ressources",
+              "ressource",
+              "destruction",
+              "ecosystemes",
+              "ecosysteme",
+              "pollution"
+            ]
+          ],
+          "weight": 1.6,
+          "required": true
+        },
+        {
+          "id": "explanation",
+          "label": "Un mot-clé scientifique est ajouté",
+          "groups": [
+            [
+              "exploitation",
+              "causer",
+              "epuisement",
+              "ressources",
+              "ressource",
+              "destruction",
+              "ecosystemes",
+              "ecosysteme"
+            ]
+          ],
+          "weight": 0.6,
+          "required": false,
+          "feedback": "Idéalement, relie le terme à son rôle ou à sa conséquence."
+        }
+      ],
+      "misconceptions": [],
+      "remediation": {
+        "micro_task": "Reformule la réponse en une phrase avec un mot-clé de : Conséquences des actions humaines sur l'environnement.",
+        "retry_prompt": "En une ou deux phrases, réponds à la question : Pour satisfaire ses besoins, l'être humain exploite les ressources naturelles, ce qui peut entraîner",
+        "extension": "Donne un exemple ou une conséquence qui précise la réponse."
+      },
+      "source": {
+        "file": "D:\\IA\\Wooflashquizz\\index.html",
+        "locator": "Quiz eb38, question 1",
+        "program": "Le vivant et son environnement"
+      },
+      "origin": "wooflashquizz"
+    },
+    {
+      "id": "wooflash-eb38-06",
+      "level": "Cycle 3",
+      "school_level": "6e",
+      "theme": "Le vivant et son environnement",
+      "title": "Conséquences des actions humaines sur l'environnement",
+      "prompt": "En une ou deux phrases, réponds à la question : On peut concevoir et construire des objets pour favoriser la biodiversité comme",
+      "context": "Question tirée du quiz Wooflash eb38 — Conséquences des actions humaines sur l'environnement.",
+      "expected_answer": "Des nichoirs ou des hôtels à insectes Nichoirs et hôtels à insectes favorisent la biodiversité locale.",
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "La réponse attendue est formulée",
+          "groups": [
+            [
+              "Des nichoirs ou des hôtels à insectes",
+              "nichoirs",
+              "nichoir",
+              "hotels",
+              "hotel",
+              "insectes",
+              "insecte"
+            ]
+          ],
+          "weight": 1.6,
+          "required": true
+        },
+        {
+          "id": "explanation",
+          "label": "Un mot-clé scientifique est ajouté",
+          "groups": [
+            [
+              "nichoirs",
+              "nichoir",
+              "hotels",
+              "hotel",
+              "insectes",
+              "insecte",
+              "favorisent",
+              "biodiversite"
+            ]
+          ],
+          "weight": 0.6,
+          "required": false,
+          "feedback": "Idéalement, relie le terme à son rôle ou à sa conséquence."
+        }
+      ],
+      "misconceptions": [],
+      "remediation": {
+        "micro_task": "Reformule la réponse en une phrase avec un mot-clé de : Conséquences des actions humaines sur l'environnement.",
+        "retry_prompt": "En une ou deux phrases, réponds à la question : On peut concevoir et construire des objets pour favoriser la biodiversité comme",
+        "extension": "Donne un exemple ou une conséquence qui précise la réponse."
+      },
+      "source": {
+        "file": "D:\\IA\\Wooflashquizz\\index.html",
+        "locator": "Quiz eb38, question 6",
+        "program": "Le vivant et son environnement"
+      },
+      "origin": "wooflashquizz"
+    },
+    {
+      "id": "wooflash-eb39-01",
+      "level": "Cycle 4",
+      "school_level": "3e",
+      "theme": "Le corps humain et la santé",
+      "title": "Les éléments d'une défense rapide",
+      "prompt": "En une ou deux phrases, réponds à la question : Notre intestin héberge un grand nombre de micro-organismes qui",
+      "context": "Question tirée du quiz Wooflash eb39 — Les éléments d'une défense rapide.",
+      "expected_answer": "Contribuent à son bon fonctionnement Notre organisme héberge de nombreux micro-organismes, particulièrement dans l'intestin, qui contribuent à son bon fonctionnement.",
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "La réponse attendue est formulée",
+          "groups": [
+            [
+              "Contribuent à son bon fonctionnement",
+              "contribuent",
+              "fonctionnement"
+            ]
+          ],
+          "weight": 1.6,
+          "required": true
+        },
+        {
+          "id": "explanation",
+          "label": "Un mot-clé scientifique est ajouté",
+          "groups": [
+            [
+              "notre",
+              "organisme",
+              "heberge",
+              "nombreux",
+              "micro",
+              "organismes",
+              "particulierement",
+              "intestin"
+            ]
+          ],
+          "weight": 0.6,
+          "required": false,
+          "feedback": "Idéalement, relie le terme à son rôle ou à sa conséquence."
+        }
+      ],
+      "misconceptions": [],
+      "remediation": {
+        "micro_task": "Reformule la réponse en une phrase avec un mot-clé de : Les éléments d'une défense rapide.",
+        "retry_prompt": "En une ou deux phrases, réponds à la question : Notre intestin héberge un grand nombre de micro-organismes qui",
+        "extension": "Donne un exemple ou une conséquence qui précise la réponse."
+      },
+      "source": {
+        "file": "D:\\IA\\Wooflashquizz\\index.html",
+        "locator": "Quiz eb39, question 1",
+        "program": "Le corps humain et la santé"
+      },
+      "origin": "wooflashquizz"
+    },
+    {
+      "id": "wooflash-eb39-06",
+      "level": "Cycle 4",
+      "school_level": "3e",
+      "theme": "Le corps humain et la santé",
+      "title": "Les éléments d'une défense rapide",
+      "prompt": "En une ou deux phrases, réponds à la question : La peau constitue une barrière naturelle contre les micro-organismes car",
+      "context": "Question tirée du quiz Wooflash eb39 — Les éléments d'une défense rapide.",
+      "expected_answer": "Elle forme une barrière physique continue qui empêche la pénétration des microbes La peau sèche et intacte empêche la pénétration des micro-organismes : c'est la première barrière naturelle de l'organisme.",
+      "criteria": [
+        {
+          "id": "answer",
+          "label": "La réponse attendue est formulée",
+          "groups": [
+            [
+              "Elle forme une barrière physique continue qui empêche la pénétration des microbes",
+              "forme",
+              "barriere",
+              "physique",
+              "continue",
+              "empeche",
+              "penetration",
+              "microbes",
+              "microbe"
+            ]
+          ],
+          "weight": 1.6,
+          "required": true
+        },
+        {
+          "id": "explanation",
+          "label": "Un mot-clé scientifique est ajouté",
+          "groups": [
+            [
+              "peau",
+              "seche",
+              "intacte",
+              "empeche",
+              "penetration",
+              "micro",
+              "organismes",
+              "organisme"
+            ]
+          ],
+          "weight": 0.6,
+          "required": false,
+          "feedback": "Idéalement, relie le terme à son rôle ou à sa conséquence."
+        }
+      ],
+      "misconceptions": [],
+      "remediation": {
+        "micro_task": "Reformule la réponse en une phrase avec un mot-clé de : Les éléments d'une défense rapide.",
+        "retry_prompt": "En une ou deux phrases, réponds à la question : La peau constitue une barrière naturelle contre les micro-organismes car",
+        "extension": "Donne un exemple ou une conséquence qui précise la réponse."
+      },
+      "source": {
+        "file": "D:\\IA\\Wooflashquizz\\index.html",
+        "locator": "Quiz eb39, question 6",
+        "program": "Le corps humain et la santé"
+      },
+      "origin": "wooflashquizz"
+    }
+  ]
+}

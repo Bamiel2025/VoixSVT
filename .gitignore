@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.py[cod]
+app/data/uploads/
+.DS_Store
+
+# URL secrète de la Web App et variables de production : ne pas versionner.
+.env
+.env.*
+!.env.example
+.vercel/
+
+# Fichiers générés, résultats pupils et validations visuelles.
+server.*.log
+server.pid
+validation-*.png

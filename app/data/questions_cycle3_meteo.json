@@ -1,0 +1,51 @@
+{
+  "meta": {"title": "Météo — cycle 4 · reproduction — cycle 3", "sources_directory": "D:\\IA"},
+  "questions": [
+    {
+      "id": "c4-vent-direction",
+      "level": "Cycle 4",
+      "school_level": "4e",
+      "theme": "Météo",
+      "title": "Direction du vent",
+      "prompt": "Dans quel sens souffle le vent ?",
+      "context": "Pense au gradient de pression.",
+      "expected_answer": "Le vent souffle des hautes pressions vers les basses pressions.",
+      "criteria": [
+        {"id": "depart", "label": "Le vent part des hautes pressions", "groups": [["hautes pressions", "haute pression", "hautes pression"], ["souffle", "va", "part", "vient"]], "weight": 1.4},
+        {"id": "arrivee", "label": "Il arrive vers les basses pressions", "groups": [["basses pressions", "basse pression", "basses pression"], ["vers", "vers les", "vers la"]], "weight": 1.4}
+      ],
+      "misconceptions": [
+        {"id": "vent-inversion", "label": "Sens des pressions inversé", "cues": [["souffle des basses pressions vers les hautes pressions", "vient des basses pressions vers les hautes pressions", "des basses pressions vers les hautes pressions"]], "feedback": "L’air se déplace des hautes vers les basses pressions.", "remediation": "Place une flèche entre deux cartes de pression : des hautes vers les basses."}
+      ],
+      "remediation": {
+        "micro_task": "Sur deux cartes de pression, relie la zone HP à la zone BP.",
+        "retry_prompt": "Dans quel sens l’air se déplace-t-il entre deux zones de pression ?",
+        "extension": "Explique comment l’air chaud participe à la formation d’une basse pression."
+      },
+      "source": {"file": "vent2.html", "locator": "Quiz, question 1", "program": "SVT — météo"}
+    },
+    {
+      "id": "c3-reproduction-asexuee",
+      "level": "Cycle 3",
+      "school_level": "5e",
+      "theme": "Reproduction",
+      "title": "Reproduction asexuée",
+      "prompt": "En une phrase, qu’est-ce qu’un clone obtenu par reproduction asexuée ?",
+      "context": "Un seul parent est nécessaire.",
+      "expected_answer": "Un clone est un individu génétiquement identique à son parent, obtenu sans fécondation.",
+      "criteria": [
+        {"id": "clone", "label": "Le mot clone ou génétiquement identique est utilisé", "groups": [["clone", "genetiquement identique", "identique genetiquement"]], "weight": 1.8},
+        {"id": "sans-fecundation", "label": "L’absence de fécondation est explicite", "groups": [["sans fecondation", "pas de fecondation", "aucune fecondation", "sans unite", "sans rencontre"]], "weight": 1.2}
+      ],
+      "misconceptions": [
+        {"id": "clone-deux-parents", "label": "Clone confondu avec un enfant", "cues": [["deux parents", "deux individus", "pere et mere"], ["clone", "genetiquement identique"]], "feedback": "La reproduction asexuée ne nécessite pas deux parents.", "remediation": "Représente un parent unique donnant plusieurs individuals identiques."}
+      ],
+      "remediation": {
+        "micro_task": "Observe un cas de bouturage et compte le nombre de parents.",
+        "retry_prompt": "Qu’est-ce qu’un clone et comment se forme-t-il en reproduction asexuée ?",
+        "extension": "Cite deux exemples de reproduction asexuée."
+      },
+      "source": {"file": "Asexuesexue.html", "locator": "Reproduction asexuée, section 2", "program": "SVT — reproduction"}
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "meta": {"title": "Digestion — cycle 4", "sources_directory": "D:\\IA"},
+  "questions": [
+    {
+      "id": "c4-digestion-absorption",
+      "level": "Cycle 4",
+      "school_level": "5e",
+      "theme": "Digestion",
+      "title": "Passage des nutriments",
+      "prompt": "Où les nutriments passent-ils dans le sang ?",
+      "context": "Repère le lieu de l’absorption intestinale.",
+      "expected_answer": "Les nutriments passent dans le sang au niveau des villosités de l’intestin grêle.",
+      "criteria": [
+        {"id": "organe", "label": "L’intestin grêle est nommé", "groups": [["intestin grele"]], "weight": 1.2},
+        {"id": "lieu", "label": "Les villosités sont nommées", "groups": [["villosites", "villosite"]], "weight": 1.8},
+        {"id": "passage", "label": "Le passage vers le sang est explicité", "groups": [["sang", "circulation sanguine"], ["passent", "passage", "absorbes", "absorption", "traversent"]], "weight": 1}
+      ],
+      "misconceptions": [
+        {"id": "absorption-bouche", "label": "Absorption confondue avec la mastication", "cues": [["dans la bouche", "au niveau de la bouche"], ["absorb", "passent dans le sang"]], "feedback": "La bouche transforme mécaniquement les aliments ; l’absorption se fait dans l’intestin grêle.", "remediation": "Schéma le trajet et place l’absorption au niveau des villosités."}
+      ],
+      "remediation": {
+        "micro_task": "Sur un schéma du tube digestif, place les villosités dans l’intestin grêle.",
+        "retry_prompt": "Où et par quelles structures les nutriments passent-ils dans le sang ?",
+        "extension": "Explique à quoi servent les villosités : elles augmentent la surface d’échange."
+      },
+      "source": {"file": "Alimentation.html", "locator": "Quiz, question 6", "program": "SVT — digestion"}
+    },
+    {
+      "id": "c4-digestion-enzymes",
+      "level": "Cycle 4",
+      "school_level": "5e",
+      "theme": "Digestion",
+      "title": "Rôle des enzymes",
+      "prompt": "Que font les enzymes des sucs digestifs ?",
+      "context": "Relie l’enzyme à son effet sur les aliments.",
+      "expected_answer": "Les enzymes découpent chimiquement les aliments en petites molécules appelées nutriments.",
+      "criteria": [
+        {"id": "action", "label": "L’action de découper est décrite", "groups": [["decoup", "scind", "transform", "digere", "decompose"]], "weight": 1.5},
+        {"id": "chimie", "label": "La transformation est chimique", "groups": [["chimiqu", "enzym", "sucs digestif"], ["decoup", "scind", "transform", "digere", "decompose"]], "weight": 0.8},
+        {"id": "nutriments", "label": "Le résultat « nutriments » est nommé", "groups": [["nutriment", "petites molecules", "molecules simples"]], "weight": 1.2}
+      ],
+      "misconceptions": [
+        {"id": "enzyme-mecanique", "label": "Enzyme confondue avec les dents", "cues": [["enzyme"], ["dent", "broyer", "moulin"]], "feedback": "Les dents broient ; les enzymes réalisent une digestion chimique.", "remediation": "Compare les actions : dents = broyage, enzymes = découpage chimique."}
+      ],
+      "remediation": {
+        "micro_task": "Représente un gros morceau d’aliment qui devient de petites molécules.",
+        "retry_prompt": "Quel est le rôle des enzymes digestives ?",
+        "extension": "Cite une enzyme digestive et son substrat."
+      },
+      "source": {"file": "Alimentation.html", "locator": "Quiz, question 2", "program": "SVT — digestion"}
+    }
+  ]
+}
+

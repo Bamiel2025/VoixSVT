@@ -1,0 +1,55 @@
+{
+  "meta": {"title": "Plantes et immunité — cycle 4", "sources_directory": "D:\\IA"},
+  "questions": [
+    {
+      "id": "c4-nutrition-plante-echanges",
+      "level": "Cycle 4",
+      "school_level": "5e",
+      "theme": "Nutrition des plantes",
+      "title": "Photosynthèse",
+      "prompt": "Quels gaz et quelle source d’énergie la plante utilise-t-elle pour fabriquer sa matière organique ?",
+      "context": "Ne confonds pas les entrées et les sorties de la photosynthèse.",
+      "expected_answer": "Éclairée, la plante utilise la lumière, l’eau et le dioxyde de carbone pour fabriquer de la matière organique et libérer du dioxygène.",
+      "criteria": [
+        {"id": "lumiere", "label": "La lumière est nommée", "groups": [["lumiere", "rayonnement solaire", "soleil"]], "weight": 1},
+        {"id": "co2-entree", "label": "Le CO₂ est identifié comme entrée", "groups": [["co2", "dioxyde de carbone"]], "weight": 1},
+        {"id": "eau", "label": "L’eau est identifiée comme entrée", "groups": [["eau", "h2o"]], "weight": 0.8},
+        {"id": "o2-sortie", "label": "Le dioxygène est identifié comme sortie", "groups": [["o2", "dioxygene"]], "weight": 1}
+      ],
+      "misconceptions": [
+        {"id": "photosynthese-respiration", "label": "Entrées et sorties de la photosynthèse inversées", "cues": [["photosynthese", "photosynthetique"], ["libere", "rejette", "produit"], ["co2", "dioxyde de carbone"], ["consomme", "utilise", "absorbe"], ["o2", "dioxygene"]], "feedback": "La photosynthèse consomme du CO₂ et libère de l’O₂ ; la respiration fait l’inverse.", "remediation": "Fais deux flèches : CO₂ vers la feuille, O₂ vers l’extérieur."}
+      ],
+      "remediation": {
+        "micro_task": "Complète le bilan : lumière + eau + CO₂ → matière organique + …",
+        "retry_prompt": "Quelles sont les entrées et les sorties de la photosynthèse ?",
+        "extension": "Explique pourquoi les plantes respirent aussi la nuit."
+      },
+      "source": {"file": "nutrition des plantes.html", "locator": "Données pédagogiques, étape photo", "program": "SVT — nutrition des plantes"}
+    },
+    {
+      "id": "c4-immunite-specificite",
+      "level": "Cycle 4",
+      "school_level": "5e",
+      "theme": "Immunité",
+      "title": "Spécificité de la réponse humorale",
+      "prompt": "Explique en une phrase ce qu’est la spécificité de la réponse immunitaire humorale.",
+      "context": "Lie chaque lymphocyte B à un antigène.",
+      "expected_answer": "Chaque lymphocyte B produit un anticorps spécifique qui reconnaît un seul type d’antigène.",
+      "criteria": [
+        {"id": "lymphocyte-b", "label": "Le lymphocyte B est nommé", "groups": [["lymphocyte b", "lymphocytes b", "cellule b"]], "weight": 1.2},
+        {"id": "anticorps", "label": "L’anticorps est nommé", "groups": [["anticorps", "immunoglobuline"]], "weight": 1},
+        {"id": "specifique", "label": "La spécificité est explicite", "groups": [["specifique", "specifiques", "complementaire"]], "weight": 1.5},
+        {"id": "antigene", "label": "Un antigène est associé", "groups": [["antigene", "antigenes"]], "weight": 1.2}
+      ],
+      "misconceptions": [
+        {"id": "anticorps-aleatoire", "label": "Anticorps décrit comme non spécifique", "cues": [["anticorps"], ["n'importe quel", "tous les antigenes", "aucune specificite"]], "feedback": "Un anticorps n’agit pas indifféremment sur tous les antigènes : il est spécifique.", "remediation": "Associe chaque lymphocyte B à un seul antigène, comme une clé à une serrure."}
+      ],
+      "remediation": {
+        "micro_task": "Schématise deux lymphocytes B associés à deux antigènes différents.",
+        "retry_prompt": "Pourquoi dit-on que la réponse humorale est spécifique ?",
+        "extension": "Explique ce que montre l’expérience de Nossal avec deux souches de Salmonella."
+      },
+      "source": {"file": "Activite_Nossal_Cycle4.html", "locator": "Introduction et conclusion", "program": "SVT — immunité"}
+    }
+  ]
+}

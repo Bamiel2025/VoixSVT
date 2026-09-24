@@ -1,0 +1,77 @@
+{
+  "meta": {"title": "Vaccination, synapse et évolution — cycle 4", "sources_directory": "D:\\IA"},
+  "questions": [
+    {
+      "id": "c4-vaccin-memoire",
+      "level": "Cycle 4",
+      "school_level": "5e",
+      "theme": "Vaccination",
+      "title": "Réponse vaccinale secondaire",
+      "prompt": "Pourquoi la réponse secondaire est-elle plus rapide et plus forte après un vaccin ?",
+      "context": "Cherche le rôle des cellules mémoires.",
+      "expected_answer": "Les lymphocytes mémoires persistent après le vaccin et reconnaissent rapidement l’antigène lors du second contact.",
+      "criteria": [
+        {"id": "memoire", "label": "Les lymphocytes mémoires sont nommés", "groups": [["lymphocytes memoire", "lymphocyte memoire", "cellules memoire", "cellule memoire"]], "weight": 1.7},
+        {"id": "reconnaissance", "label": "La reconnaissance de l’antigène est expliquée", "groups": [["reconnaissent", "reconnait", "identification", "reconnaissance"], ["antigene", "antigenes"]], "weight": 1.2},
+        {"id": "rapidite-force", "label": "La rapidité ou la force de la réponse est liée", "groups": [["rapide", "rapidement", "vite", "plus forte", "forte", "intense"]], "weight": 1}
+      ],
+      "misconceptions": [
+        {"id": "vaccin-maladie", "label": "Vaccin confondu avec infection", "cues": [["vaccin"], ["provoque la maladie", "donne la maladie", "rend malade"]], "feedback": "Le vaccin entraîne le système immunitaire sans provoquer la maladie.", "remediation": "Place le vaccin dans la réponse primaire, puis le vrai pathogène dans le second contact."}
+      ],
+      "remediation": {
+        "micro_task": "Complète le schéma : premier contact → mémoire → second contact plus rapide.",
+        "retry_prompt": "Quel rôle jouent les lymphocytes mémoires après une vaccination ?",
+        "extension": "Compare les courbes de la réponse primaire et secondaire."
+      },
+      "source": {"file": "vaccinationfinal.html", "locator": "Étapes mémoire et second contact", "program": "SVT — vaccination"}
+    },
+    {
+      "id": "c4-synapse-neurotransmetteurs",
+      "level": "Cycle 4",
+      "school_level": "5e",
+      "theme": "Communication nerveuse",
+      "title": "Message entre neurones",
+      "prompt": "À quoi servent les neurotransmetteurs dans la communication entre deux neurones ?",
+      "context": "Pense au changement de nature du message.",
+      "expected_answer": "Les neurotransmetteurs convertissent le signal électrique en signal chimique qui traverse la fente synaptique.",
+      "criteria": [
+        {"id": "nt", "label": "Le neurotransmetteur est nommé", "groups": [["neurotransmetteur", "neurotransmetteurs", "mediateur chimique"]], "weight": 1.2},
+        {"id": "fente", "label": "La fente synaptique est identifiée", "groups": [["fente synaptique", "espace synaptique", "fente"]], "weight": 1.4},
+        {"id": "chimie", "label": "Le message chimique est explicité", "groups": [["chimique", "chimiquement", "molecule", "molécule"]], "weight": 1}
+      ],
+      "misconceptions": [
+        {"id": "courant-saut", "label": "Courant électrique supposé sauter la fente", "cues": [["courant", "signal electrique", "electricite"], ["saut", "traverse directement", "franchit la fente"]], "feedback": "Le signal ne traverse pas directement le vide : un signal chimique fait relais.", "remediation": "Dessine deux neurones et place le neurotransmetteur dans la fente."}
+      ],
+      "remediation": {
+        "micro_task": "Sur un schéma de synapse, relie le signal électrique au signal chimique.",
+        "retry_prompt": "Quel est le rôle d’un neurotransmetteur ?",
+        "extension": "Compare un neurotransmetteur excitateur et inhibiteur."
+      },
+      "source": {"file": "SNVXglm.html", "locator": "Quiz final, question 2", "program": "SVT — communication nerveuse"}
+    },
+    {
+      "id": "c4-selection-naturelle",
+      "level": "Cycle 4",
+      "school_level": "5e",
+      "theme": "Évolution",
+      "title": "Prédation et phalènes",
+      "prompt": "Pourquoi la forme sombre de la phalène est-elle mieux recaptérée dans un bois pollué ?",
+      "context": "Relie le camouflage à la prédation.",
+      "expected_answer": "La forme sombre est mieux camouflée sur les écorces noircies, donc les oiseaux la repèrent et la mangent moins.",
+      "criteria": [
+        {"id": "camouflage", "label": "Le camouflage est nommé", "groups": [["camouflage", "camouflee", "mieux cachee", "difficile a voir"]], "weight": 1.3},
+        {"id": "milieu", "label": "Le bois ou les écorces polluées sont cités", "groups": [["bois pollue", "foret polluee", "ecorce noircie", "tronc noir", "suie", "pollution"]], "weight": 1.1},
+        {"id": "predation", "label": "La prédation par les oiseaux est citée", "groups": [["oiseaux", "oiseau", "predation", "mange"]], "weight": 1.5}
+      ],
+      "misconceptions": [
+        {"id": "choix-phalene", "label": "La phalène supposée choisir son tronc", "cues": [["phalene", "papillon"], ["choisit", "choisir", "choix"]], "feedback": "La phalène ne choisit pas sa couleur : la sélection agit sur les variations présentes.", "remediation": "Compare le fond clair et le fond sombre dans les deux forêts."}
+      ],
+      "remediation": {
+        "micro_task": "Sur deux images, repère la phalène la plus visible pour un oiseau.",
+        "retry_prompt": "Comment la couleur du milieu influence-t-elle la survie des phalènes ?",
+        "extension": "Explique pourquoi le changement d’environnement peut inverser l’avantage."
+      },
+      "source": {"file": "biodiversite2.html", "locator": "Activité 1, question 1", "program": "SVT — évolution"}
+    }
+  ]
+}

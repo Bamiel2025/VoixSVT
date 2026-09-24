@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#173f35">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%2318352e'/%3E%3Cpath d='M21 31v-7a11 11 0 0 1 22 0v7M18 31h28M24 31v9a8 8 0 0 0 16 0v-9M32 48v7' fill='none' stroke='%23ddeb73' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E">
+  <title>Voix SVT — Correcteur de réponses orales</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#workspace">Aller au contenu</a>
+  <header class="topbar">
+    <a class="brand" href="/" aria-label="Voix SVT, accueil">
+      <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+      <span><strong>VOIX<span>SVT</span></strong><small>Correcteur de réponses orales</small></span>
+    </a>
+    <div class="privacy-note" id="privacy-note"><span class="pulse-dot"></span> Audio traité localement</div>
+    <div class="student-chip" id="student-chip" hidden>
+      <span id="student-chip-name"></span>
+      <button id="edit-student-button" type="button" aria-label="Modifier l’identité de l’élève">Modifier</button>
+    </div>
+    <button class="ghost-button" id="reset-button" type="button" hidden>Nouvelle réponse</button>
+    <button class="teacher-top-button" id="teacher-open-button" type="button"><span aria-hidden="true">⌑</span><span>Espace enseignant</span></button>
+  </header>
+
+  <main id="workspace" class="workspace">
+    <section class="welcome" id="welcome-view" aria-labelledby="welcome-title">
+      <div class="welcome-copy">
+        <p class="eyebrow">ORAL SVT · CYCLES 3 ET 4</p>
+        <h1 id="welcome-title">Ta science<br><em>se dit à voix haute.</em></h1>
+        <p>Choisis ton contexte, réponds en une ou deux phrases, puis reçois un diagnostic précis et une remédiation immédiate.</p>
+        <div class="welcome-actions">
+          <button class="teacher-entry-link" id="teacher-entry-link" type="button"><span aria-hidden="true">⌑</span> Espace enseignant <i>↗</i></button>
+          <span>Pour le professeur</span>
+        </div>
+        <div class="welcome-stats" aria-label="Contenu de la banque de questions">
+          <div><b id="welcome-question-count">—</b><span>questions SVT</span></div>
+          <div><b>39</b><span>quiz Wooflash</span></div>
+          <div><b>2</b><span>cycles</span></div>
+        </div>
+      </div>
+      <form class="student-card" id="student-form" novalidate>
+        <div class="card-number">FICHE ÉLÈVE · 01</div>
+        <h2>Avant de commencer</h2>
+        <p>Ces informations servent à associer chaque oral à ton résultat.</p>
+        <div class="identity-grid">
+          <label for="student-last-name">Nom</label>
+          <label for="student-first-name">Prénom</label>
+          <label for="student-class">Classe</label>
+        </div>
+        <div class="identity-inputs">
+          <input id="student-last-name" name="last_name" type="text" autocomplete="family-name" maxlength="80" placeholder="MARTIN" required aria-describedby="identity-error">
+          <input id="student-first-name" name="first_name" type="text" autocomplete="given-name" maxlength="80" placeholder="Léa" required aria-describedby="identity-error">
+          <input id="student-class" name="class_name" type="text" autocomplete="off" maxlength="40" placeholder="5e2" required aria-describedby="identity-error">
+        </div>
+        <p class="identity-error" id="identity-error" role="alert" hidden></p>
+        <button class="identity-submit" type="submit"><span>Commencer l’oral</span><i aria-hidden="true">→</i></button>
+        <p class="student-card-note"><span aria-hidden="true">●</span> Traitement audio local · résultats exportables vers le tableau du professeur</p>
+      </form>
+    </section>
+
+    <section class="teacher-login-view" id="teacher-login-view" aria-labelledby="teacher-login-title" hidden>
+      <div class="teacher-login-intro">
+        <p class="eyebrow">REGISTRE PÉDAGOGIQUE · ACCÈS RESTREINT</p>
+        <h1 id="teacher-login-title">Les voix de la classe,<br><em>en un seul regard.</em></h1>
+        <p>Retrouvez les oraux, les critères manquants et les tendances du programme sans quitter Voix SVT.</p>
+        <div class="teacher-trust"><span>●</span><div><b>Session signée et temporaire</b><small>Les identités élèves restent liées à votre tableau Google.</small></div></div>
+        <p class="teacher-deployment-note">Espace réservé à l’enseignant. Le code d’accès et la session ne sont jamais stockés dans le navigateur ni dans le dépôt Git.</p>
+      </div>
+      <form class="teacher-login-card" id="teacher-login-form" novalidate>
+        <div class="card-number">ESPACE ENSEIGNANT · 02</div>
+        <h2>Ouvrir le registre</h2>
+        <p>Saisissez le code d’accès fourni par l’administrateur.</p>
+        <label class="teacher-code-label" for="teacher-code">Code d’accès</label>
+        <input id="teacher-code" name="access_code" type="password" autocomplete="current-password" maxlength="160" placeholder="••••••••" required aria-describedby="teacher-login-error">
+        <p class="teacher-error" id="teacher-login-error" role="alert" hidden></p>
+        <button class="teacher-login-submit" id="teacher-login-button" type="submit"><span>Ouvrir le registre</span><i aria-hidden="true">→</i></button>
+        <button class="teacher-back-link" id="teacher-back-button" type="button">← Retour à l’espace élève</button>
+      </form>
+    </section>
+
+    <section class="teacher-dashboard" id="teacher-dashboard-view" aria-labelledby="teacher-dashboard-title" hidden>
+      <header class="teacher-dashboard-head">
+        <div>
+          <p class="eyebrow">REGISTRE PÉDAGOGIQUE · SESSION ENSEIGNANT</p>
+          <h1 id="teacher-dashboard-title">Le suivi des <em>oraux SVT.</em></h1>
+          <p>Une lecture synthétique des réponses, puis le détail de chaque élève quand vous en avez besoin.</p>
+        </div>
+        <div class="teacher-dashboard-actions">
+          <button class="teacher-import-button" id="teacher-import-button" type="button">Actualiser l’import</button>
+          <button class="teacher-logout-button" id="teacher-logout-button" type="button">Se déconnecter</button>
+          <button class="teacher-back-link" id="teacher-dashboard-back-button" type="button">← Retour élève</button>
+        </div>
+      </header>
+      <div class="teacher-import-message" id="teacher-import-message" role="status" aria-live="polite">Aucune importation effectuée.</div>
+      <div class="teacher-filters panel">
+        <div><p class="section-index">LECTURE RAPIDE</p><h2>Vue d’ensemble</h2></div>
+        <label><span>Classe</span><select id="teacher-class-filter"><option value="">Toutes les classes</option></select></label>
+        <label><span>Cycle &amp; niveau</span><select id="teacher-level-filter"><option value="">Tous les cycles</option></select></label>
+        <label><span>Thème</span><select id="teacher-theme-filter"><option value="">Tous les thèmes</option></select></label>
+      </div>
+      <div class="teacher-metrics" id="teacher-metrics" aria-live="polite"></div>
+      <section class="teacher-results-section" aria-labelledby="teacher-results-title">
+        <div class="teacher-section-head"><div><p class="section-index">03 / RÉSULTATS</p><h2 id="teacher-results-title">Registre des réponses</h2></div><span class="teacher-count" id="teacher-results-count">0 / 0</span></div>
+        <div id="teacher-results"></div>
+      </section>
+      <section class="teacher-stats-section" aria-labelledby="teacher-stats-title">
+        <div class="teacher-section-head"><div><p class="section-index">04 / TENDANCES</p><h2 id="teacher-stats-title">Statistiques de classe</h2></div><span class="teacher-count">GRILLE RAPIDE · 0–4</span></div>
+        <div class="teacher-stats-grid" id="teacher-stats"></div>
+      </section>
+    </section>
+
+    <div id="assessment-view" hidden>
+    <section class="intro" aria-labelledby="page-title">
+      <div>
+        <p class="eyebrow">ÉVALUATION FORMATIVE · SVT</p>
+        <h1 id="page-title">Une réponse orale.<br><em>Un diagnostic précis.</em></h1>
+      </div>
+      <p class="intro-copy">Choisissez une question, écoutez la réponse de l’élève puis laissez la grille détecter les mots-clés, les manques et les confusions.</p>
+    </section>
+
+    <div class="stepper" aria-label="Étapes de correction">
+      <div class="step active" data-step="1"><span>01</span><div><b>Question</b><small>Choisir le contexte</small></div></div>
+      <i aria-hidden="true"></i>
+      <div class="step" data-step="2"><span>02</span><div><b>Réponse</b><small>Écouter ou saisir</small></div></div>
+      <i aria-hidden="true"></i>
+      <div class="step" data-step="3"><span>03</span><div><b>Diagnostic</b><small>Corriger et remédier</small></div></div>
+    </div>
+
+    <div class="dashboard">
+      <aside class="question-panel panel" aria-labelledby="questions-title">
+        <div class="panel-heading">
+          <div><p class="section-index">01 / SÉLECTION</p><h2 id="questions-title">Questions</h2></div>
+          <span class="count-badge" id="question-count">—</span>
+        </div>
+        <div class="filters">
+          <label><span class="sr-only">Filtrer par niveau</span><select id="level-filter"><option value="">Tous les cycles</option></select></label>
+          <label><span class="sr-only">Filtrer par thème</span><select id="theme-filter"><option value="">Tous les thèmes</option></select></label>
+        </div>
+        <div class="question-list" id="question-list" aria-live="polite"></div>
+        <p class="source-note"><span aria-hidden="true">↳</span> 78 questions curationnées dans <code>D:\IA\Wooflashquizz</code>, complétées par 9 grilles pédagogiques.</p>
+      </aside>
+
+      <section class="answer-panel panel" aria-labelledby="selected-title">
+        <div class="question-focus">
+          <div class="focus-meta"><span id="focus-level" class="tag"></span><span id="focus-theme" class="tag muted"></span></div>
+          <p class="section-index">QUESTION SÉLECTIONNÉE</p>
+          <h2 id="selected-title">Choisissez une question</h2>
+          <p id="selected-context" class="context"></p>
+          <details class="reference-answer"><summary>Voir la réponse de référence</summary><p id="selected-answer"></p></details>
+        </div>
+
+        <div class="record-zone" id="record-zone">
+          <div class="record-orbit" aria-hidden="true"><span></span><span></span><span></span></div>
+          <button class="record-button" id="record-button" type="button" aria-label="Démarrer l’enregistrement">
+            <span class="mic-icon" aria-hidden="true"></span>
+          </button>
+          <p class="record-title" id="record-title">Prêt à écouter</p>
+          <p class="record-help" id="record-help">Réponse conseillée : 10 à 30 secondes</p>
+          <div class="timer" id="timer" hidden>00:00</div>
+          <div class="audio-preview" id="audio-preview" hidden><audio id="audio-player" controls></audio></div>
+          <label class="upload-button"><span>Importer un audio</span><input id="audio-file" type="file" accept="audio/*,.webm,.ogg,.mp3,.wav,.m4a" hidden></label>
+        </div>
+
+        <div class="transcript-block">
+          <div class="transcript-heading"><label for="transcript">Transcription</label><span id="transcript-count">0 mot</span></div>
+          <textarea id="transcript" rows="4" placeholder="La transcription apparaîtra ici. Vous pourrez la corriger avant l’analyse…" disabled></textarea>
+          <p class="privacy-inline">L’audio temporaire est supprimé après transcription. L’identité et le résultat peuvent être enregistrés dans le tableau Google configuré par le professeur.</p>
+          <p class="hosted-audio-note" id="hosted-audio-note" hidden>Mode Vercel : utilisez la dictée du navigateur quand elle est disponible, ou saisissez la transcription. Whisper, Laya et les imports audio restent réservés à l’exécution locale.</p>
+        </div>
+
+        <div class="answer-actions">
+          <label class="switch"><input id="laya-toggle" type="checkbox" checked><span></span><b>Complément Laya</b></label>
+          <button class="primary-button" id="analyze-button" type="button" disabled><span>Analyser la réponse</span><i aria-hidden="true">→</i></button>
+        </div>
+        <div class="inline-message" id="message" role="status" aria-live="polite" hidden></div>
+      </section>
+
+      <section class="result-panel panel" aria-labelledby="result-title">
+        <div class="panel-heading">
+          <div><p class="section-index">03 / DIAGNOSTIC</p><h2 id="result-title">Analyse</h2></div>
+          <span class="engine-badge" id="engine-badge">EN ATTENTE</span>
+        </div>
+        <div class="result-empty" id="result-empty">
+          <div class="specimen" aria-hidden="true"><span>?</span><i></i><i></i><i></i></div>
+          <h3>Le diagnostic apparaîtra ici</h3>
+          <p>Les mots trouvés, les éléments manquants et la prochaine activité seront séparés clairement.</p>
+        </div>
+        <div class="result-content" id="result-content" hidden></div>
+      </section>
+    </div>
+    </div>
+  </main>
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+  <script src="/static/app.js" defer></script>
+</body>
+</html>
