@@ -8,8 +8,15 @@
   },
   "rewrites": [
     {
-      "source": "/((?!api(?:/|$)).*)",
-      "destination": "/api"
+      "source": "/(.*)",
+      "destination": "/api",
+      "transforms": [
+        {
+          "type": "request.path",
+          "op": "set",
+          "args": "/$1"
+        }
+      ]
     }
   ]
 }

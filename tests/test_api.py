@@ -350,3 +350,34 @@ def test_package_application_est_importable():
     from app import __version__
 
     assert __version__ == "0.1.0"
+
+
+def test_mode_hote_detecte_sans_variable_vercel(tmp_path: Path):
+    from app.settings import detect_hosted_mode
+
+    assert detect_hosted_mode(env={}, root=tmp_path) is False
+    assert detect_hosted_mode(env={"HOSTED_MODE": "false"}, root=tmp_path) is False
+    assert detect_hosted_mode(env={"VERCEL": "1"}, root=tmp_path) is True
+    assert detect_hosted_mode(env={"VERCEL": ""}, root=tmp_path) is False
+    assert detect_hosted_mode(env={"HOSTED_MODE": "true"}, root=tmp_path) is True
+    assert detect_hosted_mode(env={"__VC_HANDLER_MODULE_NAME": "api.index"}, root=tmp_path) is True
+    assert detect_hosted_mode(env={}, root=tmp_path / "lecture-seule") is True
+
+
+def test_demarrage_ignore_un_dossier_audio_inaccessible(tmp_path: Path, monkeypatch: pytest.MonkeyPatch):
+    blocker = tmp_path / "blocage"
+    blocker.write_text("x", encoding="utf-8")
+    monkeypatch.setattr(main_module, "HOSTED_MODE", False)
+    monkeypatch.setattr(main_module, "UPLOAD_DIR", blocker / "uploads")
+    with TestClient(main_module.app) as local_client:
+        assert local_client.get("/api/health").status_code == 200
+        assert local_client.get("/").status_code == 200
+
+
+def test_reecriture_vercel_conserve_le_chemin_d_origine():
+    config = json.loads((Path(__file__).resolve().parents[1] / "vercel.json").read_text(encoding="utf-8"))
+    rewrites = config["rewrites"]
+    assert len(rewrites) == 1
+    assert rewrites[0]["source"] == "/(.*)"
+    assert rewrites[0]["destination"] == "/api"
+    assert {"type": "request.path", "op": "set", "args": "/$1"} in rewrites[0]["transforms"]

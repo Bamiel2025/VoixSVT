@@ -102,7 +102,12 @@ def _run_laya_job(analysis_id: str, question: dict[str, Any], transcription: str
 @asynccontextmanager
 async def lifespan(_: FastAPI):
     if not HOSTED_MODE:
-        UPLOAD_DIR.mkdir(parents=True, exist_ok=True)
+        try:
+            UPLOAD_DIR.mkdir(parents=True, exist_ok=True)
+        except OSError:
+            # Système de fichiers en lecture seule (hébergement) : le stockage
+            # d'audio local n'est pas utilisable, le démarrage doit continuer.
+            pass
     try:
         yield
     finally:
@@ -118,7 +123,8 @@ app = FastAPI(
     description="Correction locale de réponses orales SVT, cycles 3 et 4",
     lifespan=lifespan,
 )
-app.mount("/static", StaticFiles(directory=STATIC_DIR), name="static")
+if STATIC_DIR.is_dir():
+    app.mount("/static", StaticFiles(directory=STATIC_DIR), name="static")
 
 
 @app.middleware("http")
