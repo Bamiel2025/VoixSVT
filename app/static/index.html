@@ -40,7 +40,7 @@
           <div><b>2</b><span>cycles</span></div>
         </div>
       </div>
-      <form class="student-card" id="student-form" novalidate>
+      <form class="student-card" id="student-form" autocomplete="off" novalidate>
         <div class="card-number">FICHE ÉLÈVE · 01</div>
         <h2>Avant de commencer</h2>
         <p>Ces informations servent à associer chaque oral à ton résultat.</p>
@@ -50,9 +50,9 @@
           <label for="student-class">Classe</label>
         </div>
         <div class="identity-inputs">
-          <input id="student-last-name" name="last_name" type="text" autocomplete="family-name" maxlength="80" placeholder="MARTIN" required aria-describedby="identity-error">
-          <input id="student-first-name" name="first_name" type="text" autocomplete="given-name" maxlength="80" placeholder="Léa" required aria-describedby="identity-error">
-          <input id="student-class" name="class_name" type="text" autocomplete="off" maxlength="40" placeholder="5e2" required aria-describedby="identity-error">
+          <input id="student-last-name" name="last_name" type="text" autocomplete="off" data-1p-ignore data-lpignore="true" data-bwignore="true" maxlength="80" placeholder="MARTIN" required aria-describedby="identity-error">
+          <input id="student-first-name" name="first_name" type="text" autocomplete="off" data-1p-ignore data-lpignore="true" data-bwignore="true" maxlength="80" placeholder="Léa" required aria-describedby="identity-error">
+          <input id="student-class" name="class_name" type="text" autocomplete="off" data-1p-ignore data-lpignore="true" data-bwignore="true" maxlength="40" placeholder="5e2" required aria-describedby="identity-error">
         </div>
         <p class="identity-error" id="identity-error" role="alert" hidden></p>
         <button class="identity-submit" type="submit"><span>Commencer l’oral</span><i aria-hidden="true">→</i></button>
@@ -148,7 +148,18 @@
           <p class="section-index">QUESTION SÉLECTIONNÉE</p>
           <h2 id="selected-title">Choisissez une question</h2>
           <p id="selected-context" class="context"></p>
-          <details class="reference-answer"><summary>Voir la réponse de référence</summary><p id="selected-answer"></p></details>
+          <details class="reference-answer" id="reference-answer" hidden>
+            <summary>Voir la réponse de référence</summary>
+            <form class="reference-lock" id="reference-lock-form">
+              <label for="reference-code">Accès réservé au professeur</label>
+              <div class="reference-lock-row">
+                <input id="reference-code" type="password" autocomplete="off" maxlength="160" placeholder="••••••••" required aria-describedby="reference-lock-error">
+                <button type="submit">Afficher</button>
+              </div>
+              <p class="reference-lock-error" id="reference-lock-error" role="alert" hidden></p>
+            </form>
+            <p id="selected-answer" hidden></p>
+          </details>
         </div>
 
         <div class="record-zone" id="record-zone">

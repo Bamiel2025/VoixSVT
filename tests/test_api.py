@@ -173,6 +173,51 @@ def test_question_inexistante(client: TestClient):
     assert response.status_code == 404
 
 
+def test_catalog_masque_la_reponse_de_reference(client: TestClient):
+    catalog = client.get("/api/questions").json()
+    assert catalog["count"] == 87
+    for item in catalog["questions"]:
+        assert "expected_answer" not in item
+        assert "criteria" not in item
+        assert "misconceptions" not in item
+        assert item["prompt"].strip().endswith("?")
+    detail = client.get("/api/questions/c4-digestion-absorption").json()
+    assert "expected_answer" not in detail
+    assert detail["prompt"]
+    assert detail["context"]
+
+
+def test_reponse_de_reference_reservee_au_professeur(
+    client: TestClient,
+    monkeypatch: pytest.MonkeyPatch,
+):
+    monkeypatch.setenv("TEACHER_ACCESS_CODE", "code-de-test")
+    monkeypatch.setenv("TEACHER_SESSION_SECRET", "r" * 32)
+
+    assert client.post("/api/questions/c4-digestion-absorption/reference", json={}).status_code == 401
+    wrong = client.post(
+        "/api/questions/c4-digestion-absorption/reference",
+        json={"access_code": "incorrect"},
+    )
+    assert wrong.status_code == 401
+    assert "expected_answer" not in wrong.json()
+
+    granted = client.post(
+        "/api/questions/c4-digestion-absorption/reference",
+        json={"access_code": "code-de-test"},
+    )
+    assert granted.status_code == 200
+    assert granted.json()["expected_answer"]
+
+    login = client.post("/api/teacher/login", json={"access_code": "code-de-test"})
+    assert login.status_code == 200
+    session_only = client.post("/api/questions/c4-digestion-absorption/reference", json={})
+    assert session_only.status_code == 200
+    assert session_only.json()["id"] == "c4-digestion-absorption"
+
+    assert client.post("/api/questions/inconnue/reference", json={}).status_code == 404
+
+
 def test_teacher_space_requires_valid_code_and_signed_session(
     client: TestClient,
     monkeypatch: pytest.MonkeyPatch,

@@ -153,6 +153,18 @@ class TeacherLoginRequest(BaseModel):
         return cleaned
 
 
+class ReferenceRequest(BaseModel):
+    access_code: str | None = Field(default=None, max_length=160)
+
+    @field_validator("access_code")
+    @classmethod
+    def normalize_code(cls, value: str | None) -> str | None:
+        if value is None:
+            return None
+        cleaned = value.strip()
+        return cleaned or None
+
+
 class AnalysisRequest(BaseModel):
     question_id: str = Field(min_length=1, max_length=100)
     transcription: str = Field(min_length=1, max_length=1200)
@@ -175,8 +187,11 @@ class AnalysisRequest(BaseModel):
         return cleaned
 
 
+PUBLIC_QUESTION_FIELDS = ("id", "level", "school_level", "theme", "title", "prompt", "context")
+
+
 def _question_public(question: dict[str, Any]) -> dict[str, Any]:
-    return question
+    return {field: question[field] for field in PUBLIC_QUESTION_FIELDS if field in question}
 
 
 def _teacher_authenticated(session: str | None) -> bool:
@@ -272,6 +287,26 @@ def question_detail(question_id: str) -> dict[str, Any]:
     if not question:
         raise HTTPException(status_code=404, detail="Question introuvable")
     return _question_public(question)
+
+
+@app.post("/api/questions/{question_id}/reference")
+def question_reference(
+    question_id: str,
+    payload: ReferenceRequest,
+    voix_teacher: Annotated[str | None, Cookie()] = None,
+) -> dict[str, Any]:
+    authorized = _teacher_authenticated(voix_teacher)
+    if not authorized and payload.access_code:
+        authorized = sheets.authenticate_teacher(payload.access_code)
+    if not authorized:
+        raise HTTPException(
+            status_code=401,
+            detail="La réponse de référence est réservée au professeur.",
+        )
+    question = get_question(question_id)
+    if not question:
+        raise HTTPException(status_code=404, detail="Question introuvable")
+    return {"id": question_id, "expected_answer": question["expected_answer"]}
 
 
 @app.post("/api/transcribe")

@@ -16,6 +16,7 @@ const state = {
   teacherData: null,
   student: null,
   hosted: false,
+  referenceUnlocked: false,
 };
 
 const el = (id) => document.getElementById(id);
@@ -165,7 +166,7 @@ function selectQuestion(questionId) {
   el("focus-theme").textContent = question.theme;
   el("selected-title").textContent = question.prompt;
   el("selected-context").textContent = question.context;
-  el("selected-answer").textContent = question.expected_answer;
+  resetReference();
   el("transcript").value = "";
   el("transcript").disabled = false;
   el("analyze-button").disabled = true;
@@ -180,6 +181,59 @@ function selectQuestion(questionId) {
   renderQuestions();
   setStep(2);
   if (window.innerWidth < 1220) document.querySelector(".answer-panel").scrollIntoView({ behavior: "smooth", block: "start" });
+}
+
+function resetReference() {
+  const details = el("reference-answer");
+  details.hidden = !state.selectedId;
+  details.open = false;
+  el("selected-answer").textContent = "";
+  el("selected-answer").hidden = true;
+  el("reference-code").value = "";
+  el("reference-lock-error").hidden = true;
+  el("reference-lock-form").hidden = state.referenceUnlocked;
+  if (state.referenceUnlocked && state.selectedId) loadReference();
+}
+
+async function loadReference(code) {
+  if (!state.selectedId) return false;
+  try {
+    const payload = await api(`/api/questions/${encodeURIComponent(state.selectedId)}/reference`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ access_code: code || null }),
+    });
+    el("selected-answer").textContent = payload.expected_answer;
+    el("selected-answer").hidden = false;
+    el("reference-lock-form").hidden = true;
+    el("reference-lock-error").hidden = true;
+    return true;
+  } catch (requestError) {
+    state.referenceUnlocked = false;
+    el("reference-lock-form").hidden = false;
+    const box = el("reference-lock-error");
+    box.textContent = requestError.message || "Code enseignant incorrect.";
+    box.hidden = false;
+    return false;
+  }
+}
+
+async function unlockReference(event) {
+  event.preventDefault();
+  const input = el("reference-code");
+  const code = String(input.value || "").trim();
+  const box = el("reference-lock-error");
+  if (!code) {
+    box.textContent = "Saisissez le code enseignant.";
+    box.hidden = false;
+    input.focus();
+    return;
+  }
+  if (await loadReference(code)) {
+    state.referenceUnlocked = true;
+    input.value = "";
+    el("reference-answer").open = true;
+  }
 }
 
 function clearAudio() {
@@ -555,6 +609,7 @@ async function loginTeacher(event) {
     if (!response.ok) throw new Error(payload.detail || "Connexion impossible.");
     input.value = "";
     state.teacher = { authenticated: true };
+    state.referenceUnlocked = true;
     await loadTeacherData();
     showTeacherDashboard();
   } catch (requestError) {
@@ -697,7 +752,7 @@ function resetSession() {
   el("focus-theme").textContent = "";
   el("selected-title").textContent = "Choisissez une question";
   el("selected-context").textContent = "";
-  el("selected-answer").textContent = "";
+  resetReference();
   showMessage("");
   updateTranscriptState();
   resetResult();
@@ -710,6 +765,9 @@ async function init() {
     const [catalog, health] = await Promise.all([api("/api/questions"), api("/api/health")]);
     state.questions = catalog.questions;
     state.hosted = Boolean(health.hosted);
+    state.referenceUnlocked = await api("/api/teacher/session")
+      .then((session) => Boolean(session.authenticated))
+      .catch(() => false);
     el("welcome-question-count").textContent = state.questions.length;
     populateFilters(catalog);
     renderQuestions();
@@ -748,6 +806,10 @@ el("teacher-logout-button").addEventListener("click", logoutTeacher);
 el("teacher-class-filter").addEventListener("change", () => state.teacherData && renderTeacherDashboard());
 el("teacher-level-filter").addEventListener("change", () => state.teacherData && renderTeacherDashboard());
 el("teacher-theme-filter").addEventListener("change", () => state.teacherData && renderTeacherDashboard());
+el("reference-lock-form").addEventListener("submit", unlockReference);
+el("reference-answer").addEventListener("toggle", () => {
+  if (el("reference-answer").open && !el("reference-lock-form").hidden) el("reference-code").focus();
+});
 el("student-form").addEventListener("submit", (event) => {
   event.preventDefault();
   if (!validateIdentity()) return;
