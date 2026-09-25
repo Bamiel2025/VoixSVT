@@ -406,3 +406,39 @@ def test_point_entree_vercel_signale_un_import_en_echec():
 
     assert messages[0]["status"] == 500
     assert messages[1]["body"] == "rapport d'échec".encode()
+
+
+def test_regle_d_environnement_vide_ou_invalide_utilise_le_defaut(monkeypatch: pytest.MonkeyPatch):
+    from app.settings import env_float, env_int, env_value
+
+    monkeypatch.setenv("VOIX_TEST_TIMEOUT", "")
+    assert env_value("VOIX_TEST_TIMEOUT", "10") == "10"
+    assert env_float("VOIX_TEST_TIMEOUT", 10.0) == 10.0
+    assert env_int("VOIX_TEST_TIMEOUT", 7) == 7
+
+    monkeypatch.setenv("VOIX_TEST_TIMEOUT", "   ")
+    assert env_float("VOIX_TEST_TIMEOUT", 10.0) == 10.0
+
+    monkeypatch.setenv("VOIX_TEST_TIMEOUT", "abc")
+    assert env_float("VOIX_TEST_TIMEOUT", 10.0) == 10.0
+    assert env_int("VOIX_TEST_TIMEOUT", 7) == 7
+
+    monkeypatch.setenv("VOIX_TEST_TIMEOUT", " 7.5 ")
+    assert env_float("VOIX_TEST_TIMEOUT", 10.0) == 7.5
+
+
+def test_import_des_reglages_avec_variables_vides(monkeypatch: pytest.MonkeyPatch):
+    import importlib
+
+    import app.settings as settings_module
+
+    monkeypatch.setenv("GOOGLE_SHEETS_TIMEOUT", "")
+    monkeypatch.setenv("MAX_AUDIO_SECONDS", "")
+    monkeypatch.setenv("MAX_UPLOAD_BYTES", "")
+    monkeypatch.setenv("LAYA_MODEL", "")
+    reloaded = importlib.reload(settings_module)
+
+    assert reloaded.GOOGLE_SHEETS_TIMEOUT == 10.0
+    assert reloaded.MAX_AUDIO_SECONDS == 45.0
+    assert reloaded.MAX_UPLOAD_BYTES == 20 * 1024 * 1024
+    assert reloaded.LAYA_MODEL == "aac6fef/laya-multilingual-mlx"

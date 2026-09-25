@@ -39,24 +39,45 @@ def detect_hosted_mode(env: Mapping[str, str] | None = None, root: Path | None =
 
 HOSTED_MODE = detect_hosted_mode()
 
-LAYA_HOME = Path(os.environ.get("LAYA_HOME", r"D:\IA\laramxl"))
-LAYA_PYTHON = Path(
-    os.environ.get("LAYA_PYTHON", str(LAYA_HOME / "laya-mlx" / ".venv" / "Scripts" / "python.exe"))
-)
-LAYA_WORKER = Path(
-    os.environ.get("LAYA_WORKER", str(LAYA_HOME / "mcp-laya" / "worker.py"))
-)
-LAYA_MODEL = os.environ.get("LAYA_MODEL", "aac6fef/laya-multilingual-mlx")
 
-WHISPER_MODEL = os.environ.get("WHISPER_MODEL", "small")
-WHISPER_DEVICE = os.environ.get("WHISPER_DEVICE", "cpu")
-WHISPER_COMPUTE_TYPE = os.environ.get("WHISPER_COMPUTE_TYPE", "int8")
-MAX_AUDIO_SECONDS = float(os.environ.get("MAX_AUDIO_SECONDS", "45"))
-MAX_UPLOAD_BYTES = int(os.environ.get("MAX_UPLOAD_BYTES", str(20 * 1024 * 1024)))
+def env_value(name: str, default: str) -> str:
+    """Variable d'environnement : une valeur vide vaut « non définie »."""
+    value = os.environ.get(name)
+    return default if value is None or not value.strip() else value.strip()
+
+
+def env_float(name: str, default: float) -> float:
+    """Nombre d'environnement : toute valeur illisible vaut le défaut."""
+    try:
+        return float(env_value(name, str(default)))
+    except ValueError:
+        return default
+
+
+def env_int(name: str, default: int) -> int:
+    """Entier d'environnement : toute valeur illisible vaut le défaut."""
+    try:
+        return int(env_value(name, str(default)))
+    except ValueError:
+        return default
+
+
+LAYA_HOME = Path(env_value("LAYA_HOME", r"D:\IA\laramxl"))
+LAYA_PYTHON = Path(
+    env_value("LAYA_PYTHON", str(LAYA_HOME / "laya-mlx" / ".venv" / "Scripts" / "python.exe"))
+)
+LAYA_WORKER = Path(env_value("LAYA_WORKER", str(LAYA_HOME / "mcp-laya" / "worker.py")))
+LAYA_MODEL = env_value("LAYA_MODEL", "aac6fef/laya-multilingual-mlx")
+
+WHISPER_MODEL = env_value("WHISPER_MODEL", "small")
+WHISPER_DEVICE = env_value("WHISPER_DEVICE", "cpu")
+WHISPER_COMPUTE_TYPE = env_value("WHISPER_COMPUTE_TYPE", "int8")
+MAX_AUDIO_SECONDS = env_float("MAX_AUDIO_SECONDS", 45.0)
+MAX_UPLOAD_BYTES = env_int("MAX_UPLOAD_BYTES", 20 * 1024 * 1024)
 
 ALLOWED_AUDIO_SUFFIXES = {".webm", ".ogg", ".oga", ".mp3", ".wav", ".m4a", ".mp4", ".aac", ".flac"}
 
 # URL /exec du déploiement Google Apps Script. La variable reste vide tant que
 # l'enseignant n'a pas déployé le fichier apps-script/Code.gs.
-GOOGLE_SHEETS_APP_URL = os.environ.get("GOOGLE_SHEETS_APP_URL", "").strip()
-GOOGLE_SHEETS_TIMEOUT = float(os.environ.get("GOOGLE_SHEETS_TIMEOUT", "10"))
+GOOGLE_SHEETS_APP_URL = env_value("GOOGLE_SHEETS_APP_URL", "")
+GOOGLE_SHEETS_TIMEOUT = env_float("GOOGLE_SHEETS_TIMEOUT", 10.0)
