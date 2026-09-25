@@ -178,6 +178,10 @@
 
         <div class="transcript-block">
           <div class="transcript-heading"><label for="transcript">Transcription</label><span id="transcript-count">0 mot</span></div>
+          <div class="transcript-tabs" role="group" aria-label="Mode de réponse">
+            <button class="transcript-tab active" id="tab-dictation" type="button" aria-pressed="true" aria-controls="transcript">Répondre au micro</button>
+            <button class="transcript-tab" id="tab-typing" type="button" aria-pressed="false" aria-controls="transcript">Taper la réponse</button>
+          </div>
           <textarea id="transcript" rows="4" placeholder="La transcription apparaîtra ici. Vous pourrez la corriger avant l’analyse…" disabled></textarea>
           <p class="privacy-inline">L’audio temporaire est supprimé après transcription. L’identité et le résultat peuvent être enregistrés dans le tableau Google configuré par le professeur.</p>
           <p class="hosted-audio-note" id="hosted-audio-note" hidden>Mode Vercel : utilisez la dictée du navigateur quand elle est disponible, ou saisissez la transcription. Whisper, Laya et les imports audio restent réservés à l’exécution locale.</p>

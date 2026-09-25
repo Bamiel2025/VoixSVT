@@ -590,6 +590,22 @@ def test_menu_eleve_regroupe_les_questions_par_theme_du_bo():
     assert ".question-group-title" in styles
 
 
+def test_onglet_saisie_manuelle_sous_la_transcription():
+    static = Path(__file__).resolve().parents[1] / "app" / "static"
+    page = (static / "index.html").read_text(encoding="utf-8-sig")
+    script = (static / "app.js").read_text(encoding="utf-8-sig")
+    styles = (static / "styles.css").read_text(encoding="utf-8-sig")
+
+    assert 'id="tab-dictation"' in page
+    assert 'id="tab-typing"' in page
+    assert 'aria-controls="transcript"' in page
+    assert 'aria-pressed="false"' in page
+    assert "function setTranscriptMode" in script
+    assert "setTranscriptMode(\"typing\")" in script
+    assert "Saisis ta réponse ici" in script
+    assert ".transcript-tab.active" in styles
+
+
 def test_bouton_suppression_des_reponses_dans_lespace_enseignant():
     static = Path(__file__).resolve().parents[1] / "app" / "static"
     page = (static / "index.html").read_text(encoding="utf-8-sig")

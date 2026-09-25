@@ -255,6 +255,11 @@ select { width: 100%; border: 1px solid var(--line); border-radius: 8px; padding
 .transcript-heading { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
 .transcript-heading label { font-size: 12px; font-weight: 800; }
 .transcript-heading span { color: var(--ink-2); font: 10px var(--mono); }
+.transcript-tabs { display: flex; flex-wrap: wrap; gap: 7px; margin-bottom: 9px; }
+.transcript-tab { border: 1px solid var(--line); border-radius: 999px; padding: 7px 13px; color: var(--ink-2); background: transparent; font: 700 10px var(--mono); letter-spacing: .04em; cursor: pointer; transition: .2s; }
+.transcript-tab:hover { background: var(--paper-deep); }
+.transcript-tab.active { border-color: var(--forest); color: var(--forest-dark); background: var(--mint); }
+.transcript-tab:focus-visible { outline: 2px solid var(--forest); outline-offset: 2px; }
 textarea { resize: vertical; width: 100%; min-height: 98px; border: 1px solid var(--line); border-radius: 11px; padding: 13px 14px; color: var(--ink); background: #f7f3e9; line-height: 1.5; }
 textarea:disabled { opacity: .58; }
 .privacy-inline { margin: 8px 0 0; color: var(--ink-2); font-size: 9px; line-height: 1.4; }

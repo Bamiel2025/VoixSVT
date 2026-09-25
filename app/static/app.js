@@ -1,6 +1,7 @@
 const state = {
   questions: [],
   boThemes: [],
+  transcriptMode: "dictation",
   selectedId: null,
   mediaRecorder: null,
   chunks: [],
@@ -296,6 +297,19 @@ function updateTranscriptState() {
   el("analyze-button").disabled = !state.selectedId || !text;
 }
 
+function setTranscriptMode(mode) {
+  const typing = mode === "typing";
+  state.transcriptMode = typing ? "typing" : "dictation";
+  el("tab-dictation").classList.toggle("active", !typing);
+  el("tab-typing").classList.toggle("active", typing);
+  el("tab-dictation").setAttribute("aria-pressed", String(!typing));
+  el("tab-typing").setAttribute("aria-pressed", String(typing));
+  el("transcript").placeholder = typing
+    ? "Saisis ta réponse ici : une ou deux phrases, comme à l’oral."
+    : "La transcription apparaîtra ici. Vous pourrez la corriger avant l’analyse…";
+  if (typing && state.speechActive) state.speechRecognition?.stop();
+}
+
 const MIME_CANDIDATES = [
   "audio/webm;codecs=opus",
   "audio/webm",
@@ -362,6 +376,7 @@ async function toggleRecording() {
     state.mediaRecorder.stop();
     return;
   }
+  setTranscriptMode("dictation");
   if (state.hosted) {
     startBrowserDictation();
     return;
@@ -866,6 +881,11 @@ el("level-filter").addEventListener("change", renderQuestions);
 el("theme-filter").addEventListener("change", renderQuestions);
 el("record-button").addEventListener("click", toggleRecording);
 el("audio-file").addEventListener("change", handleUpload);
+el("tab-dictation").addEventListener("click", () => setTranscriptMode("dictation"));
+el("tab-typing").addEventListener("click", () => {
+  setTranscriptMode("typing");
+  el("transcript").focus();
+});
 el("transcript").addEventListener("input", updateTranscriptState);
 el("analyze-button").addEventListener("click", analyzeAnswer);
 el("reset-button").addEventListener("click", resetSession);
