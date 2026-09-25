@@ -10,6 +10,12 @@ from typing import Any
 CATALOG_DIR = Path(__file__).resolve().parent / "data"
 CATALOG_GLOB = "questions_*.json"
 
+BO_THEMES: tuple[str, ...] = (
+    "La planète Terre, l'environnement et l'action humaine",
+    "Le vivant et son évolution",
+    "Le corps humain et la santé",
+)
+
 
 @lru_cache(maxsize=1)
 def load_catalog() -> tuple[dict[str, Any], ...]:
@@ -36,6 +42,7 @@ def load_catalog() -> tuple[dict[str, Any], ...]:
         "level",
         "school_level",
         "theme",
+        "bo_theme",
         "title",
         "prompt",
         "expected_answer",
@@ -49,6 +56,10 @@ def load_catalog() -> tuple[dict[str, Any], ...]:
         missing = sorted(required - question.keys())
         if missing:
             raise RuntimeError(f"Question {question.get('id', '?')} misses: {', '.join(missing)}")
+        if question["bo_theme"] not in BO_THEMES:
+            raise RuntimeError(
+                f"Question {question.get('id', '?')} has an unknown BO theme: {question['bo_theme']}"
+            )
         qid = str(question["id"])
         if qid in seen:
             raise RuntimeError(f"Duplicate question id: {qid}")
@@ -75,8 +86,10 @@ def get_question(question_id: str) -> dict[str, Any] | None:
 
 def catalog_summary() -> dict[str, list[str]]:
     questions = load_catalog()
+    present = {str(question["bo_theme"]) for question in questions}
     return {
         "levels": sorted({str(question["level"]) for question in questions}),
         "themes": sorted({str(question["theme"]) for question in questions}),
+        "bo_themes": [theme for theme in BO_THEMES if theme in present],
         "school_levels": sorted({str(question["school_level"]) for question in questions}),
     }

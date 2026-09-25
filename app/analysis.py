@@ -31,6 +31,12 @@ class AnalysisStore:
             item = self._items.get(analysis_id)
             return dict(item) if item else None
 
+    def clear(self) -> int:
+        with self._lock:
+            removed = len(self._items)
+            self._items.clear()
+        return removed
+
     def update_laya(self, analysis_id: str, laya: dict[str, Any]) -> None:
         with self._lock:
             item = self._items.get(analysis_id)

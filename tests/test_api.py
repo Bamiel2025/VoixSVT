@@ -560,3 +560,66 @@ def test_mode_mobile_disponible_dans_le_frontend():
     assert "body.mobile-mode .dashboard { grid-template-columns: 1fr; }" in styles
     assert ".mobile-mode-button { display: none; }" in styles
     assert "body.mobile-mode .record-zone" in styles
+
+
+def test_questions_classees_selon_les_trois_themes_du_bo(client: TestClient):
+    from app.catalog import BO_THEMES
+
+    catalog = client.get("/api/questions").json()
+
+    assert catalog["bo_themes"] == list(BO_THEMES)
+    assert len(catalog["bo_themes"]) == 3
+    for theme in BO_THEMES:
+        assert any(question["bo_theme"] == theme for question in catalog["questions"])
+    for question in catalog["questions"]:
+        assert question["bo_theme"] in BO_THEMES
+        assert question["theme"]
+
+
+def test_menu_eleve_regroupe_les_questions_par_theme_du_bo():
+    static = Path(__file__).resolve().parents[1] / "app" / "static"
+    page = (static / "index.html").read_text(encoding="utf-8-sig")
+    script = (static / "app.js").read_text(encoding="utf-8-sig")
+    styles = (static / "styles.css").read_text(encoding="utf-8-sig")
+
+    assert 'id="theme-filter"' in page
+    assert "payload.bo_themes?.length" in script
+    assert 'class="question-group"' in script
+    assert 'h3 class="question-group-title"' in script
+    assert "function questionTheme" in script
+    assert ".question-group-title" in styles
+
+
+def test_bouton_suppression_des_reponses_dans_lespace_enseignant():
+    static = Path(__file__).resolve().parents[1] / "app" / "static"
+    page = (static / "index.html").read_text(encoding="utf-8-sig")
+    script = (static / "app.js").read_text(encoding="utf-8-sig")
+    styles = (static / "styles.css").read_text(encoding="utf-8-sig")
+
+    assert 'id="teacher-clear-button"' in page
+    assert "Supprimer toutes les réponses" in page
+    assert "function clearTeacherAnalyses" in script
+    assert "/api/teacher/analyses/clear" in script
+    assert "window.confirm(" in script
+    assert ".teacher-clear-button" in styles
+
+
+def test_suppression_des_analyses_locales_reservee_au_professeur(
+    client: TestClient,
+    monkeypatch: pytest.MonkeyPatch,
+):
+    from app.analysis import utc_now
+
+    monkeypatch.setenv("TEACHER_ACCESS_CODE", "code-de-test")
+    monkeypatch.setenv("TEACHER_SESSION_SECRET", "v" * 32)
+
+    assert client.post("/api/teacher/analyses/clear").status_code == 401
+
+    client.cookies.set("voix_teacher", main_module.sheets.make_teacher_token())
+    main_module.store.create({"id": "analyse-a-supprimer", "created_at": utc_now()})
+
+    response = client.post("/api/teacher/analyses/clear")
+    assert response.status_code == 200
+    assert response.json()["ok"] is True
+    assert response.json()["deleted"] >= 1
+    assert main_module.store.get("analyse-a-supprimer") is None

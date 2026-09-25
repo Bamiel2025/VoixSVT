@@ -187,7 +187,16 @@ class AnalysisRequest(BaseModel):
         return cleaned
 
 
-PUBLIC_QUESTION_FIELDS = ("id", "level", "school_level", "theme", "title", "prompt", "context")
+PUBLIC_QUESTION_FIELDS = (
+    "id",
+    "level",
+    "school_level",
+    "theme",
+    "bo_theme",
+    "title",
+    "prompt",
+    "context",
+)
 
 
 def _question_public(question: dict[str, Any]) -> dict[str, Any]:
@@ -252,6 +261,13 @@ def teacher_import(voix_teacher: Annotated[str | None, Cookie()] = None) -> dict
         status = 503 if result.get("status") == "not_configured" else 502
         raise HTTPException(status_code=status, detail=str(result.get("error", "Import impossible.")))
     return result
+
+
+@app.post("/api/teacher/analyses/clear")
+def teacher_clear_analyses(voix_teacher: Annotated[str | None, Cookie()] = None) -> dict[str, Any]:
+    _require_teacher(voix_teacher)
+    deleted = store.clear()
+    return {"ok": True, "deleted": deleted}
 
 
 @app.get("/")

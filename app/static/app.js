@@ -1,5 +1,6 @@
 const state = {
   questions: [],
+  boThemes: [],
   selectedId: null,
   mediaRecorder: null,
   chunks: [],
@@ -146,7 +147,9 @@ function resetIdentityForm() {
 }
 
 function populateFilters(payload) {
-  for (const [level, theme] of [["level-filter", payload.levels], ["theme-filter", payload.themes]]) {
+  const themeValues = payload.bo_themes?.length ? payload.bo_themes : payload.themes;
+  state.boThemes = themeValues;
+  for (const [level, theme] of [["level-filter", payload.levels], ["theme-filter", themeValues]]) {
     const select = el(level);
     for (const value of theme) {
       const option = document.createElement("option");
@@ -161,18 +164,42 @@ function filteredQuestions() {
   const level = el("level-filter").value;
   const theme = el("theme-filter").value;
   return state.questions.filter((question) =>
-    (!level || question.level === level) && (!theme || question.theme === theme));
+    (!level || question.level === level) && (!theme || questionTheme(question) === theme));
+}
+
+function questionTheme(question) {
+  return question.bo_theme || question.theme;
+}
+
+function questionCard(question) {
+  return `
+    <button class="question-card ${question.id === state.selectedId ? "selected" : ""}" data-question-id="${escapeHtml(question.id)}" type="button">
+      <span class="meta"><span>${escapeHtml(question.level)}</span><span>${escapeHtml(question.theme)}</span></span>
+      <strong>${escapeHtml(question.title)}</strong>
+      <small>${escapeHtml(question.prompt)}</small>
+    </button>`;
 }
 
 function renderQuestions() {
   const questions = filteredQuestions();
   el("question-count").textContent = `${questions.length} / ${state.questions.length}`;
-  el("question-list").innerHTML = questions.length ? questions.map((question) => `
-    <button class="question-card ${question.id === state.selectedId ? "selected" : ""}" data-question-id="${escapeHtml(question.id)}" type="button">
-      <span class="meta"><span>${escapeHtml(question.level)}</span><span>${escapeHtml(question.theme)}</span></span>
-      <strong>${escapeHtml(question.title)}</strong>
-      <small>${escapeHtml(question.prompt)}</small>
-    </button>`).join("") : `<p class="source-note">Aucune question pour ces filtres.</p>`;
+  if (!questions.length) {
+    el("question-list").innerHTML = `<p class="source-note">Aucune question pour ces filtres.</p>`;
+    return;
+  }
+  const groups = new Map(state.boThemes.map((theme) => [theme, []]));
+  for (const question of questions) {
+    const theme = questionTheme(question);
+    if (!groups.has(theme)) groups.set(theme, []);
+    groups.get(theme).push(question);
+  }
+  el("question-list").innerHTML = [...groups.entries()]
+    .filter(([, list]) => list.length)
+    .map(([theme, list]) => `
+    <section class="question-group" aria-label="${escapeHtml(theme)}">
+      <h3 class="question-group-title">${escapeHtml(theme)}</h3>
+      ${list.map(questionCard).join("")}
+    </section>`).join("");
   el("question-list").querySelectorAll("[data-question-id]").forEach((button) => {
     button.addEventListener("click", () => selectQuestion(button.dataset.questionId));
   });
@@ -673,6 +700,32 @@ async function loadTeacherData() {
   }
 }
 
+async function clearTeacherAnalyses() {
+  const confirmed = window.confirm(
+    "Supprimer toutes les analyses locales (transcriptions et diagnostics) ? Cette action est immédiate et définitive.",
+  );
+  if (!confirmed) return;
+  const button = el("teacher-clear-button");
+  const message = el("teacher-import-message");
+  button.disabled = true;
+  message.textContent = "Suppression des analyses locales…";
+  message.className = "teacher-import-message loading";
+  try {
+    const result = await api("/api/teacher/analyses/clear", { method: "POST" });
+    const deleted = Number(result.deleted) || 0;
+    message.textContent = deleted
+      ? `${deleted} analyse${deleted > 1 ? "s" : ""} locale${deleted > 1 ? "s" : ""} supprimée${deleted > 1 ? "s" : ""}.`
+      : "Aucune analyse locale à supprimer.";
+    message.className = "teacher-import-message success";
+    if (deleted) toast("Analyses locales supprimées.");
+  } catch (requestError) {
+    message.textContent = requestError.message;
+    message.className = "teacher-import-message error";
+  } finally {
+    button.disabled = false;
+  }
+}
+
 function formatDateTime(value) {
   const date = new Date(value);
   if (Number.isNaN(date.getTime())) return "date inconnue";
@@ -823,6 +876,7 @@ el("teacher-back-button").addEventListener("click", showWelcome);
 el("teacher-dashboard-back-button").addEventListener("click", showWelcome);
 el("teacher-login-form").addEventListener("submit", loginTeacher);
 el("teacher-import-button").addEventListener("click", loadTeacherData);
+el("teacher-clear-button").addEventListener("click", clearTeacherAnalyses);
 el("teacher-logout-button").addEventListener("click", logoutTeacher);
 el("teacher-class-filter").addEventListener("change", () => state.teacherData && renderTeacherDashboard());
 el("teacher-level-filter").addEventListener("change", () => state.teacherData && renderTeacherDashboard());
