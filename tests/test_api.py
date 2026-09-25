@@ -508,3 +508,55 @@ def test_cle_web_app_lue_dans_lenvironnement(monkeypatch: pytest.MonkeyPatch):
     # Une clé déjà présente dans l'URL prime sur l'environnement.
     with_key = GoogleSheetsClient(f"{base}?key=url")
     assert with_key._request_url() == f"{base}?key=url"
+
+
+def test_statut_sheets_signale_la_cle_d_acces(monkeypatch: pytest.MonkeyPatch):
+    from app.sheets_client import GoogleSheetsClient
+
+    base = "https://script.google.com/macros/s/ABC/exec"
+    monkeypatch.delenv("WEB_APP_SECRET", raising=False)
+
+    assert GoogleSheetsClient(base).status()["access_key_configured"] is False
+    assert GoogleSheetsClient(f"{base}?key=url").status()["access_key_configured"] is True
+
+    monkeypatch.setenv("WEB_APP_SECRET", "cle-secrete")
+    assert GoogleSheetsClient(base).status()["access_key_configured"] is True
+
+
+def test_erreur_web_app_secret_propose_la_configuration(monkeypatch: pytest.MonkeyPatch):
+    from unittest.mock import MagicMock
+
+    from app import sheets_client
+
+    body = json.dumps(
+        {"ok": False, "error": "WEB_APP_SECRET absent : configurez-le avant de publier la Web App."}
+    ).encode("utf-8")
+    response = MagicMock()
+    response.__enter__.return_value = response
+    response.read.return_value = body
+    monkeypatch.setattr(sheets_client, "urlopen", MagicMock(return_value=response))
+
+    result = sheets_client.GoogleSheetsClient(
+        "https://script.google.com/macros/s/ABC/exec", 2
+    ).send_analysis({"id": "analyse-1"})
+
+    assert result["status"] == "error"
+    assert "WEB_APP_SECRET absent" in result["message"]
+    assert "propriétés du script Apps Script" in result["message"]
+
+
+def test_mode_mobile_disponible_dans_le_frontend():
+    static = Path(__file__).resolve().parents[1] / "app" / "static"
+    page = (static / "index.html").read_text(encoding="utf-8-sig")
+    script = (static / "app.js").read_text(encoding="utf-8-sig")
+    styles = (static / "styles.css").read_text(encoding="utf-8-sig")
+
+    assert 'id="mobile-mode-button"' in page
+    assert 'aria-pressed="false"' in page
+    assert "function toggleMobileMode" in script
+    assert 'const MOBILE_MODE_KEY = "voix-mobile-mode"' in script
+    assert "localStorage.setItem(MOBILE_MODE_KEY" in script
+    assert "micro de ton clavier" in script
+    assert "body.mobile-mode .dashboard { grid-template-columns: 1fr; }" in styles
+    assert ".mobile-mode-button { display: none; }" in styles
+    assert "body.mobile-mode .record-zone" in styles

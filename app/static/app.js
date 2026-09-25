@@ -48,6 +48,27 @@ function toast(text) {
   node.timeout = setTimeout(() => { node.hidden = true; }, 4200);
 }
 
+const MOBILE_MODE_KEY = "voix-mobile-mode";
+
+function applyMobileMode(enabled) {
+  document.body.classList.toggle("mobile-mode", enabled);
+  const button = el("mobile-mode-button");
+  button.setAttribute("aria-pressed", String(enabled));
+  button.textContent = enabled ? "Mode ordinateur" : "Mode mobile";
+}
+
+function initMobileMode() {
+  let saved = null;
+  try { saved = localStorage.getItem(MOBILE_MODE_KEY); } catch { saved = null; }
+  applyMobileMode(saved === "1");
+}
+
+function toggleMobileMode() {
+  const enabled = !document.body.classList.contains("mobile-mode");
+  applyMobileMode(enabled);
+  try { localStorage.setItem(MOBILE_MODE_KEY, enabled ? "1" : "0"); } catch { /* stockage local indisponible */ }
+}
+
 function setStep(step) {
   document.querySelectorAll(".step").forEach((node) => {
     node.classList.toggle("active", Number(node.dataset.step) <= step);
@@ -258,7 +279,7 @@ const MIME_CANDIDATES = [
 function startBrowserDictation() {
   const Recognition = window.SpeechRecognition || window.webkitSpeechRecognition;
   if (!Recognition) {
-    toast("Ce navigateur ne propose pas la dictée. Saisis directement la réponse dans le champ.");
+    toast("Dictée non prise en charge par ce navigateur : utilise le micro de ton clavier ou saisis la réponse.");
     return;
   }
   if (!state.selectedId) {
@@ -807,6 +828,7 @@ el("teacher-class-filter").addEventListener("change", () => state.teacherData &&
 el("teacher-level-filter").addEventListener("change", () => state.teacherData && renderTeacherDashboard());
 el("teacher-theme-filter").addEventListener("change", () => state.teacherData && renderTeacherDashboard());
 el("reference-lock-form").addEventListener("submit", unlockReference);
+el("mobile-mode-button").addEventListener("click", toggleMobileMode);
 el("reference-answer").addEventListener("toggle", () => {
   if (el("reference-answer").open && !el("reference-lock-form").hidden) el("reference-code").focus();
 });
@@ -829,6 +851,7 @@ window.addEventListener("beforeunload", () => {
   state.speechActive = false;
   clearAudio();
 });
+initMobileMode();
 init();
 
 

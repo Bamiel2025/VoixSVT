@@ -56,7 +56,9 @@ button:disabled { cursor: not-allowed; }
 .privacy-note { margin-left: auto; font: 600 11px/1 var(--mono); letter-spacing: .05em; color: var(--ink-2); display: flex; align-items: center; gap: 8px; }
 .pulse-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--forest); box-shadow: 0 0 0 5px rgba(23,107,85,.12); }
 .ghost-button { border: 1px solid var(--line); color: var(--ink); background: transparent; border-radius: 999px; padding: 10px 16px; font-weight: 700; font-size: 12px; transition: .2s; }
-.ghost-button:hover { background: var(--card); border-color: rgba(23,107,85,.35); }
+    .ghost-button:hover { background: var(--card); border-color: rgba(23,107,85,.35); }
+    .mobile-mode-button[aria-pressed="true"] { color: white; background: var(--forest); border-color: var(--forest); }
+    .mobile-mode-button:focus-visible { outline: 2px solid var(--forest); outline-offset: 2px; }
 .student-chip { margin-left: auto; display: flex; align-items: center; gap: 8px; color: var(--ink-2); font: 700 10px var(--mono); }
 .student-chip button { border: 0; border-bottom: 1px solid currentColor; padding: 2px 0; color: var(--forest); background: none; font: 700 9px var(--mono); }
 .privacy-note + .student-chip { margin-left: 0; }
@@ -340,6 +342,7 @@ textarea:disabled { opacity: .58; }
 @media (max-width: 800px) {
   .topbar { height: 68px; padding: 0 16px; }
   .brand small, .privacy-note, .student-chip { display: none; }
+  .mobile-mode-button { display: none; }
   .welcome { min-height: auto; grid-template-columns: 1fr; gap: 46px; padding: 30px 0 70px; }
   .welcome-copy h1 { font-size: clamp(48px,13vw,76px); }
   .student-card { width: min(100%,560px); }
@@ -400,3 +403,62 @@ textarea:disabled { opacity: .58; }
   .teacher-section-head h2 { font-size: 27px; }
 }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; } }
+
+  body.mobile-mode .topbar { height: 68px; padding: 0 16px; }
+  body.mobile-mode .brand small, body.mobile-mode .privacy-note, body.mobile-mode .student-chip { display: none; }
+  body.mobile-mode .welcome { min-height: auto; grid-template-columns: 1fr; gap: 46px; padding: 30px 0 70px; }
+  body.mobile-mode .welcome-copy h1 { font-size: clamp(48px,13vw,76px); }
+  body.mobile-mode .student-card { width: min(100%,560px); }
+  body.mobile-mode .teacher-top-button { margin-left: auto; }
+  body.mobile-mode .teacher-login-view { min-height: auto; grid-template-columns: 1fr; gap: 38px; padding: 34px 0 70px; }
+  body.mobile-mode .teacher-login-intro h1 { font-size: clamp(48px,12vw,76px); }
+  body.mobile-mode .teacher-login-card { width: min(100%,560px); }
+  body.mobile-mode .teacher-dashboard-head { display: block; }
+  body.mobile-mode .teacher-dashboard-actions { justify-content: start; margin-top: 23px; }
+  body.mobile-mode .teacher-filters { grid-template-columns: 1fr 1fr; }
+  body.mobile-mode .teacher-filters > div { grid-column: 1 / -1; }
+  body.mobile-mode .teacher-metrics { grid-template-columns: repeat(3,1fr); }
+  body.mobile-mode .teacher-stats-grid { grid-template-columns: 1fr; }
+  body.mobile-mode .ghost-button { margin-left: auto; }
+  body.mobile-mode .workspace { width: min(100% - 24px, 680px); padding-top: 20px; }
+  body.mobile-mode .intro { display: block; }
+  body.mobile-mode .intro h1 { font-size: 44px; }
+  body.mobile-mode .intro-copy { margin-top: 24px; font-size: 16px; }
+  body.mobile-mode .stepper { align-items: flex-start; overflow: visible; padding-bottom: 4px; }
+  body.mobile-mode .step { min-width: 84px; flex-direction: column; align-items: center; gap: 6px; text-align: center; }
+  body.mobile-mode .step div { align-items: center; }
+  body.mobile-mode .step small { display: none; }
+  body.mobile-mode .stepper > i { min-width: 28px; margin-top: 16px; }
+  body.mobile-mode .dashboard { grid-template-columns: 1fr; }
+  body.mobile-mode .question-panel, body.mobile-mode .result-panel { position: static; }
+  body.mobile-mode .question-list { max-height: 310px; }
+  body.mobile-mode .record-zone { min-height: 285px; }
+  body.mobile-mode .result-panel { grid-column: auto; }
+  body.mobile-mode .result-content { display: block; }
+  body.mobile-mode .question-focus, body.mobile-mode .transcript-block { padding-left: 20px; padding-right: 20px; }
+  body.mobile-mode .answer-actions { padding-left: 20px; padding-right: 20px; }
+  body.mobile-mode .inline-message { margin-left: 20px; margin-right: 20px; }
+  body.mobile-mode .ghost-button { font-size: 10px; padding: 9px 11px; }
+  body.mobile-mode .brand strong { font-size: 14px; }
+  body.mobile-mode .brand-mark { width: 36px; height: 36px; }
+  body.mobile-mode .welcome-stats { gap: 22px; }
+  body.mobile-mode .welcome-stats b { font-size: 25px; }
+  body.mobile-mode .identity-grid, body.mobile-mode .identity-inputs { grid-template-columns: 1fr; }
+  body.mobile-mode .identity-grid label:last-of-type, body.mobile-mode .identity-inputs input:last-child { grid-column: auto; }
+  body.mobile-mode .intro h1 { font-size: 38px; }
+  body.mobile-mode .answer-actions { align-items: stretch; flex-direction: column; }
+  body.mobile-mode .primary-button { width: 100%; }
+  body.mobile-mode .switch { justify-content: center; }
+  body.mobile-mode .question-focus h2 { font-size: 29px; }
+  body.mobile-mode .teacher-top-button { padding: 8px 9px; font-size: 8px; }
+  body.mobile-mode .teacher-top-button > span:last-child { max-width: 70px; line-height: 1.2; }
+  body.mobile-mode .welcome-actions { align-items: flex-start; flex-direction: column; gap: 7px; }
+  body.mobile-mode .teacher-login-intro > p:not(.eyebrow) { font-size: 16px; }
+  body.mobile-mode .teacher-login-card { padding: 28px 22px; }
+  body.mobile-mode .teacher-filters { padding: 17px; gap: 10px; }
+  body.mobile-mode .teacher-filters label { font-size: 8px; }
+  body.mobile-mode .teacher-metrics { grid-template-columns: 1fr 1fr; gap: 9px; }
+  body.mobile-mode .teacher-metric { min-height: 108px; padding: 14px 12px; }
+  body.mobile-mode .teacher-metric b { font-size: 26px; }
+  body.mobile-mode .teacher-metric span { margin-top: 10px; font-size: 8px; }
+  body.mobile-mode .teacher-section-head h2 { font-size: 27px; }

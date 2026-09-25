@@ -16,6 +16,17 @@ from urllib.parse import parse_qsl, urlencode, urlparse
 from urllib.request import Request, urlopen
 
 
+def export_hint(message: str) -> str:
+    """Ajoute la marche à suivre quand Apps Script réclame son secret."""
+    if "WEB_APP_SECRET" in message:
+        return (
+            f"{message} → Définissez WEB_APP_SECRET dans les propriétés du script Apps Script, "
+            "puis la même valeur côté Vercel (WEB_APP_SECRET, ou ?key= dans GOOGLE_SHEETS_APP_URL) "
+            "et redéployez."
+        )
+    return message
+
+
 class GoogleSheetsClient:
     """Envoie une analyse à une Web App Google Apps Script.
 
@@ -48,7 +59,17 @@ class GoogleSheetsClient:
         return parsed._replace(query=urlencode(query)).geturl()
 
     def status(self) -> dict[str, Any]:
-        return {"configured": self.configured, "label": "Configuré" if self.configured else "Non configuré"}
+        return {
+            "configured": self.configured,
+            "label": "Configuré" if self.configured else "Non configuré",
+            "access_key_configured": self._access_key_configured(),
+        }
+
+    def _access_key_configured(self) -> bool:
+        if os.environ.get("WEB_APP_SECRET", "").strip():
+            return True
+        query = dict(parse_qsl(urlparse(self.app_url).query, keep_blank_values=True))
+        return bool(query.get("key"))
 
     def send_analysis(self, analysis: dict[str, Any]) -> dict[str, Any]:
         """Envoie une analyse et retourne un état serialisable."""
@@ -73,7 +94,8 @@ class GoogleSheetsClient:
         except (TimeoutError, URLError, OSError) as exc:
             return {"status": "error", "label": "Google Sheets inaccessible", "message": str(exc)[:300]}
         if isinstance(response_payload, dict) and response_payload.get("ok") is False:
-            return {"status": "error", "label": "Erreur Google Sheets", "message": str(response_payload.get("error", "Réponse invalide"))[:300]}
+            message = str(response_payload.get("error", "Réponse invalide"))[:300]
+            return {"status": "error", "label": "Erreur Google Sheets", "message": export_hint(message)}
         if not isinstance(response_payload, dict) or response_payload.get("ok") is not True:
             return {
                 "status": "error",
