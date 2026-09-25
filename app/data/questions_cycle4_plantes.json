@@ -32,7 +32,7 @@
       "school_level": "5e",
       "theme": "Immunité",
       "title": "Spécificité de la réponse humorale",
-      "prompt": "Explique en une phrase ce qu’est la spécificité de la réponse immunitaire humorale.",
+      "prompt": "En quoi la réponse immunitaire humorale est-elle spécifique ?",
       "context": "Lie chaque lymphocyte B à un antigène.",
       "expected_answer": "Chaque lymphocyte B produit un anticorps spécifique qui reconnaît un seul type d’antigène.",
       "criteria": [

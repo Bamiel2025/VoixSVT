@@ -74,7 +74,7 @@
       "school_level": "4e",
       "theme": "La planète Terre et l'action humaine",
       "title": "La dynamique terrestre et la tectonique des plaques",
-      "prompt": "En une ou deux phrases, réponds à la question : Le point situé à la surface du sol, à la verticale du foyer d'un séisme, s'appelle",
+      "prompt": "En une ou deux phrases, réponds à la question : Comment s'appelle le point situé à la surface du sol, à la verticale du foyer d'un séisme ?",
       "context": "Question tirée du quiz Wooflash eb01 — La dynamique terrestre et la tectonique des plaques.",
       "expected_answer": "L'épicentre Le foyer (ou hypocentre) est le lieu de la rupture en profondeur ; l'épicentre est le point en surface à sa verticale, où les secousses sont maximales.",
       "criteria": [
@@ -129,7 +129,7 @@
       "school_level": "4e",
       "theme": "La planète Terre et l'action humaine",
       "title": "Météo, climat et réchauffement planétaire",
-      "prompt": "En une ou deux phrases, réponds à la question : Selon l'OMM, le climat d'une région se définit par des moyennes calculées sur au moins",
+      "prompt": "En une ou deux phrases, réponds à la question : Selon l'OMM, sur combien d'années au moins le climat d'une région se définit-il par des moyennes ?",
       "context": "Question tirée du quiz Wooflash eb02 — Météo, climat et réchauffement planétaire.",
       "expected_answer": "30 ans Le climat correspond aux moyennes des grandeurs atmosphériques sur au moins 30 ans ; en dessous, on parle de météo (temps à court terme).",
       "criteria": [
@@ -245,7 +245,7 @@
       "school_level": "4e",
       "theme": "La planète Terre et l'action humaine",
       "title": "Gestion des risques naturels",
-      "prompt": "En une ou deux phrases, réponds à la question : Le risque naturel résulte du croisement entre",
+      "prompt": "En une ou deux phrases, réponds à la question : Le risque naturel résulte-t-il du croisement entre quels deux éléments ?",
       "context": "Question tirée du quiz Wooflash eb03 — Gestion des risques naturels.",
       "expected_answer": "L'aléa et la vulnérabilité Risque = Aléa (probabilité et intensité de l'événement dangereux) × Vulnérabilité (fragilité des personnes et des biens exposés).",
       "criteria": [
@@ -303,7 +303,7 @@
       "school_level": "4e",
       "theme": "La planète Terre et l'action humaine",
       "title": "Gestion des risques naturels",
-      "prompt": "En une ou deux phrases, réponds à la question : Les bâtiments parasismiques sont conçus pour",
+      "prompt": "En une ou deux phrases, réponds à la question : Pourquoi construit-on des bâtiments parasismiques ?",
       "context": "Question tirée du quiz Wooflash eb03 — Gestion des risques naturels.",
       "expected_answer": "Résister aux secousses sismiques Construire des bâtiments parasismiques, capables d'encaisser les secousses, est une mesure de prévention essentielle en zone sismique.",
       "criteria": [
@@ -424,7 +424,7 @@
       "school_level": "5e",
       "theme": "La planète Terre et l'action humaine",
       "title": "Gestion des ressources terrestres",
-      "prompt": "En une ou deux phrases, réponds à la question : Le solaire, l'éolien et l'hydraulique sont des énergies",
+      "prompt": "En une ou deux phrases, réponds à la question : À quelle catégorie d'énergies le solaire, l'éolien et l'hydraulique appartiennent-ils ?",
       "context": "Question tirée du quiz Wooflash eb04 — Gestion des ressources terrestres.",
       "expected_answer": "Renouvelables : inépuisables à l'échelle humaine Les énergies renouvelables (soleil, vent, eau, chaleur de la Terre) sont inépuisables et peu polluantes : ce sont les énergies de demain.",
       "criteria": [
@@ -544,7 +544,7 @@
       "school_level": "5e",
       "theme": "Le vivant et son évolution",
       "title": "La nutrition des organismes",
-      "prompt": "En une ou deux phrases, réponds à la question : Un organisme autotrophe est capable de",
+      "prompt": "En une ou deux phrases, réponds à la question : De quoi un organisme autotrophe est-il capable ?",
       "context": "Question tirée du quiz Wooflash eb05 — La nutrition des organismes.",
       "expected_answer": "Fabriquer sa propre matière organique à partir de matière minérale et de lumière Les végétaux chlorophylliens sont autotrophes : ils fabriquent leur matière organique à partir d'éléments minéraux et de lumière. Les animaux et les champignons sont hétérotrophes.",
       "criteria": [
@@ -606,7 +606,7 @@
       "school_level": "4e",
       "theme": "Le vivant et son évolution",
       "title": "La reproduction sexuée des êtres vivants",
-      "prompt": "En une ou deux phrases, réponds à la question : La reproduction sexuée nécessite l'union de deux cellules reproductrices appelées",
+      "prompt": "En une ou deux phrases, réponds à la question : Comment s'appellent les deux cellules reproductrices dont l'union est nécessaire à la reproduction sexuée ?",
       "context": "Question tirée du quiz Wooflash eb06 — La reproduction sexuée des êtres vivants.",
       "expected_answer": "Les gamètes : un gamète mâle (spermatozoïde ou grain de pollen) et un gamète femelle (ovule) La reproduction sexuée repose sur la rencontre d'un gamète mâle et d'un gamète femelle : leur union (fécondation) donne naissance à une cellule-œuf.",
       "criteria": [
@@ -669,7 +669,7 @@
       "school_level": "4e",
       "theme": "Le vivant et son évolution",
       "title": "La reproduction sexuée des êtres vivants",
-      "prompt": "En une ou deux phrases, réponds à la question : L'hydre d'eau douce se reproduit de manière asexuée par",
+      "prompt": "En une ou deux phrases, réponds à la question : Comment l'hydre d'eau douce se reproduit-il de manière asexuée ?",
       "context": "Question tirée du quiz Wooflash eb06 — La reproduction sexuée des êtres vivants.",
       "expected_answer": "Bourgeonnement : un petit hydre pousse sur le parent avant de s'en détacher Chez l'hydre, un bourgeon se forme sur le corps du parent, grandit puis se détache : c'est une reproduction asexuée animale.",
       "criteria": [
@@ -791,7 +791,7 @@
       "school_level": "3e",
       "theme": "Le vivant et son évolution",
       "title": "Génétique humaine et hérédité",
-      "prompt": "En une ou deux phrases, réponds à la question : Lors de la fabrication des gamètes (méiose), les paires de chromosomes",
+      "prompt": "En une ou deux phrases, réponds à la question : Que deviennent les paires de chromosomes lors de la fabrication des gamètes (méiose) ?",
       "context": "Question tirée du quiz Wooflash eb07 — Génétique humaine et hérédité.",
       "expected_answer": "Se séparent : chaque gamète ne reçoit que 23 chromosomes La méiose (deux divisions successives) réduit le nombre de chromosomes de moitié : chaque gamète reçoit 23 chromosomes, un seul de chaque paire.",
       "criteria": [
@@ -853,7 +853,7 @@
       "school_level": "3e",
       "theme": "Le vivant et son évolution",
       "title": "L'évolution : preuves et mécanismes",
-      "prompt": "En une ou deux phrases, réponds à la question : La vie sur Terre est apparue il y a environ",
+      "prompt": "En une ou deux phrases, réponds à la question : Depuis combien d'années la vie est-elle apparue sur Terre ?",
       "context": "Question tirée du quiz Wooflash eb08 — L'évolution : preuves et mécanismes.",
       "expected_answer": "3,8 milliards d'années Les plus anciennes traces de vie (bactéries fossiles) datent d'environ 3,8 milliards d'années : tous les êtres vivants actuels descendent de ces premières formes.",
       "criteria": [
@@ -912,7 +912,7 @@
       "school_level": "3e",
       "theme": "Le vivant et son évolution",
       "title": "L'évolution : preuves et mécanismes",
-      "prompt": "En une ou deux phrases, réponds à la question : Archaeopteryx est un fossile précieux car il présente",
+      "prompt": "En une ou deux phrases, réponds à la question : Pourquoi Archaeopteryx est-il un fossile précieux ?",
       "context": "Question tirée du quiz Wooflash eb08 — L'évolution : preuves et mécanismes.",
       "expected_answer": "Des caractères intermédiaires : plumes d'oiseau et dents de reptile Ce fossile à caractères intermédiaires montre la transition entre reptiles et oiseaux : il illustre l'évolution graduelle des espèces.",
       "criteria": [
@@ -975,7 +975,7 @@
       "school_level": "4e",
       "theme": "Le corps humain et la santé",
       "title": "Effort musculaire et système nerveux",
-      "prompt": "En une ou deux phrases, réponds à la question : Pendant un effort physique, les muscles consomment davantage",
+      "prompt": "En une ou deux phrases, réponds à la question : Que consomment et que rejettent davantage les muscles pendant un effort physique ?",
       "context": "Question tirée du quiz Wooflash eb09 — Effort musculaire et système nerveux.",
       "expected_answer": "De dioxygène et de glucose, et rejettent plus de CO2 et de chaleur Les muscles en activité brûlent glucose + O2 (respiration cellulaire) : il faut donc leur apporter davantage de nutriments et de dioxygène par le sang.",
       "criteria": [
@@ -1037,7 +1037,7 @@
       "school_level": "4e",
       "theme": "Le corps humain et la santé",
       "title": "Effort musculaire et système nerveux",
-      "prompt": "En une ou deux phrases, réponds à la question : Le message nerveux passe d'un neurone au suivant au niveau de",
+      "prompt": "En une ou deux phrases, réponds à la question : Au niveau de quelle structure le message nerveux passe-t-il d'un neurone au suivant ?",
       "context": "Question tirée du quiz Wooflash eb09 — Effort musculaire et système nerveux.",
       "expected_answer": "La synapse, grâce à des neurotransmetteurs (molécules chimiques) La synapse est la zone de jonction entre deux neurones : la transmission y est chimique, par des neurotransmetteurs qui stimulent ou inhibent le neurone suivant.",
       "criteria": [
@@ -1100,7 +1100,7 @@
       "school_level": "5e",
       "theme": "Le corps humain et la santé",
       "title": "Digestion et voyage des nutriments",
-      "prompt": "En une ou deux phrases, réponds à la question : La digestion commence dans la bouche où les dents",
+      "prompt": "En une ou deux phrases, réponds à la question : Que font les dents dans la bouche, où commence la digestion ?",
       "context": "Question tirée du quiz Wooflash eb10 — Digestion et voyage des nutriments.",
       "expected_answer": "Coupent et broient les aliments : c'est la digestion mécanique La digestion est double : mécanique (dents, brassage de l'estomac) et chimique (enzymes). La bouche assure le broyage mécanique, tandis que la salive amorce la digestion chimique de l'amidon.",
       "criteria": [
@@ -1222,7 +1222,7 @@
       "school_level": "3e",
       "theme": "Le corps humain et la santé",
       "title": "Le système immunitaire humain",
-      "prompt": "En une ou deux phrases, réponds à la question : L'entrée de micro-organismes dans le corps (par une coupure ou la respiration) s'appelle",
+      "prompt": "En une ou deux phrases, réponds à la question : Comment s'appelle l'entrée de micro-organismes dans le corps, par une coupure ou par la respiration ?",
       "context": "Question tirée du quiz Wooflash eb11 — Le système immunitaire humain.",
       "expected_answer": "La contamination La contamination est l'entrée des microbes dans le corps ; l'infection est leur multiplication à l'intérieur. Se laver les mains et désinfecter une plaie évite la contamination.",
       "criteria": [
@@ -1277,7 +1277,7 @@
       "school_level": "3e",
       "theme": "Le corps humain et la santé",
       "title": "Le système immunitaire humain",
-      "prompt": "En une ou deux phrases, réponds à la question : La vaccination consiste à",
+      "prompt": "En une ou deux phrases, réponds à la question : En quoi consiste la vaccination ?",
       "context": "Question tirée du quiz Wooflash eb11 — Le système immunitaire humain.",
       "expected_answer": "Présenter au corps un microbe rendu inoffensif pour qu'il fabrique des anticorps et des lymphocytes mémoires Le vaccin entraîne le système immunitaire sans déclencher la maladie : à la vraie rencontre, les lymphocytes mémoires réagissent immédiatement.",
       "criteria": [
@@ -1340,7 +1340,7 @@
       "school_level": "4e",
       "theme": "Le corps humain et la santé",
       "title": "La reproduction humaine",
-      "prompt": "En une ou deux phrases, réponds à la question : Chez la femme, l'ovulation a lieu en général",
+      "prompt": "En une ou deux phrases, réponds à la question : Chez la femme, quand l'ovulation a-t-elle lieu en général ?",
       "context": "Question tirée du quiz Wooflash eb12 — La reproduction humaine.",
       "expected_answer": "Vers le 14e jour d'un cycle de 28 jours Les ovaires libèrent un ovule environ tous les 28 jours, vers le 14e jour du cycle. Sans fécondation, la muqueuse utérine est évacuée : ce sont les règles.",
       "criteria": [
@@ -1513,7 +1513,7 @@
       "school_level": "6e",
       "theme": "Le vivant et son environnement",
       "title": "Cellule, pollinisation et recyclage du sol",
-      "prompt": "En une ou deux phrases, réponds à la question : La coopération entre l'abeille et la fleur est bénéfique",
+      "prompt": "En une ou deux phrases, réponds à la question : À qui la coopération entre l'abeille et la fleur est-elle bénéfique ?",
       "context": "Question tirée du quiz Wooflash eb13 — Cellule, pollinisation et recyclage du sol.",
       "expected_answer": "Aux deux : l'abeille se nourrit de nectar, la plante est fécondée C'est une coopération mutuelle : l'insecte butine le nectar (sa récompense) et transporte le pollen, assurant la fécondation de la plante.",
       "criteria": [
@@ -1756,7 +1756,7 @@
       "school_level": "6e",
       "theme": "Le vivant et son environnement",
       "title": "Micro-organismes et fermentations",
-      "prompt": "En une ou deux phrases, réponds à la question : Une fermentation est",
+      "prompt": "En une ou deux phrases, réponds à la question : Qu'est-ce qu'une fermentation ?",
       "context": "Question tirée du quiz Wooflash eb15 — Micro-organismes et fermentations.",
       "expected_answer": "Une transformation biologique d'une matière organique par des micro-organismes vivants La fermentation (pain, yaourt, fromage, choucroute) est réalisée par des êtres vivants microscopiques : levures ou bactéries, qui transforment la matière organique.",
       "criteria": [
@@ -1819,7 +1819,7 @@
       "school_level": "3e",
       "theme": "Le corps humain et la santé",
       "title": "Le monde microbien et notre organisme",
-      "prompt": "En une ou deux phrases, réponds à la question : Notre intestin héberge un grand nombre de micro-organismes qui",
+      "prompt": "En une ou deux phrases, réponds à la question : Notre intestin héberge de nombreux micro-organismes : quel rôle jouent-ils ?",
       "context": "Question tirée du quiz Wooflash eb16 — Le monde microbien et notre organisme.",
       "expected_answer": "Contribuent à son bon fonctionnement Notre organisme héberge de nombreux micro-organismes, particulièrement dans l'intestin, qui contribuent à son bon fonctionnement.",
       "criteria": [
@@ -1935,7 +1935,7 @@
       "school_level": "3e",
       "theme": "Le vivant et son évolution",
       "title": "Stabilité et diversité génétique",
-      "prompt": "En une ou deux phrases, réponds à la question : Le phénotype d'un individu est le résultat de",
+      "prompt": "En une ou deux phrases, réponds à la question : De quoi le phénotype d'un individu est-il le résultat ?",
       "context": "Question tirée du quiz Wooflash eb17 — Stabilité et diversité génétique.",
       "expected_answer": "L'expression de ses gènes et de l'influence de l'environnement Le phénotype est le résultat de l'expression des gènes et de l'influence de l'environnement.",
       "criteria": [
@@ -1993,7 +1993,7 @@
       "school_level": "3e",
       "theme": "Le vivant et son évolution",
       "title": "Stabilité et diversité génétique",
-      "prompt": "En une ou deux phrases, réponds à la question : L'apparition de nouveaux caractères est liée à",
+      "prompt": "En une ou deux phrases, réponds à la question : À quoi l'apparition de nouveaux caractères est-elle liée ?",
       "context": "Question tirée du quiz Wooflash eb17 — Stabilité et diversité génétique.",
       "expected_answer": "Des modifications de l'ADN : les mutations L'apparition de nouveaux caractères est liée à des modifications de l'ADN, les mutations.",
       "criteria": [
@@ -2053,7 +2053,7 @@
       "school_level": "3e",
       "theme": "Le vivant et son évolution",
       "title": "Parenté et évolution",
-      "prompt": "En une ou deux phrases, réponds à la question : La biodiversité représente",
+      "prompt": "En une ou deux phrases, réponds à la question : Que représente la biodiversité ?",
       "context": "Question tirée du quiz Wooflash eb18 — Parenté et évolution.",
       "expected_answer": "La diversité des êtres vivants d'un milieu et leurs relations entre eux et avec le milieu La biodiversité représente la diversité des êtres vivants qui occupent un milieu et leurs relations entre eux et avec le milieu.",
       "criteria": [
@@ -2116,7 +2116,7 @@
       "school_level": "3e",
       "theme": "Le vivant et son évolution",
       "title": "Parenté et évolution",
-      "prompt": "En une ou deux phrases, réponds à la question : L'évolution des espèces s'explique notamment par",
+      "prompt": "En une ou deux phrases, réponds à la question : Par quoi l'évolution des espèces s'explique-t-elle notamment ?",
       "context": "Question tirée du quiz Wooflash eb18 — Parenté et évolution.",
       "expected_answer": "L'apparition de nouveaux caractères au hasard suite à des mutations, puis la sélection naturelle L'évolution s'explique par l'apparition de nouveaux caractères au hasard (mutations) et la sélection naturelle.",
       "criteria": [
@@ -2179,7 +2179,7 @@
       "school_level": "4e",
       "theme": "La planète Terre et l'action humaine",
       "title": "Phénomènes géologiques et risques naturels",
-      "prompt": "En une ou deux phrases, réponds à la question : Les séismes et les éruptions volcaniques se produisent",
+      "prompt": "En une ou deux phrases, réponds à la question : Où les séismes et les éruptions volcaniques se produisent-ils ?",
       "context": "Question tirée du quiz Wooflash eb19 — Phénomènes géologiques et risques naturels.",
       "expected_answer": "Dans des zones précises du globe : les zones actives On observe séismes et éruptions dans des zones précises du globe : les zones actives.",
       "criteria": [
@@ -2241,7 +2241,7 @@
       "school_level": "4e",
       "theme": "La planète Terre et l'action humaine",
       "title": "Phénomènes géologiques et risques naturels",
-      "prompt": "En une ou deux phrases, réponds à la question : Un volcanisme et des séismes fréquents à la frontière de deux plaques s'expliquent par",
+      "prompt": "En une ou deux phrases, réponds à la question : Comment s'explique un volcanisme et des séismes fréquents à la frontière de deux plaques ?",
       "context": "Question tirée du quiz Wooflash eb19 — Phénomènes géologiques et risques naturels.",
       "expected_answer": "Le mouvement relatif des plaques lithosphériques à leur frontière C'est le mouvement des plaques à leur frontière qui explique l'activité des zones actives.",
       "criteria": [
@@ -2302,7 +2302,7 @@
       "school_level": "4e",
       "theme": "La planète Terre et l'action humaine",
       "title": "Météorologie et climats",
-      "prompt": "En une ou deux phrases, réponds à la question : La climatologie étudie les phénomènes météorologiques",
+      "prompt": "En une ou deux phrases, réponds à la question : Quelles zones et quelle échelle de temps la climatologie étudie-t-elle ?",
       "context": "Question tirée du quiz Wooflash eb20 — Météorologie et climats.",
       "expected_answer": "Sur des zones étendues et une longue échelle de temps La climatologie étudie les phénomènes météorologiques sur des zones et une échelle de temps étendues.",
       "criteria": [
@@ -2364,7 +2364,7 @@
       "school_level": "4e",
       "theme": "La planète Terre et l'action humaine",
       "title": "Météorologie et climats",
-      "prompt": "En une ou deux phrases, réponds à la question : Les masses d'eau et les masses d'air sont",
+      "prompt": "En une ou deux phrases, réponds à la question : Que sont les masses d'eau et les masses d'air ?",
       "context": "Question tirée du quiz Wooflash eb20 — Météorologie et climats.",
       "expected_answer": "Les enveloppes fluides de la Terre, dont la connaissance explique météo et climats La connaissance des enveloppes fluides (masses d'eau et d'air) permet de comprendre météo et climats.",
       "criteria": [
@@ -2427,7 +2427,7 @@
       "school_level": "4e",
       "theme": "Le vivant et son évolution",
       "title": "Reproduction et dynamique des populations",
-      "prompt": "En une ou deux phrases, réponds à la question : La reproduction asexuée permet de produire des descendants",
+      "prompt": "En une ou deux phrases, réponds à la question : À partir de combien d'individus la reproduction asexuée permet-elle de produire des descendants ?",
       "context": "Question tirée du quiz Wooflash eb21 — Reproduction et dynamique des populations.",
       "expected_answer": "À partir d'un seul individu La reproduction asexuée permet de produire des descendants à partir d'un seul individu.",
       "criteria": [
@@ -2484,7 +2484,7 @@
       "school_level": "4e",
       "theme": "Le vivant et son évolution",
       "title": "Reproduction et dynamique des populations",
-      "prompt": "En une ou deux phrases, réponds à la question : Il existe donc une dynamique des populations",
+      "prompt": "En une ou deux phrases, réponds à la question : À quoi la dynamique des populations est-elle liée ?",
       "context": "Question tirée du quiz Wooflash eb21 — Reproduction et dynamique des populations.",
       "expected_answer": "Liée à l'efficacité de la reproduction Il existe une dynamique des populations liée à l'efficacité de la reproduction.",
       "criteria": [
@@ -2540,7 +2540,7 @@
       "school_level": "4e",
       "theme": "Le corps humain et la santé",
       "title": "Reproduction et sexualité",
-      "prompt": "En une ou deux phrases, réponds à la question : À la puberté, les changements du corps sont déclenchés par",
+      "prompt": "En une ou deux phrases, réponds à la question : Par quoi les changements du corps sont-ils déclenchés à la puberté ?",
       "context": "Question tirée du quiz Wooflash eb22 — Reproduction et sexualité.",
       "expected_answer": "La mise en fonctionnement des organes reproducteurs À la puberté, les changements sont déclenchés par la mise en fonctionnement des organes reproducteurs.",
       "criteria": [
@@ -2600,7 +2600,7 @@
       "school_level": "4e",
       "theme": "Le corps humain et la santé",
       "title": "Reproduction et sexualité",
-      "prompt": "En une ou deux phrases, réponds à la question : Les règles sont dues à",
+      "prompt": "En une ou deux phrases, réponds à la question : À quoi les règles sont-elles dues ?",
       "context": "Question tirée du quiz Wooflash eb22 — Reproduction et sexualité.",
       "expected_answer": "La chute du taux d'hormones ovariennes La chute du taux d'hormones ovariennes est responsable des règles.",
       "criteria": [
@@ -2660,7 +2660,7 @@
       "school_level": "4e",
       "theme": "Le corps humain et la santé",
       "title": "Le fonctionnement du système nerveux",
-      "prompt": "En une ou deux phrases, réponds à la question : Notre corps capte les variations de l'environnement grâce",
+      "prompt": "En une ou deux phrases, réponds à la question : Grâce à quoi notre corps capte-t-il les variations de l'environnement ?",
       "context": "Question tirée du quiz Wooflash eb23 — Le fonctionnement du système nerveux.",
       "expected_answer": "Aux organes sensoriels pourvus de récepteurs sensoriels spécifiques Notre corps capte les variations de l'environnement grâce aux organes sensoriels pourvus de récepteurs spécifiques.",
       "criteria": [
@@ -2723,7 +2723,7 @@
       "school_level": "4e",
       "theme": "Le corps humain et la santé",
       "title": "Le fonctionnement du système nerveux",
-      "prompt": "En une ou deux phrases, réponds à la question : Les neurones constituent",
+      "prompt": "En une ou deux phrases, réponds à la question : Que constituent les neurones ?",
       "context": "Question tirée du quiz Wooflash eb23 — Le fonctionnement du système nerveux.",
       "expected_answer": "Un réseau complexe de communication Les neurones constituent un réseau complexe de communication.",
       "criteria": [
@@ -2778,7 +2778,7 @@
       "school_level": "5e",
       "theme": "Le vivant et son évolution",
       "title": "Nutrition chez les végétaux",
-      "prompt": "En une ou deux phrases, réponds à la question : Les végétaux chlorophylliens prélèvent leurs éléments nutritifs",
+      "prompt": "En une ou deux phrases, réponds à la question : Où les végétaux chlorophylliens prélèvent-ils leurs éléments nutritifs ?",
       "context": "Question tirée du quiz Wooflash eb24 — Nutrition chez les végétaux.",
       "expected_answer": "À la frontière de deux milieux : le sol et l'atmosphère Les végétaux chlorophylliens vivent à la frontière du sol et de l'atmosphère, où ils prélèvent leurs éléments nutritifs.",
       "criteria": [
@@ -2839,7 +2839,7 @@
       "school_level": "5e",
       "theme": "Le vivant et son évolution",
       "title": "Nutrition chez les végétaux",
-      "prompt": "En une ou deux phrases, réponds à la question : Lors de la photosynthèse, en présence de lumière et d'eau, le CO2 est converti en",
+      "prompt": "En une ou deux phrases, réponds à la question : En quoi le CO2 est-il converti lors de la photosynthèse, en présence de lumière et d'eau ?",
       "context": "Question tirée du quiz Wooflash eb24 — Nutrition chez les végétaux.",
       "expected_answer": "Matière organique En présence de lumière et d'eau, le CO2 est converti en matière organique : c'est la photosynthèse.",
       "criteria": [
@@ -2893,7 +2893,7 @@
       "school_level": "5e",
       "theme": "Le vivant et son évolution",
       "title": "Nutrition chez les animaux",
-      "prompt": "En une ou deux phrases, réponds à la question : La nutrition des animaux consiste à prélever dans le milieu extérieur",
+      "prompt": "En une ou deux phrases, réponds à la question : Que prélèvent les animaux dans le milieu extérieur par leur nutrition ?",
       "context": "Question tirée du quiz Wooflash eb25 — Nutrition chez les animaux.",
       "expected_answer": "De la matière organique et minérale La nutrition des animaux consiste à prélever de la matière organique et minérale dans le milieu extérieur.",
       "criteria": [
@@ -2952,7 +2952,7 @@
       "school_level": "5e",
       "theme": "Le vivant et son évolution",
       "title": "Nutrition chez les animaux",
-      "prompt": "En une ou deux phrases, réponds à la question : La structure du tube digestif",
+      "prompt": "En une ou deux phrases, réponds à la question : De quoi la structure du tube digestif dépend-elle ?",
       "context": "Question tirée du quiz Wooflash eb25 — Nutrition chez les animaux.",
       "expected_answer": "Dépend du régime alimentaire de l'animal La structure du tube digestif dépend du régime alimentaire de l'animal.",
       "criteria": [
@@ -3009,7 +3009,7 @@
       "school_level": "5e",
       "theme": "La planète Terre et l'action humaine",
       "title": "Impacts des activités humaines sur les écosystèmes",
-      "prompt": "En une ou deux phrases, réponds à la question : Un écosystème est",
+      "prompt": "En une ou deux phrases, réponds à la question : Qu'est-ce qu'un écosystème ?",
       "context": "Question tirée du quiz Wooflash eb26 — Impacts des activités humaines sur les écosystèmes.",
       "expected_answer": "Une association d'êtres vivants entretenant des relations complexes au sein d'un territoire donné Les écosystèmes sont des associations d'êtres vivants entretenant des relations complexes au sein d'un territoire donné.",
       "criteria": [
@@ -3072,7 +3072,7 @@
       "school_level": "5e",
       "theme": "La planète Terre et l'action humaine",
       "title": "Impacts des activités humaines sur les écosystèmes",
-      "prompt": "En une ou deux phrases, réponds à la question : Face à ces menaces, de plus en plus de personnes",
+      "prompt": "En une ou deux phrases, réponds à la question : Face à ces menaces, que font de plus en plus de personnes ?",
       "context": "Question tirée du quiz Wooflash eb26 — Impacts des activités humaines sur les écosystèmes.",
       "expected_answer": "Prennent conscience de leur importance et mettent en place des actions de préservation De plus en plus de personnes prennent conscience de leur importance et mettent en place des actions de préservation.",
       "criteria": [
@@ -3135,7 +3135,7 @@
       "school_level": "5e",
       "theme": "La planète Terre et l'action humaine",
       "title": "Enjeux de l'exploitation des ressources naturelles",
-      "prompt": "En une ou deux phrases, réponds à la question : Une ressource naturelle est prélevée par l'homme dans l'environnement pour",
+      "prompt": "En une ou deux phrases, réponds à la question : Pourquoi l'homme prélève-t-il des ressources naturelles dans l'environnement ?",
       "context": "Question tirée du quiz Wooflash eb27 — Enjeux de l'exploitation des ressources naturelles.",
       "expected_answer": "Subvenir à ses besoins et réaliser ses activités Une ressource naturelle est prélevée pour subvenir aux besoins de l'homme et à ses activités.",
       "criteria": [
@@ -3197,7 +3197,7 @@
       "school_level": "5e",
       "theme": "La planète Terre et l'action humaine",
       "title": "Enjeux de l'exploitation des ressources naturelles",
-      "prompt": "En une ou deux phrases, réponds à la question : Exploiter les ressources dans le cadre du développement durable, c'est par exemple",
+      "prompt": "En une ou deux phrases, réponds à la question : Quel est un exemple d'exploitation des ressources dans le cadre du développement durable ?",
       "context": "Question tirée du quiz Wooflash eb27 — Enjeux de l'exploitation des ressources naturelles.",
       "expected_answer": "Mettre en place des quotas de pêche et des techniques d'irrigation économes en eau Quotas de pêche et techniques d'irrigation économes : une exploitation raisonnée dans le cadre du développement durable.",
       "criteria": [
@@ -3260,7 +3260,7 @@
       "school_level": "5e",
       "theme": "Le corps humain et la santé",
       "title": "Activité physique : efforts et santé",
-      "prompt": "En une ou deux phrases, réponds à la question : Pendant un effort physique, le système cardio-vasculaire est sollicité pour",
+      "prompt": "En une ou deux phrases, réponds à la question : Pourquoi le système cardio-vasculaire est-il sollicité pendant un effort physique ?",
       "context": "Question tirée du quiz Wooflash eb28 — Activité physique : efforts et santé.",
       "expected_answer": "Envoyer davantage de sang aux muscles actifs Le système cardio-vasculaire envoie davantage de sang aux muscles actifs pendant l'effort.",
       "criteria": [
@@ -3321,7 +3321,7 @@
       "school_level": "5e",
       "theme": "Le corps humain et la santé",
       "title": "Activité physique : efforts et santé",
-      "prompt": "En une ou deux phrases, réponds à la question : Pendant l'effort, une partie de l'énergie musculaire est transformée en chaleur, ce qui explique",
+      "prompt": "En une ou deux phrases, réponds à la question : Pourquoi la température du corps augmente-t-elle pendant l'effort ?",
       "context": "Question tirée du quiz Wooflash eb28 — Activité physique : efforts et santé.",
       "expected_answer": "L'augmentation de la température du corps Une partie de l'énergie est transformée en chaleur : la température du corps augmente.",
       "criteria": [
@@ -3377,7 +3377,7 @@
       "school_level": "5e",
       "theme": "Le corps humain et la santé",
       "title": "Alimentation et digestion",
-      "prompt": "En une ou deux phrases, réponds à la question : L'alimentation doit être suffisamment variée et équilibrée pour apporter",
+      "prompt": "En une ou deux phrases, réponds à la question : Que doit apporter une alimentation suffisamment variée et équilibrée ?",
       "context": "Question tirée du quiz Wooflash eb29 — Alimentation et digestion.",
       "expected_answer": "Tous les éléments énergétiques, de l'eau et des vitamines L'alimentation apporte tous les éléments énergétiques, de l'eau et des vitamines.",
       "criteria": [
@@ -3439,7 +3439,7 @@
       "school_level": "5e",
       "theme": "Le corps humain et la santé",
       "title": "Alimentation et digestion",
-      "prompt": "En une ou deux phrases, réponds à la question : Les nutriments sont indispensables",
+      "prompt": "En une ou deux phrases, réponds à la question : Pourquoi les nutriments sont-ils indispensables ?",
       "context": "Question tirée du quiz Wooflash eb29 — Alimentation et digestion.",
       "expected_answer": "Au bon fonctionnement de l'organisme Les nutriments sont indispensables au bon fonctionnement de l'organisme.",
       "criteria": [
@@ -3493,7 +3493,7 @@
       "school_level": "6e",
       "theme": "Le vivant et son environnement",
       "title": "Conditions de vie sur Terre et réchauffement climatique",
-      "prompt": "En une ou deux phrases, réponds à la question : Sans atmosphère, la température moyenne théorique de la Terre serait de",
+      "prompt": "En une ou deux phrases, réponds à la question : Quelle serait la température moyenne théorique de la Terre sans atmosphère ?",
       "context": "Question tirée du quiz Wooflash eb30 — Conditions de vie sur Terre et réchauffement climatique.",
       "expected_answer": "Moins 18 degrés La position de la Terre lui confère une température moyenne théorique de moins 18 degrés.",
       "criteria": [
@@ -3551,7 +3551,7 @@
       "school_level": "6e",
       "theme": "Le vivant et son environnement",
       "title": "Conditions de vie sur Terre et réchauffement climatique",
-      "prompt": "En une ou deux phrases, réponds à la question : Ces émissions augmentent l'effet de serre naturel, ce qui entraîne",
+      "prompt": "En une ou deux phrases, réponds à la question : Qu'entraîne l'augmentation de l'effet de serre naturel due à ces émissions ?",
       "context": "Question tirée du quiz Wooflash eb30 — Conditions de vie sur Terre et réchauffement climatique.",
       "expected_answer": "Un réchauffement climatique Ces émissions augmentent l'effet de serre naturel, d'où un réchauffement climatique.",
       "criteria": [
@@ -3607,7 +3607,7 @@
       "school_level": "6e",
       "theme": "Le vivant et son environnement",
       "title": "Alimentation et santé",
-      "prompt": "En une ou deux phrases, réponds à la question : Les aliments sont composés de",
+      "prompt": "En une ou deux phrases, réponds à la question : De quoi les aliments sont-ils composés ?",
       "context": "Question tirée du quiz Wooflash eb31 — Alimentation et santé.",
       "expected_answer": "Glucides, lipides, protéines, eau et sels minéraux Les aliments sont composés de glucides, de lipides, de protéines, ainsi que d'eau et de sels minéraux.",
       "criteria": [
@@ -3670,7 +3670,7 @@
       "school_level": "6e",
       "theme": "Le vivant et son environnement",
       "title": "Alimentation et santé",
-      "prompt": "En une ou deux phrases, réponds à la question : L'énergie apportée par les aliments se mesure en",
+      "prompt": "En une ou deux phrases, réponds à la question : En quelle unité l'énergie apportée par les aliments se mesure-t-elle ?",
       "context": "Question tirée du quiz Wooflash eb31 — Alimentation et santé.",
       "expected_answer": "Kilocalories (Kcal) ou KiloJoules (KJ) L'énergie des aliments se mesure en Kilocalories (Kcal) ou KiloJoules (KJ).",
       "criteria": [
@@ -3730,7 +3730,7 @@
       "school_level": "6e",
       "theme": "Le vivant et son environnement",
       "title": "Unité du vivant et classification",
-      "prompt": "En une ou deux phrases, réponds à la question : La classification utilitaire classe les êtres vivants selon",
+      "prompt": "En une ou deux phrases, réponds à la question : Selon quels critères la classification utilitaire classe-t-elle les êtres vivants ?",
       "context": "Question tirée du quiz Wooflash eb32 — Unité du vivant et classification.",
       "expected_answer": "Des critères déterminés par les besoins de l'être humain (comestible, nuisible...) En classification utilitaire, les critères sont déterminés par les besoins de l'être humain.",
       "criteria": [
@@ -3793,7 +3793,7 @@
       "school_level": "6e",
       "theme": "Le vivant et son environnement",
       "title": "Unité du vivant et classification",
-      "prompt": "En une ou deux phrases, réponds à la question : Tous les êtres vivants, unicellulaires ou pluricellulaires, partagent le même caractère :",
+      "prompt": "En une ou deux phrases, réponds à la question : Quel caractère les êtres vivants, unicellulaires ou pluricellulaires, partagent-ils tous ?",
       "context": "Question tirée du quiz Wooflash eb32 — Unité du vivant et classification.",
       "expected_answer": "Ils sont tous composés d'au moins une cellule Tous les êtres vivants sont composés d'au moins une cellule.",
       "criteria": [
@@ -3850,7 +3850,7 @@
       "school_level": "6e",
       "theme": "Le vivant et son environnement",
       "title": "Biodiversité actuelle et passée",
-      "prompt": "En une ou deux phrases, réponds à la question : Pour décrire la biodiversité à l'échelle des espèces, les scientifiques",
+      "prompt": "En une ou deux phrases, réponds à la question : Que font les scientifiques pour décrire la biodiversité à l'échelle des espèces ?",
       "context": "Question tirée du quiz Wooflash eb33 — Biodiversité actuelle et passée.",
       "expected_answer": "Observent les caractères des individus et construisent des clés de détermination Ils observent les caractères et construisent des clés de détermination pour identifier espèces et groupes.",
       "criteria": [
@@ -3913,7 +3913,7 @@
       "school_level": "6e",
       "theme": "Le vivant et son environnement",
       "title": "Biodiversité actuelle et passée",
-      "prompt": "En une ou deux phrases, réponds à la question : Grâce au principe d'actualisme, les scientifiques peuvent",
+      "prompt": "En une ou deux phrases, réponds à la question : Qu'est-ce que le principe d'actualisme permet aux scientifiques de faire ?",
       "context": "Question tirée du quiz Wooflash eb33 — Biodiversité actuelle et passée.",
       "expected_answer": "Reconstituer le paléo-environnement où vivaient ces espèces ainsi que leurs interactions Ils peuvent reconstituer le paléo-environnement et les interactions des espèces disparues.",
       "criteria": [
@@ -3976,7 +3976,7 @@
       "school_level": "6e",
       "theme": "Le vivant et son environnement",
       "title": "Reproduction des plantes à fleurs",
-      "prompt": "En une ou deux phrases, réponds à la question : Dans une fleur, le pistil est",
+      "prompt": "En une ou deux phrases, réponds à la question : Dans une fleur, que représente le pistil ?",
       "context": "Question tirée du quiz Wooflash eb34 — Reproduction des plantes à fleurs.",
       "expected_answer": "La partie femelle : il contient des cellules reproductrices dans les ovules Le pistil est la partie femelle : il contient des cellules reproductrices dans les ovules.",
       "criteria": [
@@ -4039,7 +4039,7 @@
       "school_level": "6e",
       "theme": "Le vivant et son environnement",
       "title": "Reproduction des plantes à fleurs",
-      "prompt": "En une ou deux phrases, réponds à la question : Beaucoup de fleurs attirent les insectes pollinisateurs par",
+      "prompt": "En une ou deux phrases, réponds à la question : Comment beaucoup de fleurs attirent-elles les insectes pollinisateurs ?",
       "context": "Question tirée du quiz Wooflash eb34 — Reproduction des plantes à fleurs.",
       "expected_answer": "Différents signaux : grands pétales colorés, molécules odorantes Les fleurs attirent les insectes par différents signaux : pétales colorés, molécules odorantes.",
       "criteria": [
@@ -4102,7 +4102,7 @@
       "school_level": "6e",
       "theme": "Le vivant et son environnement",
       "title": "Reproduction et sexualité humaine",
-      "prompt": "En une ou deux phrases, réponds à la question : La puberté marque",
+      "prompt": "En une ou deux phrases, réponds à la question : Quel passage la puberté marque-t-elle ?",
       "context": "Question tirée du quiz Wooflash eb35 — Reproduction et sexualité humaine.",
       "expected_answer": "Le passage de l'enfance à l'âge adulte La puberté marque le passage de l'enfance à l'âge adulte.",
       "criteria": [
@@ -4156,7 +4156,7 @@
       "school_level": "6e",
       "theme": "Le vivant et son environnement",
       "title": "Reproduction et sexualité humaine",
-      "prompt": "En une ou deux phrases, réponds à la question : Chez l'être humain, la sexualité",
+      "prompt": "En une ou deux phrases, réponds à la question : Que prend en compte la sexualité chez l'être humain ?",
       "context": "Question tirée du quiz Wooflash eb35 — Reproduction et sexualité humaine.",
       "expected_answer": "Prend en compte des aspects biologiques, mais aussi émotionnels, juridiques et sociaux La sexualité humaine prend en compte des aspects biologiques, émotionnels, juridiques et sociaux.",
       "criteria": [
@@ -4219,7 +4219,7 @@
       "school_level": "6e",
       "theme": "Le vivant et son environnement",
       "title": "Fonctionnement et dynamique des écosystèmes",
-      "prompt": "En une ou deux phrases, réponds à la question : Un écosystème est constitué de",
+      "prompt": "En une ou deux phrases, réponds à la question : De quoi un écosystème est-il constitué ?",
       "context": "Question tirée du quiz Wooflash eb36 — Fonctionnement et dynamique des écosystèmes.",
       "expected_answer": "L'ensemble des êtres vivants, de leur milieu de vie et de leurs interactions Un écosystème réunit les êtres vivants, leur milieu de vie et toutes leurs interactions.",
       "criteria": [
@@ -4281,7 +4281,7 @@
       "school_level": "6e",
       "theme": "Le vivant et son environnement",
       "title": "Fonctionnement et dynamique des écosystèmes",
-      "prompt": "En une ou deux phrases, réponds à la question : Les feux ou les chablis (chutes d'arbres) sont",
+      "prompt": "En une ou deux phrases, réponds à la question : Que sont les feux ou les chablis (chutes d'arbres) ?",
       "context": "Question tirée du quiz Wooflash eb36 — Fonctionnement et dynamique des écosystèmes.",
       "expected_answer": "Des perturbations de l'écosystème qui modifient fortement les conditions du milieu Feux et chablis sont des perturbations qui modifient fortement les conditions du milieu.",
       "criteria": [
@@ -4343,7 +4343,7 @@
       "school_level": "6e",
       "theme": "Le vivant et son environnement",
       "title": "Place des êtres vivants dans le cycle de la matière",
-      "prompt": "En une ou deux phrases, réponds à la question : Les végétaux produisent de la matière organique à partir de",
+      "prompt": "En une ou deux phrases, réponds à la question : À partir de quoi les végétaux produisent-ils de la matière organique ?",
       "context": "Question tirée du quiz Wooflash eb37 — Place des êtres vivants dans le cycle de la matière.",
       "expected_answer": "De sels minéraux, de dioxyde de carbone, d'eau et d'énergie sous forme de lumière Les végétaux produisent de la matière organique à partir de sels minéraux, CO2, eau et lumière.",
       "criteria": [
@@ -4406,7 +4406,7 @@
       "school_level": "6e",
       "theme": "Le vivant et son environnement",
       "title": "Place des êtres vivants dans le cycle de la matière",
-      "prompt": "En une ou deux phrases, réponds à la question : Les décomposeurs permettent",
+      "prompt": "En une ou deux phrases, réponds à la question : Que permettent les décomposeurs ?",
       "context": "Question tirée du quiz Wooflash eb37 — Place des êtres vivants dans le cycle de la matière.",
       "expected_answer": "D'enrichir le sol en matière minérale, indispensable aux végétaux Les décomposeurs enrichissent le sol en matière minérale, indispensable aux végétaux.",
       "criteria": [
@@ -4464,7 +4464,7 @@
       "school_level": "6e",
       "theme": "Le vivant et son environnement",
       "title": "Conséquences des actions humaines sur l'environnement",
-      "prompt": "En une ou deux phrases, réponds à la question : Pour satisfaire ses besoins, l'être humain exploite les ressources naturelles, ce qui peut entraîner",
+      "prompt": "En une ou deux phrases, réponds à la question : Quelles conséquences l'exploitation des ressources naturelles par l'être humain peut-elle entraîner ?",
       "context": "Question tirée du quiz Wooflash eb38 — Conséquences des actions humaines sur l'environnement.",
       "expected_answer": "L'épuisement des ressources, la destruction des écosystèmes et la pollution Cette exploitation peut causer épuisement des ressources, destruction des écosystèmes et pollution.",
       "criteria": [
@@ -4526,7 +4526,7 @@
       "school_level": "6e",
       "theme": "Le vivant et son environnement",
       "title": "Conséquences des actions humaines sur l'environnement",
-      "prompt": "En une ou deux phrases, réponds à la question : On peut concevoir et construire des objets pour favoriser la biodiversité comme",
+      "prompt": "En une ou deux phrases, réponds à la question : Quels objets peut-on concevoir et construire pour favoriser la biodiversité ?",
       "context": "Question tirée du quiz Wooflash eb38 — Conséquences des actions humaines sur l'environnement.",
       "expected_answer": "Des nichoirs ou des hôtels à insectes Nichoirs et hôtels à insectes favorisent la biodiversité locale.",
       "criteria": [
@@ -4586,7 +4586,7 @@
       "school_level": "3e",
       "theme": "Le corps humain et la santé",
       "title": "Les éléments d'une défense rapide",
-      "prompt": "En une ou deux phrases, réponds à la question : Notre intestin héberge un grand nombre de micro-organismes qui",
+      "prompt": "En une ou deux phrases, réponds à la question : Notre intestin héberge de nombreux micro-organismes : quel rôle jouent-ils ?",
       "context": "Question tirée du quiz Wooflash eb39 — Les éléments d'une défense rapide.",
       "expected_answer": "Contribuent à son bon fonctionnement Notre organisme héberge de nombreux micro-organismes, particulièrement dans l'intestin, qui contribuent à son bon fonctionnement.",
       "criteria": [
@@ -4642,7 +4642,7 @@
       "school_level": "3e",
       "theme": "Le corps humain et la santé",
       "title": "Les éléments d'une défense rapide",
-      "prompt": "En une ou deux phrases, réponds à la question : La peau constitue une barrière naturelle contre les micro-organismes car",
+      "prompt": "En une ou deux phrases, réponds à la question : Pourquoi la peau constitue-t-elle une barrière naturelle contre les micro-organismes ?",
       "context": "Question tirée du quiz Wooflash eb39 — Les éléments d'une défense rapide.",
       "expected_answer": "Elle forme une barrière physique continue qui empêche la pénétration des microbes La peau sèche et intacte empêche la pénétration des micro-organismes : c'est la première barrière naturelle de l'organisme.",
       "criteria": [
