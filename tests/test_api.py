@@ -381,3 +381,28 @@ def test_reecriture_vercel_conserve_le_chemin_d_origine():
     assert rewrites[0]["source"] == "/(.*)"
     assert rewrites[0]["destination"] == "/api"
     assert {"type": "request.path", "op": "set", "args": "/$1"} in rewrites[0]["transforms"]
+
+
+def test_point_entree_vercel_reinjecte_la_racine_du_projet():
+    import sys as sys_module
+
+    import api.index as entrypoint
+
+    assert str(entrypoint.ROOT) in sys_module.path
+    assert entrypoint.app is not None
+
+
+def test_point_entree_vercel_signale_un_import_en_echec():
+    import asyncio
+
+    from api.index import diagnostic_app
+
+    messages: list[dict[str, Any]] = []
+
+    async def send(message: dict[str, Any]) -> None:
+        messages.append(message)
+
+    asyncio.run(diagnostic_app("rapport d'échec")({"type": "http"}, None, send))
+
+    assert messages[0]["status"] == 500
+    assert messages[1]["body"] == "rapport d'échec".encode()
