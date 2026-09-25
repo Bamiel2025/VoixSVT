@@ -31,6 +31,22 @@ class GoogleSheetsClient:
     def configured(self) -> bool:
         return bool(self.app_url)
 
+    def _request_url(self, **extra: str) -> str:
+        """URL de la Web App avec la clé d'accès de la Web App.
+
+        La clé est lue dans l'URL (``?key=``) si elle y figure, sinon dans la
+        variable d'environnement ``WEB_APP_SECRET``. Elle doit être identique à
+        la propriété de script ``WEB_APP_SECRET`` d'Apps Script.
+        """
+        parsed = urlparse(self.app_url)
+        query = dict(parse_qsl(parsed.query, keep_blank_values=True))
+        if not query.get("key"):
+            secret = os.environ.get("WEB_APP_SECRET", "").strip()
+            if secret:
+                query["key"] = secret
+        query.update(extra)
+        return parsed._replace(query=urlencode(query)).geturl()
+
     def status(self) -> dict[str, Any]:
         return {"configured": self.configured, "label": "Configuré" if self.configured else "Non configuré"}
 
@@ -39,7 +55,7 @@ class GoogleSheetsClient:
         if not self.configured:
             return {"status": "not_configured", "label": "Export non configuré", "message": "Renseignez GOOGLE_SHEETS_APP_URL pour activer l'envoi."}
         request = Request(
-            self.app_url,
+            self._request_url(),
             data=json.dumps(self.build_payload(analysis), ensure_ascii=False).encode("utf-8"),
             headers={"Content-Type": "application/json; charset=utf-8", "Accept": "application/json"},
             method="POST",
@@ -102,9 +118,11 @@ class GoogleSheetsClient:
         parsed = urlparse(self.app_url)
         if parsed.scheme != "https" or parsed.hostname not in {"script.google.com", "script.googleusercontent.com"}:
             return {"ok": False, "status": "invalid_source", "error": "L'URL doit être une Web App Google Apps Script en HTTPS."}
-        query = dict(parse_qsl(parsed.query, keep_blank_values=True))
-        query.update({"action": "dashboard"})
-        request = Request(parsed._replace(query=urlencode(query)).geturl(), headers={"Accept": "application/json", "User-Agent": "VoixSVT/1.0"}, method="GET")
+        request = Request(
+            self._request_url(action="dashboard"),
+            headers={"Accept": "application/json", "User-Agent": "VoixSVT/1.0"},
+            method="GET",
+        )
         try:
             with urlopen(request, timeout=self.timeout) as response:
                 raw = response.read(2_000_001)

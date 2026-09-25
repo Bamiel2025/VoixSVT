@@ -442,3 +442,24 @@ def test_import_des_reglages_avec_variables_vides(monkeypatch: pytest.MonkeyPatc
     assert reloaded.MAX_AUDIO_SECONDS == 45.0
     assert reloaded.MAX_UPLOAD_BYTES == 20 * 1024 * 1024
     assert reloaded.LAYA_MODEL == "aac6fef/laya-multilingual-mlx"
+
+
+def test_cle_web_app_lue_dans_lenvironnement(monkeypatch: pytest.MonkeyPatch):
+    from urllib.parse import parse_qsl, urlparse
+
+    from app.sheets_client import GoogleSheetsClient
+
+    base = "https://script.google.com/macros/s/ABC/exec"
+    client = GoogleSheetsClient(base)
+    monkeypatch.delenv("WEB_APP_SECRET", raising=False)
+
+    assert client._request_url() == base
+    assert client._request_url(action="dashboard") == f"{base}?action=dashboard"
+
+    monkeypatch.setenv("WEB_APP_SECRET", "  cle-secrete  ")
+    query = dict(parse_qsl(urlparse(client._request_url(action="dashboard")).query))
+    assert query == {"key": "cle-secrete", "action": "dashboard"}
+
+    # Une clé déjà présente dans l'URL prime sur l'environnement.
+    with_key = GoogleSheetsClient(f"{base}?key=url")
+    assert with_key._request_url() == f"{base}?key=url"
