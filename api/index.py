@@ -80,8 +80,11 @@ def startup_report(label: str) -> str:
 
 
 try:
-    from app.main import app
+    from app.main import app as _application
 except BaseException:  # noqa: BLE001 — aucun journal disponible, on répond.
-    app = diagnostic_app(startup_report("Échec de l'import de app.main"))
+    _application = diagnostic_app(startup_report("Échec de l'import de app.main"))
+
+# Assignation au premier niveau : l'analyse Vercel doit trouver `app` ici.
+app = _application
 
 __all__ = ["app", "diagnostic_app", "startup_report"]
