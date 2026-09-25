@@ -1,4 +1,4 @@
-$ErrorActionPreference = 'Stop'
+﻿$ErrorActionPreference = 'Stop'
 $root = Split-Path -Parent $MyInvocation.MyCommand.Path
 Set-Location -LiteralPath $root
 
@@ -15,4 +15,4 @@ uv pip install --python "$root\.venv\Scripts\python.exe" -e "$root[whisper-win,d
 
 Write-Host ""
 Write-Host "Installation terminée." -ForegroundColor Green
-Write-Host "Lancer l'application avec .\start.ps1"
+Write-Host "Lancer l'application : double-cliquez sur start.cmd (ou .\start.ps1)"

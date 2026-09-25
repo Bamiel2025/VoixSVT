@@ -590,6 +590,19 @@ def test_menu_eleve_regroupe_les_questions_par_theme_du_bo():
     assert ".question-group-title" in styles
 
 
+def test_lanceur_double_clic_disponible():
+    root = Path(__file__).resolve().parents[1]
+    launcher = (root / "start.cmd").read_text(encoding="utf-8")
+    script = (root / "start.ps1").read_text(encoding="utf-8-sig")
+
+    assert "start.ps1" in launcher
+    assert "ExecutionPolicy Bypass" in launcher
+    assert "if errorlevel 1 pause" in launcher
+    assert "http://127.0.0.1:8765" in script
+    assert "Start-Process $url" in script
+    assert "'app.main'" in script
+
+
 def test_onglet_saisie_manuelle_sous_la_transcription():
     static = Path(__file__).resolve().parents[1] / "app" / "static"
     page = (static / "index.html").read_text(encoding="utf-8-sig")

@@ -15,7 +15,7 @@ cd D:\IA\CorrecteurAuto
 .\start.ps1
 ```
 
-Ouvrir ensuite [http://127.0.0.1:8765](http://127.0.0.1:8765).
+**Double-cliquez sur `start.cmd`** : c’est l’équivalent de `.\start.ps1` pour l’Explorateur (un fichier `.ps1` ne se lance pas par double-clic). Le serveur démarre dans la console, le navigateur s’ouvre ensuite sur [http://127.0.0.1:8765](http://127.0.0.1:8765). Si un serveur tourne déjà, seul l’onglet s’ouvre.
 
 ## Parcours d’utilisation
 
