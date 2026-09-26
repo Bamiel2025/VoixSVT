@@ -581,10 +581,10 @@ function renderAnalysis(analysis) {
       <div class="check-list">${allCriteria.map(([item, found]) => criterionItem(item, found)).join("")}</div>
       ${misconceptions}
     </section>
-    <section class="result-section"><h3>Décision Laya <span>INDICE COMPLEMENTAIRE</span></h3>${layaMarkup(analysis.laya)}</section>
+    ${state.hosted ? "" : `<section class="result-section"><h3>Décision Laya <span>INDICE COMPLEMENTAIRE</span></h3>${layaMarkup(analysis.laya)}</section>`}
     <section class="result-section"><h3>Remédiation proposée <span>CIBLE : ${escapeHtml(question.theme).toUpperCase()}</span></h3>${remediationMarkup(result.remediation)}</section>
     <section class="result-section">
-      <h3>Correction savante <span>RÉFÉRENCE</span></h3>
+      <h3>Correction de référence <span>RÉFÉRENCE</span></h3>
       <div class="reference-block">${escapeHtml(question.expected_answer)}</div>
       <p class="source-line">Source : ${escapeHtml(question.source.file)} · ${escapeHtml(question.source.locator)}</p>
     </div>

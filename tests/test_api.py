@@ -590,6 +590,16 @@ def test_menu_eleve_regroupe_les_questions_par_theme_du_bo():
     assert ".question-group-title" in styles
 
 
+def test_diagnostic_adapte_a_la_version_hebergee():
+    static = Path(__file__).resolve().parents[1] / "app" / "static"
+    script = (static / "app.js").read_text(encoding="utf-8-sig")
+
+    assert 'state.hosted ? "" :' in script
+    assert "Décision Laya" in script
+    assert "Correction de référence" in script
+    assert "Correction savante" not in script
+
+
 def test_lanceur_double_clic_disponible():
     root = Path(__file__).resolve().parents[1]
     launcher = (root / "start.cmd").read_text(encoding="utf-8")
