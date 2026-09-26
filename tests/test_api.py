@@ -598,6 +598,12 @@ def test_diagnostic_adapte_a_la_version_hebergee():
     assert "Décision Laya" in script
     assert "Correction de référence" in script
     assert "Correction savante" not in script
+    assert 'closest(".switch").hidden = true' in script
+    assert 'closest(".answer-actions").classList.add("single-action")' in script
+
+    styles = (static / "styles.css").read_text(encoding="utf-8-sig")
+    assert ".answer-actions.single-action" in styles
+    assert "[hidden] { display: none !important; }" in styles
 
 
 def test_lanceur_double_clic_disponible():

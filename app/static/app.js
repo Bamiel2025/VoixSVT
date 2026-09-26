@@ -868,7 +868,8 @@ async function init() {
       el("record-button").setAttribute("aria-label", "Démarrer la dictée");
       el("laya-toggle").checked = false;
       el("laya-toggle").disabled = true;
-      el("laya-toggle").closest(".switch").title = "Laya est réservé à l’exécution locale";
+      el("laya-toggle").closest(".switch").hidden = true;
+      el("analyze-button").closest(".answer-actions").classList.add("single-action");
     } else if (!health.whisper.installed) {
       toast("Whisper n’est pas installé : lancer install.ps1 avant la première transcription.");
     }

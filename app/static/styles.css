@@ -265,6 +265,7 @@ textarea:disabled { opacity: .58; }
 .privacy-inline { margin: 8px 0 0; color: var(--ink-2); font-size: 9px; line-height: 1.4; }
 .hosted-audio-note { margin: 9px 0 0; padding: 9px 10px; border-left: 3px solid var(--gold); color: var(--ink-2); background: #f2eddf; font-size: 9px; line-height: 1.45; }
 .answer-actions { padding: 20px 28px 27px; display: flex; align-items: center; justify-content: space-between; gap: 18px; }
+.answer-actions.single-action { justify-content: flex-end; }
 .switch { display: flex; align-items: center; gap: 8px; font-size: 10px; color: var(--ink-2); cursor: pointer; }
 .switch input { position: absolute; opacity: 0; }
 .switch span { width: 34px; height: 19px; padding: 3px; border-radius: 999px; background: #b9b9ad; transition: .2s; }
